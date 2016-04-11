@@ -47,6 +47,7 @@
 \renewcommand{\headrulewidth}{0.4pt}
 \renewcommand{\footrulewidth}{0.4pt}
 \renewcommand{\thepage}{\roman{page}}
+
 \usepackage{indentfirst}           %remove if we dont want to indent
 \renewcommand{\thepage}{\roman{page}}
 
@@ -154,7 +155,14 @@
 
 
 \section{Introduction}
+The Van Allen belts are two regions of 
 
+
+- what the problem is\\
+- what have other ppl done\\
+- why is it difficult\\
+
+The environment inside the van allen belts have been investigated by NASA's Radiation Belt Storm Probes twin satellites. One of the primary mission objectives is to develop empirical and physical models predicting radiation belt space weather effects.
 
 \section{Lit Review}
 
@@ -169,11 +177,11 @@ What are you trying to achieve?\\
 
 \subsection{Why}
 Why is it important?\\
-- currently all satellite constructions that will be exposed to the raidation must be radiation hardened costing ?? or only have a short mission lifetime and the entire satellite is considered disposable.\\
+- currently all satellite constructions that will be exposed to the radiation must be radiation hardened costing ?? or only have a short mission lifetime and the entire satellite is considered disposable.\\
 - passive shielding requires extra mass\\
 
 \subsection{Difficult}
-What is this difficult to acomplish?\\
+What is this difficult to accomplish?\\
 - need to build for the space environment\\
 - must be reliable as once it is launched it cannot be fixed\\
 - still needs to allow EM to pass for communication and for solar power (especially Earth orbit missions)
@@ -182,7 +190,17 @@ What is this difficult to acomplish?\\
 
 
 
-\subsection{What will you do?}
+\subsection{Method of Attack}
+
+Phases:
+- identify the design constraints required of a spacecraft. Dimensions, power requirements, mass, communication ability\\
+- design different magnetic field configurations with an without the plasma element of the shield that is within design constraints with guidance of past projects and theoretical ideas \\
+- Simulate the design configurations in COMSOL and check that for the power/magnetic field it will block the plasma/radiation and the electric and magnetic fields \\
+- Choose the best configuration based on the simulations and build a prototype \\
+- test the prototype in a vacuum chamber and monitor the plasma \\
+- 
+Future: 
+- create a feedback control system in MATLAB to interface with COMSOL for incident plasma fluctuations such as what occurs during solar storms to only use the power required to shield from the plasma
 
 
 
@@ -191,11 +209,11 @@ What is this difficult to acomplish?\\
 
 
 \section{Risk Management}
+High voltage devices will be used to generate the magnetic field, 
 
 
 
-
-
+% lots fo research https://engineering.dartmouth.edu/~d76205x/research/Shielding/
 
 
 

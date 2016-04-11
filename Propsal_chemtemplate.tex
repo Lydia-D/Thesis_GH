@@ -1,0 +1,162 @@
+% Summary Report Senior Chemistry Template
+% by Lydia Drabsch
+% Created 8/8/15
+\documentclass[12pt,a4paper]{article}
+\usepackage[top=2cm, bottom=2cm, left=2cm, right=2cm]{geometry}
+%\usepackage{rsc}
+\bibliographystyle{IEEEtran}
+
+% Figure packages
+\usepackage{chngcntr}
+\usepackage{tikz}
+\usepackage{graphicx}
+%\counterwithin{figure}{section}
+\usepackage{epigraph}
+%\usepackage{subfigure}
+\usepackage{epstopdf}
+\usepackage{epsfig}
+\DeclareGraphicsExtensions{.eps}
+\setlength{\intextsep}{5pt plus 1.0pt minus 1.0pt}
+	
+% Table Packages
+\usepackage{multirow}
+%\counterwithin{table}{section}
+\usepackage{booktabs}
+\usepackage{multicol}
+
+% Formatting packages
+\usepackage{hyperref}
+\usepackage{chngcntr}
+\usepackage{indentfirst}    %remove if we dont want to indent
+\hypersetup
+	{
+		colorlinks,%
+		citecolor=black,%
+		linkcolor=black,%
+		urlcolor=black,%
+	}
+\newcommand{\temp}{$^{\circ}$C }
+\newcommand{\gm}{g mol$^{-1}$ }
+\newcommand{\Mgm}{g\;mol^{-1}}
+
+% titles packages
+\usepackage{titlesec}
+\setcounter{tocdepth}{5}
+\usepackage{caption}
+\usepackage{subcaption}
+\setcounter{secnumdepth}{5}
+\usepackage{color}
+\definecolor{titlecolour}{cmyk}{1,.1,0.0,.50}
+\definecolor{scolour}{cmyk}{1,.0,0,.3}
+\definecolor{sscolour}{cmyk}{1,.0,0.0,.75}
+\definecolor{ssscolour}{cmyk}{1,.0,0.0,.65}
+\definecolor{paracolour}{cmyk}{1,.0,0.0,.55}
+
+\usepackage{titlesec}
+\usepackage{bold-extra}
+%\titleformat{\maketitle}{\color{titlecolour}}{}{}{}
+\titleformat{\section}
+{\color{scolour}\scshape\Large\bfseries}
+{\color{scolour}\thesection}{1em}{}
+\titleformat{\subsection}
+{\color{sscolour}\normalfont\bfseries}
+{\color{sscolour}\thesubsection}{2em}{}
+%\titleformat{\subsubsection}
+%{\color{ssscolour}\normalfont\Large\bfseries}
+%{\color{ssscolour}\thesubsubsection}{3em}{}
+%\titleformat{\paragraph}
+%{\color{paracolour}\normalfont\large\bfseries}
+%{\color{paracolour}\theparagraph}{4em}{}
+\titlespacing\section{0pt}{12pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+\titlespacing\subsection{0pt}{10pt plus 4pt minus 2pt}{0pt plus 2pt minus 2pt}
+
+
+% maths packages
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+
+
+
+\newcommand{\degs}{$^{\circ}$C }
+
+% magnetosphere - 
+
+\begin{document}
+\newgeometry{top=2cm, bottom=2cm, left=1.5cm, right=1.5cm}
+{\centering\bf\LARGE\color{titlecolour} Mini Magnetosphere: Active shielding for Spacecraft from the Van Allen Belts    \par} % in geocentric orbits
+{\centering\bf Lydia Drabsch\par}
+{\bf\centering 12th April 2016\par}
+
+
+
+\section*{Background}
+The Van Allen belts are regions of trapped charged particles that encompass the Earth ranging from 1000 km to 60000 km from the surface of the Earth. Typically there are two belts with the inner belt mostly comprised of protons and an outer belt mostly containing electrons. Except for very Low Earth Orbits, spacecraft require shielding from the charged particles to prevent single-event effects on the electronics. Components are also radiation hardened before launch, which increases the cost of spacecraft manufacture. The most widely used form of shielding is passive shielding, where masses of material is used to absorb the radiation. However, this increases the mass of the spacecraft which in turn increases the cost of launch.\\
+
+The environment inside the Van Allen belts have been investigated by NASA's Radiation Belt Storm Probes twin satellites. One of the primary mission objectives is to develop empirical and physical models predicting radiation belt space weather effects. This data will be used to model the incident plasma that the device will shield against.
+
+\vspace{12pt}
+\hrule
+\vspace{3mm}
+%\vspace{-10pt}
+\noindent\textbf{\scshape\Large\color{scolour}Problem Statement:} Investigate, design and verify an active shielding configuration for spacecraft from plasma effects present in the Van Allen Belts. 
+\vspace{3mm}
+\hrule
+
+
+\subsection{What}
+What are you trying to achieve?\\
+- active shielding of the satellite from\\
+\indent - solar rad (deep space mission)\\
+\indent - galatic rad (deep space mission)\\
+\indent - van allen belts for Earth missions - solar events\\
+
+
+
+\subsection{Difficult}
+What is this difficult to accomplish?\\
+- need to build for the space environment\\
+- must be reliable as once it is launched it cannot be fixed\\
+- still needs to allow EM to pass for communication and for solar power (especially Earth orbit missions)
+
+\subsection{What have others done?}
+
+
+
+\subsection{Method of Attack}
+\begin{enumerate}
+\item Identify the design constraints required of a spacecraft. Constraints include dimensions, power requirements, mass and minimal communication interference.
+\item Design three different magnetic field configurations with the guidance of previous and theoretical designs. The first configuration will be only a magnetic field shield. The second configuration will incorporate a plasma contained by a magnetic field. The third configuration will be based on a purely theoretical design of an inflating magnetic field.
+\item Simulate the design configurations in COMSOL Multiphysics and identify the required strength of the magnetic field in order to shield the spacecraft. The best configuration will
+\item Only one configuration will be built and tested. Resource accessibility will influence the decision as well as the simulation models.
+\item The chosen configuration will be built as well as the incident plasma and sensors.
+\item The prototype will be tested to verify the simulation models.
+\item A potential expansion could be to create a feedback control system in MATLAB to interface with COMSOL to model incident plasma fluctuations. These fluctuations occur during solar storms and greatly influence the space weather.  
+\end{enumerate}
+
+
+\section{Resource Plan}
+
+
+
+\section{Risk Management}
+High voltage devices will be used to generate the magnetic field, 
+
+
+
+
+
+\section{References}
+
+
+\bibliography{proposal_bib}{}
+\bibliographystyle{ieee}
+
+
+
+
+
+
+
+\end{document}
+
