@@ -17,22 +17,55 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/outputText"
+        android:text="output"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/stopButton"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
+    <Button
+        android:id="@+id/calButton"
+        android:text="Calibrate"
+        android:onClick="calButtonClicked"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/outputText"/>
+    <TextView
+        android:id="@+id/calText"
+        android:text="press button to calibrate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/calButton"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/stopButton"
+        android:text="Stop"
+        android:onClick="stopButtonClicked"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/sendButton"
+        android:layout_alignBottom="@+id/sendButton"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="59dp"
+        android:layout_marginEnd="59dp" />
+
     <Button
         android:id="@+id/sendButton"
         android:text="Send"
         android:onClick="sendButtonClicked"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginRight="46dp"
+        android:layout_marginEnd="46dp"
         android:layout_below="@+id/startText"
-        android:layout_marginTop="@dimen/activity_vertical_margin"
-        android:layout_alignLeft="@+id/startText"/>
-    <TextView
-        android:id="@+id/outputText"
-        android:text="output"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@+id/sendButton"
-        android:layout_marginTop="@dimen/activity_vertical_margin"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"/>
+        android:layout_toLeftOf="@+id/stopButton"
+        android:layout_toStartOf="@+id/stopButton"
+        android:layout_marginTop="29dp" />
 </RelativeLayout>
