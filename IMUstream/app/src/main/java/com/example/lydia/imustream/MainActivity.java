@@ -26,16 +26,25 @@ import java.util.Iterator;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity{
-// Variables
+// widgets
     public TextView outputText;
     public TextView startText;
+    public TextView calText;
+
+// Listeners
     public SensorManager mSensorManager;
     public Sensor mAccelerometer;
     public Sensor mOrientation;
+
+// Data storage
     public ArrayList<IMUdata> DataAcc;
     public ArrayList<IMUdata> DataCal;
+
+// File handling
     public String NAME_FILE;
     public FileWriter FILE;
+
+// Flags
     boolean FLAG_send;
     boolean FLAG_cal;
     //public Time timeobject;
@@ -45,34 +54,43 @@ public class MainActivity extends AppCompatActivity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+// Widgets
         outputText = (TextView) findViewById(R.id.outputText);
         startText = (TextView) findViewById(R.id.startText);
+        calText = (TextView) findViewById(R.id.calText);
+
+// Listeners
         mSensorManager = (SensorManager) getSystemService(SENSOR_SERVICE);
         mAccelerometer = mSensorManager.getDefaultSensor(Sensor.TYPE_LINEAR_ACCELERATION);
         //mOrientation = mSensorManager.getDefaultSensor(Sensor.Type_O)
+
+// Data Handling
         DataAcc = new ArrayList<IMUdata>();
         DataCal = new ArrayList<IMUdata>();
+
+// File Handling
         String currentDateandTime = new SimpleDateFormat("MMdd_HHmmss").format(new Date());
+        NAME_FILE = String.format("AccData"+currentDateandTime+".txt");
+
+// Flags
         FLAG_send = false;
         FLAG_cal = false;
-        NAME_FILE = String.format("AccData"+currentDateandTime+".txt");
 
 
 
     }
-
+    @Override
     protected void onResume(){
         super.onResume();
         mSensorManager.registerListener(accelerationListener,mAccelerometer, mSensorManager.SENSOR_DELAY_NORMAL);
 
     }
-
+    @Override
     protected void onPause(){
         super.onPause();
         mSensorManager.unregisterListener(accelerationListener);
         flushbuffer();
     }
-
     @Override
     protected void onDestroy() {
         super.onDestroy();
@@ -96,16 +114,17 @@ public class MainActivity extends AppCompatActivity{
             }
             if (FLAG_cal){
                 // remove last bit of data
-                DataCal.add(AccObject.acc);
-                if (DataCal.size() >100){
+                DataCal.add(AccObject);
+                if (DataCal.size() >10){
                     // clear flag
                     FLAG_cal = false;
                     FLAG_send = false;
-
+                    calculateCal();
                 }
             }
         }
     };
+
 // Data Handling
     private void refreshDisplay(String output) {
         outputText.setText(output);
@@ -115,9 +134,21 @@ public class MainActivity extends AppCompatActivity{
         List<Float> xvec = IMUdata.extractvector(DataCal,"getx");
         List<Float> yvec = IMUdata.extractvector(DataCal,"gety");
         List<Float> zvec = IMUdata.extractvector(DataCal,"getz");
+        float[] mean = new float[3];
+        mean[0] = myStats.getMean(xvec);
+        mean[1] = myStats.getMean(yvec);
+        mean[2] = myStats.getMean(zvec);
 
+        float[] stdDev = new float[3];
+        stdDev[0] = myStats.getStdDev(xvec,mean[0]);
+        stdDev[1] = myStats.getStdDev(xvec,mean[1]);
+        stdDev[2] = myStats.getStdDev(xvec,mean[2]);
 
-
+        IMUdata.setcalibrate(mean,stdDev);
+        writeToFile(IMUdata.getcalibrate().getAccDataStr());
+        startText.setText("Ready");
+        calText.setText(IMUdata.getcalibrate().getAccDisp());
+        // change state to now send data again? display calibrated values?
 
     }
 
@@ -171,11 +202,11 @@ public class MainActivity extends AppCompatActivity{
 
     public void calButtonClicked(View view){
         FLAG_cal = true;
-
         startText.setText("Calibrating Data");
         FLAG_send = false;
         DataAcc.clear();
         DataCal.clear();
+        IMUdata.setcalibrate(new float[3],new float[3]); // clear last calibrate data
     }
 
 }

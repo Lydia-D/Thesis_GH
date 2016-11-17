@@ -8,6 +8,7 @@ import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Locale;
 
 /**
  * Created by Lydia on 17/11/2016.
@@ -18,16 +19,21 @@ public class IMUdata {
     private long time;
     public String id;
     private String DIFF;
-    public float[] mean;
     public float[] stddev;
     static public IMUdata cal;
 
-
+    public IMUdata(){
+        acc = new float[3];
+    }
 
     public IMUdata(SensorEvent event){
         if (cal == null){
-            acc = event.values;}
+            acc = event.values;
+            cal = new IMUdata();
+            //cal.acc = new float[3];
+        }
         else{
+            acc = new float[3];
             acc[0] = event.values[0]-cal.acc[0];
             acc[1] = event.values[1]-cal.acc[1];
             acc[2] = event.values[2]-cal.acc[2];
@@ -49,15 +55,15 @@ public class IMUdata {
         return acc[2];
     }
 
-    public void setcalibrate(float[] mean,float[] stddev){
+    public static void setcalibrate(float[] mean,float[] stddev){
         cal.acc = mean;
         cal.stddev = stddev;
-        cal.time = time;
-        cal.id = "Cal_Acc";
+        //cal.time = time;     reference the time somehow?
+        cal.id = "CAcc";
         cal.DIFF =",\t";
     }
 
-    public IMUdata getcalibrate(){
+    public static IMUdata getcalibrate(){
         return cal;
     }
 
@@ -79,16 +85,16 @@ public class IMUdata {
 
             while (IMUdataIterator.hasNext()) {
                 try {
-                    Method method = IMUdataIterator.next().getClass().getMethod(strmethod);
-                    float temp;
-                    method.invoke(temp,null);
+                    IMUdata object = IMUdataIterator.next();
+                    Method method = object.getClass().getMethod(strmethod);
+                    float temp = (float) method.invoke(object);
                     outputlist.add(temp);
-                } catch (IllegalAccessException e) {
-                    Log.e("ERROR in extractvector", e.toString());
-                } catch (InvocationTargetException e) {
-                    Log.e("ERROR in extractvector", e.toString());
-                } catch (NoSuchMethodException e) {
-                    Log.e("ERROR in extractvector", e.toString());
+                } catch (IllegalAccessException err) {
+                    Log.e("ERROR in extractvector", err.toString());
+                } catch (InvocationTargetException err) {
+                    Log.e("ERROR in extractvector", err.toString());
+                } catch (NoSuchMethodException err) {
+                    Log.e("ERROR in extractvector", err.toString());
                 }
             }
             return outputlist;
