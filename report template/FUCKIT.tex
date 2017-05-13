@@ -1,0 +1,354 @@
+%% Thesis
+\documentclass[11pt,a4paper]{article}
+\usepackage[top=2.5cm, bottom=2cm, left=2cm, right=2cm]{geometry}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{tikz}
+\usepackage{circuitikz}
+\usepackage{epigraph}
+\usepackage{hyperref}
+\usepackage{multirow}
+%\usepackage[demo]{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\setcounter{secnumdepth}{5}
+\usepackage{chngcntr}
+\counterwithin{figure}{section}
+\counterwithin{table}{section}
+\usepackage{multirow}
+\setcounter{tocdepth}{5}
+\usepackage{subfiles}
+\usepackage{epstopdf}
+\usepackage[section]{placeins}
+\usepackage{undertilde}
+
+% pseudocode
+\usepackage{algorithm}
+\usepackage[noend]{algpseudocode}
+
+
+\renewcommand\epigraphflush{flushright}
+\renewcommand\epigraphsize{\normalsize}
+\setlength\epigraphwidth{0.7\textwidth}
+
+\usepackage[]{color}
+\definecolor{titlepagecolor}{cmyk}{1,.0,0.0,.50}
+\definecolor{scolour}{cmyk}{1,.0,0.0,.85}
+\definecolor{sscolour}{cmyk}{1,.0,0.0,.75}
+\definecolor{ssscolour}{cmyk}{1,.0,0.0,.65}
+\definecolor{paracolour}{cmyk}{1,.0,0.0,.55}
+
+\usepackage{amsfonts}
+%\DeclareFixedFont{\titlefont}{T1}{ams}{b}{sc}{0.5in}
+
+% Added 
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{Augmented Space}
+\rhead{Lydia Drabsch}
+\cfoot{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+\renewcommand{\thepage}{\roman{page}}
+\usepackage{indentfirst}           %remove if we dont want to indent
+\renewcommand{\thepage}{\roman{page}}
+\usepackage{bibentry}
+
+\newcommand{\myparagraph}[1]{\paragraph{#1}\mbox{}\newline\indent}
+% vectors
+\newcommand{\dv}[1]{\textbf{\textit{#1}}}
+\newcommand{\vv}[1]{\dot{\textbf{\textit{#1}}}}
+\newcommand{\av}[1]{\ddot{\textbf{\textit{#1}}}}
+\renewcommand{\vec}[1]{\textbf{#1}}
+\newcommand{\nvec}[1]{\hat{\textbf{#1}}}
+
+\newlength{\normalparindent}
+\AtBeginDocument{\setlength{\normalparindent}{\parindent}}
+
+% Change heading colours
+\usepackage{titlesec}
+%\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{bold-extra}
+\titleformat{\section}
+{\color{scolour}\scshape\LARGE\bfseries}
+{\color{scolour}\thesection.}{2em}{}
+\titleformat{\subsection}
+{\color{sscolour}\normalfont\Large\bfseries}
+{\color{sscolour}\thesubsection}{2em}{}
+\titleformat{\subsubsection}
+{\color{ssscolour}\normalfont\large\bfseries}
+{\hspace*{\normalparindent}\color{ssscolour}\thesubsubsection}{1em}{}
+\titleformat{\paragraph}
+{\color{paracolour}\normalfont\large\bfseries}
+{\hspace*{\normalparindent}\color{paracolour}\theparagraph}{1em}{}
+
+% end added
+\makeatletter                       
+\def\printauthor{%                  
+    {\large \@author}}              
+\makeatother
+\author{%
+    Stefan Williams \\
+    University of Sydney \\
+    }
+
+% Title image
+\newcommand\titlepagedecoration{%
+\tikz[remember picture,overlay] \node[opacity=1,inner sep=0pt] at ([xshift=5cm]current page.west){\includegraphics[height=\paperheight]{./IMAGEtitle2f}};
+}
+
+% Matlab Code
+\usepackage[framed]{mcode}
+\newcommand{\Deg}{$^{\circ}$ }
+
+
+\begin{document}
+\newgeometry{top=3.7cm, bottom=4cm, left=3cm, right=3cm}
+% \nobibliography*
+\begin{titlepage}
+% TURN OFF FOR SPEED
+\titlepagedecoration
+
+\flushright
+\huge{\scshape Thesis}\\ Lydia Drabsch \\ 28th October 2017
+
+
+\null\vfill
+%\vspace{2cm}
+\begin{minipage}{0.8\textwidth}
+\centering
+\rule{1\textwidth}{0.02pt}\\
+\Huge{\textbf{\scshape FUCK IT}\\\rule{1\textwidth}{0.02pt}}
+\\ 
+\end{minipage}
+%High Accuracy Instantaneous Relative Positioning of multiple GNSS Receivers
+
+\null\vfill
+\vspace*{1cm}
+\noindent
+\hfill
+\begin{minipage}{0.45\linewidth}
+    \begin{flushright}
+        \printauthor
+    \end{flushright}
+\end{minipage}
+%
+\begin{minipage}{0.02\linewidth}
+    \rule{1pt}{190pt}
+\end{minipage}
+
+
+\end{titlepage}
+\newgeometry{top=2.5cm, bottom=2cm, left=2cm, right=2cm}
+
+% \begin{figure*}[h!]
+% \centering
+% \includegraphics[width=0.99\linewidth]{./Plag}
+% \label{fig:Plag}
+% \end{figure*}
+
+\setcounter{section}{0}
+
+\tableofcontents
+\listoffigures
+\listoftables
+\newpage
+\pagenumbering{arabic}
+%\renewcommand{\thepage}{\arabic{page}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Abstract}
+
+
+\section{Introduction}
+
+
+Instantaneous Relative displacement/position between GNSS receivers.
+Simulation case studies are presented to validate the mathematical models.
+
+
+\section{Literature Review}
+
+% BIIIIIGGGG
+- where are we
+- knowing where you are positioned is important for data gathering, motion detecting and tracking, path planning
+- current GNSS: explain GPS, GLONASS, galelao, chinese one constellations and how it works
+- civilian GNSS using duel frequency, send CDMA, how decryption works
+- military has more precise stuff
+- timing comparison between satellite and receiver to find psudeorange
+- what is psudorange?
+- what is carrier phase
+- typical accuracy for civilian accessable gps
+- formation flying, drones
+
+% big?
+- absolute vs relative position
+- what is relative position good for
+
+% mid - funnel down - low cost receivers
+- lower cost receivers have only one frequency band, error in timing
+- what error can you expect\\
+
+- dont currently have access to raw data but this is changing\\
+Unfortunately, low cost GNSS receivers rarely provide official access to the GNSS raw data. Previous studies have used customised bluetooth headsets or customised android platform mobile phones to investigate algorithms on low-cost GNSS receivers. More expensive receivers do allow raw data to be utilised, however they also provide other mechanisms such as duel frequencies and more accurate clocks, rendering the new algorithm *obtuse*. The mindset of *crowd-sourcing*/customising/flexible technology is changing the way manufactures build GNSS receivers. The new Android OS platform Nougat 7.0 provides the developer raw GNSS data at the software level.  
+
+
+% mid - errors 
+what are the errors that occur in GPS?
+- ionosphere and troposphere refraction - speed of propagation changes which alters the time of flight
+- actual location of satellite, where it thinks it is is based on a prediction model so its not 100\% correct. what uncertainty in this location therefore vector is there?
+- timing of received signal because of low cost clock on receiver. 
+- noise in measurement
+- multipath effects
+- rotation of the earth
+
+
+% types of algorithms making gps more accurate: table with columns = types of analysis, rows= types of algorithms
+- dynamic tracking (need temporal measurements) vs static measurement - no temporal
+- post processing vs pre-processing vs realtime
+- ground structure vs free standing
+- absolute vs relative
+- accuracy (how much)
+- computation time/space required
+- what error is each method removing
+- what piece of data it needs (if raw)
+- calibration required
+- robustness -> if a satellite goes out of view does it need to re-calibrate? passing information between receivers-> is one a reference? single point of failure
+
+% algorithms - how important is it to write about all of this? just focus on main ones?
+- differential types: DGPS, SBAS, WAAS RTK, multi-frequency to remove atmospheric effects, 
+
+
+% relative tracking uses carrier phase
+- needs instantaneous relative distance for first point, to speed up processing and make the first few time steps more accurate, also when locking onto new satellites
+
+
+% small
+- what data received and how to simulate misaligned timing between receivers
+- what magnitude are the errors and how to simulate them
+- simulate the errors individually (to see how each type affects the sim - convergence time and accuracy) and/or all errors at once
+
+
+
+
+
+%??Topical organisation with inverted pyramid substructure
+% \subsubsection{GNSS Localisation}
+% Global Navigation Satellite System (GNSS) 
+% - lower update rates $\approx$1Hz\\
+% - accuracy/precision? not good enough for these applications\\
+% - not good for indoor environments as signals are weak\\
+% - used differentiated gnss to solve for integer ambiguity across multiple mobile platforms on the go \cite{GNSS_difftrack} \cite{GNSS_intamb}\\
+% - multipath/atmospheric error estimation \\
+% - multiple receivers across the multiplayers \cite{GNSS_multi} \\
+
+% 	%% types of precision gnss locations (http://ieeexplore.ieee.org.ezproxy1.library.usyd.edu.au/document/7530542/)
+% - double differentiating - requires same satellites
+% - pvt position velocity and precise time
+
+\section{Your algorithm}
+
+
+- assume satellite is at infinity for comparing difference in psudorange for a particular reference satellite.
+- use all satellites as reference satellite - no single point of failure, also not all satellites might be in view for all receivers
+- get the normal vector between all receivers and each sat. 
+- Calculate the average normal vector.
+- get the difference in pseudorange between all receivers along each normal vector 
+- create a plane with the normal vector with that distance
+- solve via optimization (least squares) 
+- use clock adjustment from abs gps? or have as another optimisation variable
+- antenna problems? misalignment?
+- share clock bias's between solving for different reference sets? - do it one by one or all together?
+
+- need to align the time of signal sent to the receivers before calculating average normal vector
+
+- surface/volume of probability of where each receivers might be-> isnt that already done with the cost fn, the further away it is from the plane intersection then the more cost-> have weighted planes? have weighted area on the planes? use rectangle instead of planes? -> if one plane interscepts far away from the others then ignore it (multipath). hyperdimensional surface to minimise
+
+
+
+
+% conceptual
+how to send data between receivers? do it offline on a different platform?
+
+
+https://www.e-education.psu.edu/geog862/node/1759 - errors in pseduorange
+
+http://www.insidegnss.com/node/2898 - how to get pseudorange from raw data
+
+\subsection{Assumptions}
+\subsubsection{Static Receivers}
+All receivers are static for the time in between all receivers get a GPS lock. This makes for an easier transform to align the satellite positions to a common time 
+
+\subsubsection{Transform asynchronous time }
+any two receivers will not be synchronized. The earliest time between all the receivers will be used as the time reference point. The satellite position in the future time steps were backcalculated to find the difference in the pseudorange. As the time between receivers will be $\approx$ 1 second, this extra distance is only in the vacuum of space and is not affected by potential nonlinear affects such as ionosphere and troposphere errors that affect the speed of light.
+
+diagram
+
+\subsubsection{Parallel plane assumption}
+Satellites at infinity for all receivers in ?10km radius of reference point. Therefore an average vector calculated at one point in time  
+Put analysis here as evidence
+Draw diagram
+
+
+
+\subsection{Algorithm}
+
+\subsubsection{Pre-Processing}
+\paragraph{Select reference receiver $\alpha$}
+The receiver $\alpha$ is used as the reference location and common time in the NED frame. 
+\paragraph{Collect data of one timestep from all receivers}
+
+\paragraph{Align to reference time}
+
+
+\subsection{Planar Optimisation}
+\begin{enumerate}
+\item Find average normal vector for each satellite $\eta_s$
+\item Calculate differences in pseudorange $\Delta\rho^s_{ij}$ where s is the satellite, i and j are receivers $(i\neq j)$
+\item j
+\end{enumerate}
+
+
+\section{Method-Simulation}
+- what data is it using from receiver? psudorange, time
+
+- what errors to include and how to incorporate into the simulation.
+- how to include the different(asynchronous ) time received for all receivers-> is for the one receiver 
+- how extra receivers affects computational time/ accuracy
+- how number of sats affect comp time/accuracy
+- configuration of sats
+- large multipath affects
+- no receiver sees the same sat? - does it just output the relative difference between abs values? -> incorrect? just have it fail? not actually implementing, can control the environment
+- distance of receivers apart
+- configuration of receivers
+
+
+
+
+
+\subsection{Evaluation} % how to evaluate
+- fake gps data\\
+- how to simulate noise - what level SNR\\
+- to calculate your own GPS location using the normal algorithm? - space 3 \\
+- use real GPS locations? (and through time) -space 3\\
+- vary number of satellites in view\\
+- vary GDOP (good GDOP and bad)\\
+- when receivers don't see the exact same satellites \\
+- vary number of receivers \\
+- simulate a multipath error and how does it account for it or how much error does it introduce\\
+
+How to evaluate?:
+- accuracy in relative space\\
+- compare to just taking differences in absolute position \\
+- between individual receivers and the total error in the whole system\\
+- markov? error analysis -> cannot do precision without statistical analysis but isolate errors in x,y,z. how much worse is z than horizontal?\\
+- computational time-> how does more receivers/satellites affect the comp time -> what time and space complexity?
+
+
+\section{Result}
+
+
+\newpage
+\bibliographystyle{IEEEtran}
+\bibliography{bib.bib}
+\end{document}

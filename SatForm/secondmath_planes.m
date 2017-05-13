@@ -4,15 +4,15 @@ clc
 
 % alpha frame (km)
 SatA = [6000,0,-18000];
-SatB = [-7000,0,-17000];
-SatC = [-23000,0,-2000];
+SatB = [-7000,-2000,-17000];
+SatC = [-23000,-6000,-2000];
 SatD = [24000,0,-5000];
 SatE = [-8000,-8000,-17000];
 alpha = [0,0,0];
 beta = [0.1,-0.1,0.1];
 gamma = [0.05,0.1,-0.05];
 
-allSats = [SatA;SatB;SatE];
+allSats = [SatA;SatB;SatC;SatD;SatE];
 % create plane at alpha with normal SatA-alpha
 n = ones(size(allSats,1),1)*alpha-allSats;
 n_norm = normalise(n);
@@ -21,8 +21,12 @@ r = beta-alpha;
 dis = dotm(r,n_norm);
 
 alphaplane = findplane(n,alpha,zeros(size(allSats,1),1));
-betaplane = findplane(n,alpha,dis);
-%gammaplane = findplane(n,alpha,dotm(gamma-alpha,n_norm));
+betaplane_alpha = findplane(n,alpha,dis);
+betaplane_gamma = calcplanecoord(gamma,allSats,beta);
+
+betaplane = [betaplane_alpha;betaplane_gamma];
+
+gammaplane = findplane(n,alpha,dotm(gamma-alpha,n_norm));
 
 plotplane(betaplane,1);
 plotplane(alphaplane,1);
@@ -63,7 +67,8 @@ grid on;
 dis = costresidual(betaplane,alpha);
 
 %[x,y,z] = meshgrid(-0.2:0.05:0.2,-0.2:0.05:0.2,-0.2:0.05:0.2);
-[x,y] = meshgrid(-0.2:0.05:0.2,-0.2:0.05:0.2,-0.2:0.05:0.2);
+[x,y] = meshgrid(-0.2:0.05:0.2,-0.2:0.05:0.2);
+%distances = costresidual(betaplane,)
 
 
 
