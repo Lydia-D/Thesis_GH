@@ -1,7 +1,7 @@
 %% L Drabsch
 % 15/5/17
 
-function [Loc,Omega,avg_norm] = distopt(range_com,Sat_com, Abs_com)
+function [Loc_lin,Loc_svd,Omega,avg_norm] = distopt(range_com,Sat_com, Abs_com)
 % range_com = pseudoranges at common epoch 
 %       (already accounted for clockbias, rotation of earth, )
 %       -> matrix m receivers by n satellites
@@ -61,11 +61,13 @@ function [Loc,Omega,avg_norm] = distopt(range_com,Sat_com, Abs_com)
     % make matrix of planes for each receiver
     % eg: P(beta) = [A B C D (sat1); A B C D (sat2)];
     % all ABC will be the same for all P(omega)-> avg_norm
-    Loc = [];
+    Loc_svd = [];
+    invP = inv(avg_norm'*avg_norm)*avg_norm';
     for irec = 1:numRec-1
         P = [avg_norm,Omega(irec,:)'];
         [U,S,V]=svd(P);
-        Loc(irec,:) = V(:,end)';
+        Loc_svd(irec,:) = V(:,end)';
+        Loc_lin(irec,:) = invP*Omega(irec,:)';
     end
     
     
