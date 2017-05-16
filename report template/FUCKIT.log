@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.3.10)  13 MAY 2017 16:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.3.10)  16 MAY 2017 18:14
 entering extended mode
 **./FUCKIT.tex
 (FUCKIT.tex
@@ -757,11 +757,6 @@ G,.JBIG2,.JB2,.eps]
 sty"
 Package: placeins 2005/04/18  v 2.2
 )
-("C:\Users\Lydia\AppData\Local\Programs\MiKTeX 2.9\tex\latex\undertilde\underti
-lde.sty"
-Package: undertilde 2000/08/08 v1.0 Tilde under a math object
-\knuthian@fdfive=\skip55
-)
 ("C:\Users\Lydia\AppData\Local\Programs\MiKTeX 2.9\tex\latex\algorithms\algorit
 hm.sty"
 Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
@@ -793,13 +788,13 @@ Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
 \c@ALG@line=\count141
 \c@ALG@rem=\count142
 \c@ALG@nested=\count143
-\ALG@tlm=\skip56
-\ALG@thistlm=\skip57
+\ALG@tlm=\skip55
+\ALG@thistlm=\skip56
 \c@ALG@Lnr=\count144
 \c@ALG@blocknr=\count145
 \c@ALG@storecount=\count146
 \c@ALG@tmpcounter=\count147
-\ALG@tmplength=\skip58
+\ALG@tmplength=\skip57
 )
 Document Style - pseudocode environments for use with the `algorithmicx' style
 )
@@ -813,15 +808,15 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 )
 ("C:\Users\Lydia\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fancyhdr\fancyhdr.
 sty"
-\fancy@headwidth=\skip59
-\f@ncyO@elh=\skip60
-\f@ncyO@erh=\skip61
-\f@ncyO@olh=\skip62
-\f@ncyO@orh=\skip63
-\f@ncyO@elf=\skip64
-\f@ncyO@erf=\skip65
-\f@ncyO@olf=\skip66
-\f@ncyO@orf=\skip67
+\fancy@headwidth=\skip58
+\f@ncyO@elh=\skip59
+\f@ncyO@erh=\skip60
+\f@ncyO@olh=\skip61
+\f@ncyO@orh=\skip62
+\f@ncyO@elf=\skip63
+\f@ncyO@erf=\skip64
+\f@ncyO@olf=\skip65
+\f@ncyO@orf=\skip66
 )
 ("C:\Users\Lydia\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\indentfirst.
 sty"
@@ -831,14 +826,14 @@ Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
 y"
 Package: bibentry 2007/10/30 1.5 (PWD)
 )
-\normalparindent=\skip68
+\normalparindent=\skip67
 
 ("C:\Users\Lydia\AppData\Local\Programs\MiKTeX 2.9\tex\latex\titlesec\titlesec.
 sty"
 Package: titlesec 2011/12/15 v2.10.0 Sectioning titles
 \ttl@box=\box41
-\beforetitleunit=\skip69
-\aftertitleunit=\skip70
+\beforetitleunit=\skip68
+\aftertitleunit=\skip69
 \ttl@plus=\dimen256
 \ttl@minus=\dimen257
 \ttl@toksa=\toks38
@@ -1108,7 +1103,7 @@ Package caption Info: End \AtBeginDocument code.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 
-<./IMAGEtitle2f.jpg, id=54, 181.6386pt x 542.025pt>
+<./IMAGEtitle2f.jpg, id=218, 181.6386pt x 542.025pt>
 File: ./IMAGEtitle2f.jpg Graphic file (type jpg)
  <use ./IMAGEtitle2f.jpg>
 Package pdftex.def Info: ./IMAGEtitle2f.jpg used on input line 111.
@@ -1162,19 +1157,7 @@ e2f.jpg>]
 
 LaTeX Font Info:    Font shape `OT1/cmr/bx/sc' in size <17.28> not available
 (Font)              Font shape `OT1/cmr/b/sc' tried instead on input line 153.
- (FUCKIT.toc)
-\tf@toc=\write5
-\openout5 = `FUCKIT.toc'.
-
- (FUCKIT.lof)
-\tf@lof=\write6
-\openout6 = `FUCKIT.lof'.
-
- (FUCKIT.lot)
-\tf@lot=\write7
-\openout7 = `FUCKIT.lot'.
-
-
+ (FUCKIT.toc
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -1185,11 +1168,41 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.156 \newpage
-               [1
+l.49 ...2.3.1}Create Planes}{7}{paragraph.4.2.3.1}
+                                                   [1
 
-]
-Underfull \hbox (badness 10000) in paragraph at lines 189--191
+])
+\tf@toc=\write5
+\openout5 = `FUCKIT.toc'.
+
+ (FUCKIT.lof)
+\tf@lof=\write6
+\openout6 = `FUCKIT.lof'.
+
+
+(FUCKIT.lot)
+\tf@lot=\write7
+\openout7 = `FUCKIT.lot'.
+
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 174--179
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 180--183
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 200--204
 
  []
 
@@ -1200,23 +1213,6 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [1]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 296.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\alpha' on input line 296.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 296.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 311--320
-
- []
-
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -1230,49 +1226,154 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[3]
-No file FUCKIT.bbl.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 335.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 335.
-(FUCKIT.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 335.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 335.
+[3] <overall_singleS_multiR.jpg, id=317, 1782.66pt x 1336.995pt>
+File: overall_singleS_multiR.jpg Graphic file (type jpg)
+
+<use overall_singleS_multiR.jpg>
+Package pdftex.def Info: overall_singleS_multiR.jpg used on input line 319.
+(pdftex.def)             Requested size: 338.58632pt x 253.92969pt.
+
+<overall_multiS_duelR.jpg, id=318, 1782.66pt x 1336.995pt>
+File: overall_multiS_duelR.jpg Graphic file (type jpg)
+
+<use overall_multiS_duelR.jpg>
+Package pdftex.def Info: overall_multiS_duelR.jpg used on input line 327.
+(pdftex.def)             Requested size: 338.58632pt x 253.92969pt.
 
 
-Package rerunfilecheck Warning: File `FUCKIT.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-Package rerunfilecheck Info: Checksums for `FUCKIT.out':
-(rerunfilecheck)             Before: 5C2BBF72236EFDD18620184E2CC807F5;726
-(rerunfilecheck)             After:  57AF9243806EE1D2DD05A8F6BB3CD2D8;903.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 335.
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[4 <./overall_singleS_multiR.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 363--374
+
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[5 <./overall_multiS_duelR.jpg>]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 408.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\alpha' on input line 408.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 408.
+
+<solve_distances.jpg, id=329, 1782.66pt x 1336.995pt>
+File: solve_distances.jpg Graphic file (type jpg)
+
+<use solve_distances.jpg>
+Package pdftex.def Info: solve_distances.jpg used on input line 428.
+(pdftex.def)             Requested size: 338.58632pt x 253.92969pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[6]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[7 <./solve_distances.jpg>] <pointonplane.jpg, id=350, 2055.68pt x 1541.76pt>
+File: pointonplane.jpg Graphic file (type jpg)
+
+<use pointonplane.jpg>
+Package pdftex.def Info: pointonplane.jpg used on input line 499.
+(pdftex.def)             Requested size: 338.58632pt x 253.93243pt.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[8 <./pointonplane.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 541--542
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 560--569
+
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[9] (FUCKIT.bbl
+
+LaTeX Warning: Empty `thebibliography' environment on input line 24.
+
+)
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[10]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 584.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 584.
+ (FUCKIT.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 584.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 584.
+Package rerunfilecheck Info: File `FUCKIT.out' has not changed.
+(rerunfilecheck)             Checksum: 73B298E17396F66CB4B2124FCC1AF55E;4016.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 584.
  ) 
 Here is how much of TeX's memory you used:
- 26256 strings out of 493634
- 551122 string characters out of 3135239
- 697488 words of memory out of 3000000
- 29170 multiletter control sequences out of 15000+200000
- 17998 words of font info for 66 fonts, out of 3000000 for 9000
+ 26391 strings out of 493634
+ 553407 string characters out of 3135239
+ 701720 words of memory out of 3000000
+ 29243 multiletter control sequences out of 15000+200000
+ 18619 words of font info for 68 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 55i,11n,54p,674b,626s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 55i,13n,54p,674b,626s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\Lydia\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\cm\dpi1037\c
 mbcsc10.pk> <C:\Users\Lydia\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\cm\
 dpi1493\cmbcsc10.pk><C:/Users/Lydia/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
 e1/public/amsfonts/cm/cmbx10.pfb><C:/Users/Lydia/AppData/Local/Programs/MiKTeX 
 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Lydia/AppData/Local/Pro
 grams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/Lydia/App
-Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Us
+Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Us
 ers/Lydia/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi
-12.pfb><C:/Users/Lydia/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/ams
-fonts/cm/cmmi8.pfb><C:/Users/Lydia/AppData/Local/Programs/MiKTeX 2.9/fonts/type
-1/public/amsfonts/cm/cmr10.pfb><C:/Users/Lydia/AppData/Local/Programs/MiKTeX 2.
-9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Lydia/AppData/Local/Progra
-ms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Lydia/AppData/
-Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on FUCKIT.pdf (5 pages, 230701 bytes).
+10.pfb><C:/Users/Lydia/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/ams
+fonts/cm/cmmi12.pfb><C:/Users/Lydia/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
+e1/public/amsfonts/cm/cmmi6.pfb><C:/Users/Lydia/AppData/Local/Programs/MiKTeX 2
+.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Lydia/AppData/Local/Progr
+ams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Lydia/AppData
+/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/L
+ydia/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb
+><C:/Users/Lydia/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/
+cm/cmr6.pfb><C:/Users/Lydia/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publi
+c/amsfonts/cm/cmr8.pfb><C:/Users/Lydia/AppData/Local/Programs/MiKTeX 2.9/fonts/
+type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Lydia/AppData/Local/Programs/MiKT
+eX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on FUCKIT.pdf (13 pages, 912611 bytes).
 PDF statistics:
- 191 PDF objects out of 1000 (max. 8388607)
- 22 named destinations out of 1000 (max. 500000)
- 114 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 502 PDF objects out of 1000 (max. 8388607)
+ 80 named destinations out of 1000 (max. 500000)
+ 462 words of extra memory for PDF output out of 10000 (max. 10000000)
 
