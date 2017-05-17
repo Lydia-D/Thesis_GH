@@ -16,13 +16,8 @@ timevec = 0:dt:5;
 [X_ECIstore,X_ECEFstore,X_LLHGCstore] = keplerorbit3D(ClassPara,timevec',T_equ);
 
 %% Location of alpha recevier and what satellites are in view
-X_alpha_ecef = [r_earth;0;0];
-Sats_all_ECEF = squeeze(X_ECEFstore(:,1,:));
-Sats_vis_ECEF = Sats_all_ECEF(:,Sats_all_ECEF(1,:)>r_earth);
+X_alpha_ecef = [r_earth;0;0]
 
-animation3Dearth;
-hold on
-scatter3(Sats_vis_ECEF(1,:),Sats_vis_ECEF(2,:),Sats_vis_ECEF(3,:))
 
 
 

@@ -19,7 +19,7 @@
 \contentsline {subsubsection}{\numberline {3.6.5}Mutlipath Interference}{2}{subsubsection.3.6.5}
 \contentsline {subsubsection}{\numberline {3.6.6}Sagnac Effect}{2}{subsubsection.3.6.6}
 \contentsline {subsubsection}{\numberline {3.6.7}GNSS Error Summary}{2}{subsubsection.3.6.7}
-\contentsline {subsection}{\numberline {3.7}Multiple Receivers}{2}{subsection.3.7}
+\contentsline {subsection}{\numberline {3.7}Multiple Receivers}{3}{subsection.3.7}
 \contentsline {subsection}{\numberline {3.8}Current GNSS algorithms}{3}{subsection.3.8}
 \contentsline {subsubsection}{\numberline {3.8.1}Standard Positioning Service}{3}{subsubsection.3.8.1}
 \contentsline {subsubsection}{\numberline {3.8.2}Differential GPS}{3}{subsubsection.3.8.2}
