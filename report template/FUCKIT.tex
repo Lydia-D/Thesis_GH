@@ -330,8 +330,11 @@ With multiple satellites in view, the intersection of planes for a particular re
 \includegraphics[width=0.7\linewidth]{overall_multiS_duelR}
 \end{figure}
 
-With this strategy, some of the errors that plague the absolute position are negated for the relative position. These include the ionospheric and tropospheric affects.
-
+With this strategy, some of the errors that plague the absolute position are negated for the relative position. 
+\begin{eqnarray}
+\rho_i = \rho_n -cb_\omega + c(T_s + I_s+\nu_s+b_s)
+\end{eqnarray}
+where $\rho_n$ is the real range with the following sources of error; $b_\omega$ is the receiver clock bias, $T_s$ is the tropospheric error, $I_s$ is the ionospheric error, $\nu_s$ is the relativistic error and $b_s$ is the satellite clock bias.
 
 
 
