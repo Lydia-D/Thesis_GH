@@ -1,6 +1,6 @@
 %% Test Algorithm
 % 16/5/17
-clc
+%clc
 close all
 clear
 addpath('./fromspace3')
@@ -23,9 +23,9 @@ GS_LLH = [-deg2rad(33);deg2rad(151);0];
 X_alpha_ECEF = llhgc2ecef(GS_LLH);  % global
 Sats_all_ECEF = squeeze(X_ECEFstore(:,1,:));
 
-VisibleSat = ID_vis_sats(Sats_all_ECEF,GS_LLH);
+[VisibleSat,VisSat_LG_pol] = ID_vis_sats(Sats_all_ECEF,GS_LLH);
 %% edit how many sats were picked up
-allSats = VisibleSat(:,:)';
+allSats = VisibleSat(:,:)'; %3 by numSat
 
 numSat = size(allSats,1);
 
@@ -37,9 +37,11 @@ end
 
 
 %% True locations of all receviers
-numRec = 4;
-Rec_dispersion = 10000; % in meters, how far apart to have the receivers
+numRec = 5;
+Rec_dispersion = 10; % in meters, how far apart to have the receivers
 Rec_displacement = Rec_dispersion*rand([3,numRec-1]);
+%numRec = 2;
+%Rec_displacement = [0;0;10000];
 allRec = [X_alpha_ECEF,X_alpha_ECEF*ones(1,numRec-1)+Rec_displacement];
 allRec = allRec';
 
@@ -57,25 +59,46 @@ Isoph = (7+3*rand([1,numSat]))/c; % ~5 m of errror (time = 5/c)
  % relativistic error?
 clockbias_sat = (1.5+0.5*rand([1,numSat]))/c;
 sat_error_time = Tropo+Isoph+clockbias_sat ;
-clockbias_rec = (1+0.5*rand([numRec,1]))/c; % microsecond errors
+clockbias_rec = 10^(-6)+10*rand([numRec,1]);  %(1+0.5*rand([numRec,1]))/c; % microsecond errors
 
-range_error = all_range+0*rand(size(all_range)) - 10*c*clockbias_rec*ones(1,numSat) + 10*c*ones(numRec,1)*sat_error_time;
+range_error = all_range+0*rand(size(all_range)) - c*clockbias_rec*ones(1,numSat) + c*ones(numRec,1)*sat_error_time;
 
 
 %% NLLS
 %[X,DOP,clockbias]
+%tic
 for i = 1:numRec
-    [Rec_abs(:,i),~,calc_clockbias(i,1)] = convergance([0;0;0;0],allSats',range_error(i,:)');
+    [Rec_abs(:,i),DOP,calc_clockbias(i,1)] = convergance([X_alpha_ECEF;0],allSats',range_error(i,:)');
 end
+%toc
 Rec_abs = Rec_abs(1:3,:)';% not include clock bias
 
 %Rec_abs = [X1(1:3)';X2(1:3)';X3(1:3)']
-Rec_relative = Rec_abs(2:numRec,1:3)-ones(numRec-1,1)*Rec_abs(1,1:3)
-Rec_absolute_error = Rec_abs - allRec
+Rec_relative = Rec_abs(2:numRec,1:3)-ones(numRec-1,1)*Rec_abs(1,1:3);
+Rec_absolute_error = Rec_abs - allRec;
 %% Optimise
 % [Loc_lin,Omega,avg_norm] = distopt(range_error-calc_clockbias*ones(1,numSat),allSats, Rec_abs);
 %[Loc_lin,Omega,avg_norm] = distopt(range_error,allSats, Rec_abs);
-[Loc_lin,Omega,avg_norm] = alloptimise(range_error,allSats, Rec_abs);
+%tic
+[Loc_lin,clockbias] = alloptimise(range_error,allSats, Rec_abs);
+% change ranges according to clockbias
+%updaterange = clockbias'*ones(1,numSat) + range_error;
+%[Loc_lin2,clockbias2] = alloptimise(updaterange,allSats,Rec_abs);
 
-Loc_lin
-Rec_displacement'
+%toc
+Loc_plane = Loc_lin(2:end,:)-ones(numRec-1,1)*Loc_lin(1,:);
+Receivers_LG = ecef2lg(Loc_plane',GS_LLH); % NED cartesion row is rec col is xyz
+
+%% plot local results - alpha is (0,0,0)
+[Sat_LG_pol,Sat_LG_cart] = ecef2lg_pol(Sats_all_ECEF,GS_LLH);
+
+figure(2)
+scatter3([0,Receivers_LG(1,:)],[0,Receivers_LG(2,:)],[0,Receivers_LG(3,:)],'b');
+%hold on
+%scatter3(Sat_LG_cart(1,:),Sat_LG_cart(2,:),Sat_LG_cart(3,:),'bx');
+
+True = Rec_displacement';
+%% calc error
+Error_plane = abs(Loc_plane-True)
+%Error_nlls = abs(Rec_relative-True)
+DOP

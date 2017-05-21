@@ -1,0 +1,23 @@
+%!TEX root = ../Thesis.tex
+
+\section{Code Listings}\label{sec:code}
+
+The \texttt{listings} package allows you to include code listings or other formatted text with some parsing to make them more readable than simply calling \texttt{\textbackslash{}input\{\}} on the code file.
+
+\definecolor{listinggray}{gray}{0.97}
+\lstset{language=matlab}
+\lstset{basicstyle=\scriptsize}
+%\lstset{backgroundcolor=listinggray,framerulecolor=blue}
+%\lstset{backgroundcolor=listinggray,rulecolor=blue}
+\lstset{backgroundcolor=\color{listinggray},rulecolor=\color{blue}}
+\lstset{linewidth=\textwidth}
+%\lstset{labelstep=10}
+%\lstset{commentstyle=\textit, stringstyle=\upshape,stringspaces=false}
+%\lstset{commentstyle=\textit, stringstyle=\upshape,showspaces=false}
+\lstset{commentstyle=\textit}
+\lstset{frame=trbl,frameround=tttt}
+\lstinputlisting[caption=\textsc{Matlab} script for interactive radians to degrees converter,label=lst:jacobians]{\chapdir/code.m}
+
+A number of languages are supported with basic syntax highlighting and formatting.
+
+

@@ -1,0 +1,59 @@
+\BOOKMARK [0][-]{section*.1}{Declaration}{}% 1
+\BOOKMARK [0][-]{section*.3}{Abstract}{}% 2
+\BOOKMARK [0][-]{section*.5}{Acknowledgements}{}% 3
+\BOOKMARK [0][-]{section*.7}{Contents}{}% 4
+\BOOKMARK [0][-]{section*.9}{List of Figures}{}% 5
+\BOOKMARK [0][-]{section*.11}{List of Tables}{}% 6
+\BOOKMARK [0][-]{section*.13}{List of Algorithms}{}% 7
+\BOOKMARK [0][-]{section*.15}{List of Theorems}{}% 8
+\BOOKMARK [0][-]{section*.17}{Nomenclature}{}% 9
+\BOOKMARK [0][-]{section*.21}{Glossary}{}% 10
+\BOOKMARK [0][-]{chapter.1}{1 Introduction}{}% 11
+\BOOKMARK [1][-]{section.1.1}{1.1 Background and Motivation}{chapter.1}% 12
+\BOOKMARK [1][-]{section.1.2}{1.2 Problem Summary}{chapter.1}% 13
+\BOOKMARK [1][-]{section.1.3}{1.3 Principle Contributions}{chapter.1}% 14
+\BOOKMARK [1][-]{section.1.4}{1.4 Outline}{chapter.1}% 15
+\BOOKMARK [0][-]{chapter.2}{2 Literature Review}{}% 16
+\BOOKMARK [1][-]{section.2.1}{2.1 Position Requirements}{chapter.2}% 17
+\BOOKMARK [1][-]{section.2.2}{2.2 Relative Positioning Technology}{chapter.2}% 18
+\BOOKMARK [1][-]{section.2.3}{2.3 GNSS Operational Components}{chapter.2}% 19
+\BOOKMARK [2][-]{subsection.2.3.1}{2.3.1 Space Segment}{section.2.3}% 20
+\BOOKMARK [2][-]{subsection.2.3.2}{2.3.2 User Segment}{section.2.3}% 21
+\BOOKMARK [2][-]{subsection.2.3.3}{2.3.3 Control Segment}{section.2.3}% 22
+\BOOKMARK [1][-]{section.2.4}{2.4 GNSS Satellite Signals}{chapter.2}% 23
+\BOOKMARK [1][-]{section.2.5}{2.5 The GNSS concept}{chapter.2}% 24
+\BOOKMARK [2][-]{subsection.2.5.1}{2.5.1 2D case}{section.2.5}% 25
+\BOOKMARK [2][-]{subsection.2.5.2}{2.5.2 3D case}{section.2.5}% 26
+\BOOKMARK [1][-]{section.2.6}{2.6 GNSS Error Sources}{chapter.2}% 27
+\BOOKMARK [2][-]{subsection.2.6.1}{2.6.1 Clock Errors}{section.2.6}% 28
+\BOOKMARK [2][-]{subsection.2.6.2}{2.6.2 Receiver Noise}{section.2.6}% 29
+\BOOKMARK [2][-]{subsection.2.6.3}{2.6.3 Ephemeris Errors}{section.2.6}% 30
+\BOOKMARK [2][-]{subsection.2.6.4}{2.6.4 Atmospheric Effects}{section.2.6}% 31
+\BOOKMARK [2][-]{subsection.2.6.5}{2.6.5 Mutlipath Interference}{section.2.6}% 32
+\BOOKMARK [2][-]{subsection.2.6.6}{2.6.6 Sagnac Effect}{section.2.6}% 33
+\BOOKMARK [2][-]{subsection.2.6.7}{2.6.7 Electrical Interference}{section.2.6}% 34
+\BOOKMARK [2][-]{subsection.2.6.8}{2.6.8 GNSS Error Summary}{section.2.6}% 35
+\BOOKMARK [1][-]{section.2.7}{2.7 Multiple Receivers}{chapter.2}% 36
+\BOOKMARK [1][-]{section.2.8}{2.8 Current GNSS algorithms}{chapter.2}% 37
+\BOOKMARK [2][-]{subsection.2.8.1}{2.8.1 Standard Positioning Service}{section.2.8}% 38
+\BOOKMARK [2][-]{subsection.2.8.2}{2.8.2 Differential GPS}{section.2.8}% 39
+\BOOKMARK [2][-]{subsection.2.8.3}{2.8.3 WAAS DGPS}{section.2.8}% 40
+\BOOKMARK [2][-]{subsection.2.8.4}{2.8.4 SBAS ?}{section.2.8}% 41
+\BOOKMARK [2][-]{subsection.2.8.5}{2.8.5 Real Time Kinematic}{section.2.8}% 42
+\BOOKMARK [2][-]{subsection.2.8.6}{2.8.6 Post Processing Algorithm}{section.2.8}% 43
+\BOOKMARK [2][-]{subsection.2.8.7}{2.8.7 Single Frequency Precise Point Positioning \(SF-PPP\)}{section.2.8}% 44
+\BOOKMARK [2][-]{subsection.2.8.8}{2.8.8 Duel-Epoch, Double-Differencing Model}{section.2.8}% 45
+\BOOKMARK [2][-]{subsection.2.8.9}{2.8.9 Summary of Algorithms ?}{section.2.8}% 46
+\BOOKMARK [1][-]{section.2.9}{2.9 Proposed Planar Intersection Algorithm}{chapter.2}% 47
+\BOOKMARK [0][-]{chapter.3}{3 Example Chapter on `Perception' Stuff}{}% 48
+\BOOKMARK [1][-]{section.3.1}{3.1 Planar Intersection Algorithm}{chapter.3}% 49
+\BOOKMARK [2][-]{subsection.3.1.1}{3.1.1 Assumptions}{section.3.1}% 50
+\BOOKMARK [2][-]{subsection.3.1.2}{3.1.2 Algorithm}{section.3.1}% 51
+\BOOKMARK [1][-]{section.3.2}{3.2 Summary}{chapter.3}% 52
+\BOOKMARK [0][-]{chapter.4}{4 Experiments That Prove Things}{}% 53
+\BOOKMARK [1][-]{section.4.1}{4.1 Method}{chapter.4}% 54
+\BOOKMARK [2][-]{subsection.4.1.1}{4.1.1 Creating a Simulation}{section.4.1}% 55
+\BOOKMARK [2][-]{subsection.4.1.2}{4.1.2 Evaluation}{section.4.1}% 56
+\BOOKMARK [0][-]{chapter.5}{5 Conclusion}{}% 57
+\BOOKMARK [0][-]{section*.50}{List of References}{}% 58
+\BOOKMARK [0][-]{appendix.A}{A An Example Appendix}{}% 59

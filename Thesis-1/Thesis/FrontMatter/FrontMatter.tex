@@ -1,0 +1,67 @@
+%!TEX root = ../Thesis.tex
+
+% FrontMatter.tex
+% This file contains no real content, just commands to generate/include the various sections of the
+% pages before Page 1 of Chapter 1 (the Introduction).
+
+% Macro to generate most front-matter-sections
+%\frontsec{title}{heading=none,centred,normal}{content}
+\newcommand{\frontsec}[3]{
+    \cleardoublepage% each section starts on a new page (RHS page if doublesided)
+    \phantomsection% required for hyperrefs to work properly to subsequent contents line
+    \addcontentsline{toc}{chapter}{#1}% TOC entry
+    \begin{singlespace}% most of the front matter can be single spaced
+        % Optional headings (some content provides its own, e.g. \tableofcontents)
+        \ifthenelse{\equal{#2}{none}}{%
+            % no headings required
+        }{% else
+            % heading required (normal / centred)
+            \chapter*{\ifthenelse{\equal{#2}{centred}}{\centering}{} #1}%
+            % and page headers too, seems to be attached to whether or not the content generates its
+            % own heading
+            \markboth{#1}{#1}%
+        }%
+        % Content
+        #3%
+    \end{singlespace}%
+}%
+
+% Title page
+\pagenumbering{Roman} % to prevent duplicate page number issues with the *real* page 1
+\input{FrontMatter/TitlePage}
+
+% Roman page numbering for the Front Matter pages
+\clearpage{\pagestyle{empty}\cleardoublepage}
+\pagenumbering{roman}
+
+% Declaration (bit dodgy - not single spaced like the rest)
+\frontsec{Declaration}{normal}{\begin{onehalfspace}\input{FrontMatter/Declaration}\end{onehalfspace}}
+
+% Abstract, Acknowledgements as normal
+\frontsec{Abstract}{centred}{\input{FrontMatter/Abstract}}
+\frontsec{Acknowledgements}{normal}{\input{FrontMatter/Acknowledgements}}
+
+% Dedication (no headings or ToC entry, so just input bare)
+\newpage
+\begin{singlespace}
+    \input{FrontMatter/Dedication}
+\end{singlespace}
+
+% Lists/Tables of chapters&sections, figures, tables, algorithms, examples, ...
+%\fancyhead[R]{\nouppercase{\rightmark}}
+%\fancyhead[R]{\nouppercase{\leftmark}}
+\frontsec{Contents}{none}{\tableofcontents}
+\frontsec{List of Figures}{none}{\listoffigures}
+\frontsec{List of Tables}{none}{\listoftables}
+\frontsec{List of Algorithms}{none}{\listofalgorithms}
+\frontsec{List of Theorems}{none}{\def\listtheoremname{List of Theorems}\listoftheorems}
+
+% Nomenclature & Glossary
+\frontsec{Nomenclature}{normal}{\input{FrontMatter/Nomenclature}}
+\frontsec{Glossary}{normal}{\input{FrontMatter/Glossary}}
+
+% Now entering the main body of the document ...
+\cleardoublepage
+\pagenumbering{arabic}
+\setcounter{page}{1}
+

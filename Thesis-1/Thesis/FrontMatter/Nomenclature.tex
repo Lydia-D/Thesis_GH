@@ -1,0 +1,68 @@
+%!TEX root = ../Thesis.tex
+
+\label{fr:notation}
+
+\def\NomenLHSwidth{2.5cm}
+\def\NomenRHSwidth{12.5cm}
+
+\subsection*{List of Symbols}\label{fr:symbols}
+    %\setlength{\extrarowheight}{5pt}
+    \begin{supertabular}{p{\NomenLHSwidth} p{\NomenRHSwidth}}
+        v & Variable Name, units \\
+    \end{supertabular}
+
+\subsection*{List of Acronyms}\label{fr:acronyms}
+% Convert any \acro commands to \acrodef to hide them from this table
+% Use \acused{..} to avoid them being expanded on first use in the text
+
+\begin{acronym}[\hspace{\NomenLHSwidth}\hspace{1em}]
+    % This makes the short versions of acronyms displayed here less ugly
+    % I'm really not sure why they chose sans-serif!
+%    \renewcommand{\bflabel}[1]{\hspace{0.5em}\textbf{#1}\hfill}
+    % You can use this \comm to add a comment to acronyms, which is only shown in this list
+    % (not when the acronym is expanded)
+    % Nicer 'acroextra' text - italics in parens to follow full version for extra description
+    % e.g. \acro{ABC}{A Big Company \comm{sometimes known as `AB Co.'}}
+    \newcommand{\comm}[1]{\acroextra{ \emph{(#1)}}}
+    % Compress the list vertically since its not 'normal' paragraphs of text in a list
+    \setlength{\itemsep}{0pt}
+    \setlength{\parskip}{0pt}
+
+    % The actual acronym definitions go here.
+    % A number of examples are provided that may be useful (they'll only show up if you use them)
+    % These demonstrate quite a few of the features of the acronym package, including customising
+    %   the abbreviated form, having comments in this list, customising the plural form,
+    %   disabling expansion-on-first-use for certain acronyms, and having acronym definitions
+    %   refer to other acronyms!
+    %
+    % Note that is is preferable to capitalise ONLY proper nouns in the definitions.
+    \acro{USyd}{University of Sydney}
+    \acro{ACFR}{Australian Centre for Field Robotics}
+    \medskip
+    \acro{UAV}{unmanned aerial vehicle}
+    \acro{UGV}{unmanned ground vehicle}
+    \acro{AUV}{autonomous underwater vehicle}
+    \acro{UxV}{unmanned vehicle\comm{not specific to ground, sea or air}}
+    \medskip
+    \acro{INS}{inertial navigation system}\acused{INS}
+    \acro{GPS}{global positioning system}\acused{GPS}
+    \acro{DGPS}{differentially-corrected \acs{GPS}}
+    \acro{RTK}{real time kinematic\comm{corrections for \acs{GPS}, similar to \acs{DGPS}}}
+    \acro{GPSINS}[GPS/INS]{\acs{GPS} and inertial navigation system}
+    \acro{SLAM}{simultaneous localisation and mapping}
+    \acro{lidar}{light detection and ranging\comm{also commonly known as `ladar' or a `laser range scanner'}}
+    \acrodefplural{lidar}{light detection and ranging}
+    \acro{IMU}{inertial measurement unit}
+    \medskip
+    \acro{DDF}{decentralised data fusion}
+    \acro{EM}{expectation maximisation}
+    \acro{KF}{Kalman filter}
+    \acro{EKF}{extended \acl*{KF}}
+    \acro{GP}{Gaussian process}
+    \acrodefplural{GP}{Gaussian processes}
+    \acro{PF}{particle filter}
+    \acro{RRT}{rapidly-exploring random tree}
+    \acro{RTFM}{read the fcuking manual}
+    \acro{PCA}{principal component analysis}
+\end{acronym}
+

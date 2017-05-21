@@ -1,0 +1,136 @@
+%!TEX root = ../Thesis.tex
+
+\section{Multi-Page Tables}\label{sec:multipagetables}
+
+The \texttt{supertabular} package allows tables to span multiple pages using
+the \texttt{supertabular} environment (in place of \texttt{tabular}). This has
+already been used in the \hyperref[fr:notation]{Nomenclature Section} in the
+front matter, allowing the notation to span multiple pages if necessary.
+\Autoref{tab:supertabex} shows an example of a table spanning two pages. Note
+that such tables are no longer floating elements (i.e.~there's no
+\texttt{table} environment anymore), and the header/footer for the whole
+table, and ones repeated on each new page, can be defined through
+\texttt{supertabular} macros rather than as part of the table to copy headers
+across each page.
+
+% Note that it's not in a table environment, since this is NOT a floating environment
+\begin{center}
+    % Use the supertabular commands rather than the usual caption/etc commands, since they are
+    % inserted by supertabular
+    \tablecaption[Page-Spanning `Super Table']{This table is especially long, so it's been turned
+        into a \texttt{supertabular} environment allowing it to span multiple pages.
+        \label{tab:supertabex}}
+    % headers and footers can be defined to repeat on each page
+    % firsthead and lasttail will be used INSTEAD OF the basic head/tails where appropriate
+    \tablefirsthead{%
+        \toprule
+        \textbf{first} & \textbf{second} & \textbf{RHS}\\
+        \midrule[1pt]
+    }
+    \tablehead{%
+        \multicolumn{3}{l}{\small\sl continued from previous page}\\
+        \toprule
+        \textbf{first} & \textbf{second} & \textbf{RHS}\\
+        \midrule
+    }
+    \tablelasttail{%
+        \bottomrule
+    }
+    \tabletail{%
+        \bottomrule
+        \multicolumn{3}{l}{\small\sl continued on next page}\\
+    }
+    % Note that this is JUST the data in the table, since supertabular constructs multiple tables
+    % using the firsthead/head/lasttail/tail definitions
+    \begin{supertabular}{c @{$\times$} c @{$=$} c}
+        1 & 1 & 1 \\
+        1 & 2 & 2 \\
+        1 & 3 & 3 \\
+        1 & 4 & 4 \\
+        1 & 5 & 5 \\
+        1 & 6 & 6 \\
+        1 & 7 & 7 \\
+        1 & 8 & 8 \\
+        \midrule
+        2 & 1 & 2 \\
+        2 & 2 & 4 \\
+        2 & 3 & 6 \\
+        2 & 4 & 8 \\
+        2 & 5 & 10\\
+        2 & 6 & 12\\
+        2 & 7 & 14\\
+        2 & 8 & 16\\
+        \midrule
+        3 & 1 & 3\\
+        3 & 2 & 6\\
+        3 & 3 & 9\\
+        3 & 4 & 12\\
+        3 & 5 & 15\\
+        3 & 6 & 18\\
+        3 & 7 & 21\\
+        3 & 8 & 24\\
+    \end{supertabular}
+\end{center}
+
+\section{Landscape Tables}\label{sec:landscapetables}
+
+If your table is especially wide, it may be better to switch it to the landscape orientation. One way of doing this is with the \texttt{rotating} package, which implements (among other things) two new environments: \texttt{sidewaystable} and \texttt{sidewaysfigure}\footnote{I find \texttt{sidewaysfigure} less useful, as it tends to be easy enough to rotate the figure before inclusion, but if the caption/figure are complex it may be useful to have them oriented in the same way}. The way this package achieves this is most useful for \emph{printed results}, as it only rotates the environment on the page (but does not convert the page into landscape orientation)---for electronic viewing of a PDF, it may be useful to rotate the whole page since it's not often easy for the reader to rotate their screen (assuming the sideways content takes up the whole page). One advantage of this package's implementation of sideways environments is that it supports \texttt{twoside} page layout, and will rotate the sideways environment such that the bottom is towards the outside of the double-page layout in such cases.
+
+An example of a \texttt{sidewaystable} is shown in \autoref{tab:sidewaystable}---if you're reading this as a PDF on your computer, you'll probably find it difficult to read as it's sideways on your
+screen.
+
+\begin{sidewaystable}
+  \begin{center}
+    \caption[Table in Landscape Orientation]{This table is so wide that I decided it should be in
+        the landscape orientation to allow it to fit nicely on one page. You may of course find it
+        easier (for the reader) to reconsider the content and layout of the table, or convert it to
+        a graphical representation, as large walls of data tend to be hard to really interpret well.
+        Almost certainly, you'd only have such large tables in an appendix.}
+    \label{tab:sidewaystable}
+    {\tiny
+        % tiny font size because even sideways it wouldn't all fit at the normal font size
+        % Note that the {\tiny ...} wraps the whole tabular environment.
+    % This table is the output of a matlab script, which I found much easier than handwriting it all.
+    \hspace{-14mm}  % HACK to move the table down on the page.
+    \begin{tabular}{l c@{\hspace{4pt}}c @{\hspace{4pt}}c @{\hspace{4pt}}c @{\hspace{4pt}}c @{\hspace{4pt}}c @{\hspace{4pt}}c @{\hspace{4pt}}c @{\hspace{4pt}}c @{\hspace{4pt}}c @{\hspace{4pt}}c @{\hspace{4pt}}c @{\hspace{4pt}}c @{\hspace{4pt}}c @{\hspace{4pt}}c @{\hspace{4pt}}c @{\hspace{4pt}}c @{\hspace{4pt}}c @{\hspace{4pt}}c@{}}
+      \toprule
+      Item & Total &  1 &  2 &  3 &  4 &  5 &  6 &  7 &  8 &  9 & 10 & 11 & 12 & 13 & 14 & 15 & 16 & 17 & 18 \\
+      \midrule
+      SA Mission Distance (m) & 1101.4 & 49.4 & 81.5 & 34.2 & 78.8 & 98.8 & 70.8 & 16.0 & 61.4 & 14.9 & 52.1 & 24.3 & 83.3 & 170.3 & 143.5 & 20.7 & 30.1 & 21.4 & 99.2 \\
+      SA Traversed Distance  (m) & 3244.1 & 53.9 & 86.8 & 90.7 & 92.1 & 120.8 & 74.3 & 46.4 & 63.8 & 15.6 & 55.3 & 27.4 & 127.2 & 222.4 & 987.1 & 273.0 & 167.0 & 235.4 & 505.0 \\
+      MA Mission Distance (m) & 1083.9 & 59.1 & 81.5 & 34.2 & 78.8 & 98.8 & 70.8 & 16.0 & 61.4 & 14.9 & 52.1 & 24.3 & 83.3 & 170.3 & 143.5 & 20.7 & 30.1 & 21.4 & 81.8 \\
+      MA Traversed Distance  (m) & 2343.1 & 61.8 & 84.6 & 70.7 & 84.6 & 116.6 & 72.5 & 46.3 & 62.6 & 15.5 & 53.5 & 25.8 & 129.4 & 213.4 & 147.1 & 268.2 & 174.5 & 233.8 & 482.3 \\
+      \cmidrule(lr){2-20}
+      Ratio (SA/MA) & 1.38 & 0.872 & 1.03 & 1.28 & 1.09 & 1.04 & 1.03 & 1 & 1.02 & 1.01 & 1.03 & 1.06 & 0.983 & 1.04 & 6.71 & 1.02 & 0.957 & 1.01 & 1.05 \\
+      \midrule
+      SA Mission Est. Time (s) & 734.3 & 32.9 & 54.4 & 22.8 & 52.5 & 65.9 & 47.2 & 10.7 & 40.9 & 9.9 & 34.8 & 16.2 & 55.5 & 113.5 & 95.7 & 13.8 & 20.1 & 14.3 & 66.2 \\
+      SA Traversal Time  (s) & 2436.0 & 43.5 & 61.6 & 70.1 & 68.0 & 89.6 & 55.3 & 35.2 & 45.3 & 12.7 & 39.8 & 21.8 & 93.1 & 161.8 & 731.0 & 204.7 & 146.1 & 174.3 & 382.1 \\
+      MA Mission Est. Time (s) & 1083.9 & 59.1 & 81.5 & 34.2 & 78.8 & 98.8 & 70.8 & 16.0 & 61.4 & 14.9 & 52.1 & 24.3 & 83.3 & 170.3 & 143.5 & 20.7 & 30.1 & 21.4 & 81.8 \\
+      MA Traversal Time  (s) & 2411.3 & 64.2 & 84.8 & 73.6 & 86.8 & 119.1 & 74.2 & 47.2 & 63.5 & 16.1 & 54.3 & 28.1 & 132.8 & 215.2 & 148.2 & 271.3 & 203.4 & 239.9 & 488.7 \\
+      \cmidrule(lr){2-20}
+      Ratio (SA/MA) & 1.01 & 0.677 & 0.726 & 0.953 & 0.784 & 0.753 & 0.746 & 0.744 & 0.714 & 0.786 & 0.734 & 0.776 & 0.701 & 0.752 & 4.93 & 0.755 & 0.718 & 0.727 & 0.782 \\
+      \midrule
+      SA Cost (Exp.~Map)  & 1019924.1 & 1540.6 & 49041.0 & 5094.7 & 86202.5 & 98847.3 & 0.0 & 7974.8 & 1773.9 & 459.0 & 7825.8 & 1120.0 & 4131.3 & 14618.2 & 447306.7 & 19380.5 & 109612.1 & 33188.1 & 131807.7 \\
+      MA Cost (Exp.~Map)  & 916661.5 & 6032.4 & 81939.1 & 7722.2 & 73856.9 & 198949.4 & 11654.8 & 6191.5 & 1398.9 & 564.8 & 13336.9 & 1123.8 & 6129.8 & 68857.2 & 39422.7 & 3213.2 & 172319.0 & 93562.5 & 130386.5 \\
+      \cmidrule(lr){2-20}
+      Ratio (SA/MA) & 1.11 & 0.255 & 0.599 & 0.66 & 1.17 & 0.497 & 0 & 1.29 & 1.27 & 0.813 & 0.587 & 0.997 & 0.674 & 0.212 & 11.3 & 6.03 & 0.636 & 0.355 & 1.01 \\
+      \midrule
+      SA Cost (Ground Truth)  & 26891.4 & 0.0 & 0.0 & 0.0 & 0.0 & 0.0 & 0.0 & 0.0 & 0.0 & 0.0 & 0.0 & 0.0 & 0.0 & 0.0 & 0.0 & 0.0 & 26891.4 & 0.0 & 0.0 \\
+      MA Cost (Ground Truth)  & 28400.0 & 0.0 & 0.0 & 0.0 & 0.0 & 0.0 & 0.0 & 0.0 & 0.0 & 0.0 & 0.0 & 0.0 & 0.0 & 0.0 & 0.0 & 0.0 & 28400.0 & 0.0 & 0.0 \\
+      \cmidrule(lr){2-20}
+      Ratio (SA/MA) & 0.947 & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & -- & 0.947 & -- & -- \\
+      \bottomrule
+    \end{tabular}
+    \begin{tabular}{l c c c}
+    \noalign{\vspace{2ex}}
+      \toprule
+      Map Configuration & SA Coverage ($\textrm{m}^2$) & MA Coverage ($\textrm{m}^2$) & Ratio (MA/SA) \\
+      \midrule
+      Expanded Cost Map &   28108 &   28229 &     1 \\
+      \bottomrule
+    \end{tabular}
+    }
+  \end{center}
+\end{sidewaystable}
+
+

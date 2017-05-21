@@ -1,0 +1,67 @@
+%!TEX root = ../Thesis.tex
+
+% Produce the title page
+\thispagestyle{empty}
+
+\begin{center}
+  \begin{Huge}
+
+  {\bf
+    \ttitle \\
+  }
+  \end{Huge}
+
+  \vfill
+
+  \begin{large}
+  {\bf
+    \ifdefined\tdegrees
+        \tname \enspace \tdegrees
+    \else
+        \tname
+    \fi
+  }
+  \end{large}
+
+  \vfill% expand this space to fill the page nicely
+
+  A thesis submitted in fulfillment\\
+  of the requirements of the degree of\\
+  \tdegree{}
+
+  \vspace{0.50cm}
+
+  % NOTE that USyd policy states that the crest should ONLY appear on a thesis
+  % once it has been examined and passed. This is because the use of the crest
+  % could be taken by an examiner to imply University endorsement of the thesis.
+  % Your initial drafts and submissions should not include the crest.
+
+  % If printed in colour, use colour logo.
+  \includegraphics[width=4cm]{FrontMatter/Figures/USYD_Logo_Colour_Stacked.pdf}     % min width = 2.0cm
+  %\includegraphics[width=6.4cm]{FrontMatter/Figures/USYD_Logo_Colour.pdf}           % min width = 3.2cm
+
+  % If printed in grayscale (or to be photocopied), use the black and white logo.
+  %\includegraphics[width=4cm]{FrontMatter/Figures/USYD_Logo_Black_Stacked.pdf}      % min width = 2.0cm
+  %\includegraphics[width=6.4cm]{FrontMatter/Figures/USYD_Logo_Black.pdf}            % min width = 3.2cm
+
+  \vspace{0.50cm}
+
+  {
+%      \tdepartment{}\\
+      \tschool{}\\
+      \tinstitution{}\\
+  }
+  \vspace{0.50cm}
+
+  \begin{center}
+    \ifdefined\tmonthAndYearRevised
+        % for final emended/corrected version:
+        Submitted \tmonthAndYearSubmitted; revised \tmonthAndYearRevised
+    \else
+        % for version submitted for examination:
+        \tmonthAndYearSubmitted
+    \fi
+  \end{center}
+
+
+\end{center}

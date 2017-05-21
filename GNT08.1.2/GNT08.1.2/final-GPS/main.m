@@ -18,7 +18,8 @@ color=['r','b','c','g','k','m'];
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %Load Data and Difinition
 load project_data.mat
-GPS_Time=iono(1);Alpha=iono(2:5);
+GPS_Time=iono(1);
+Alpha=iono(2:5);
 Beta=iono(6:9);
 af=[eph(21,:);eph(20,:);eph(19,:)]';
 

@@ -1,0 +1,60 @@
+%!TEX root = ../Thesis.tex
+
+\section{Tables}\label{sec:exmapletables}
+
+Tables can be pretty messy, and there's a million features in a lot of \LaTeX{} packages, which you'll learn as you need specific things.
+
+The best advice for now is probably to check out the \texttt{booktabs} package, which makes tables look much nicer than the `usual' way of making tables in \LaTeX{}. They have a few guidelines/rules, like ``don't use vertical lines'', and simplify some of the process of putting the horizontal lines in tables.
+
+\begin{table}[H]
+    \caption[Example Table]{A simple example of a table to describe something}
+    \label{tab:example}
+    \begin{center}
+        \begin{tabular}{r c p{11em}}
+            % columns specified by alignment, p for paragraph with a set width
+            \toprule
+            % toprule, midrule and bottomrule provide nice looking horizontal rules
+            % with appropriate thicknesses and spacings above/below
+            \textbf{Label} & \textbf{Value} & \textbf{Description} \\
+            \midrule[1pt]
+            % i've thickened this midrule as I think it looks nicer, but its still a midrule since
+            % it's in between two rows of text (a top/bottom rule would have awkward spacing
+            % above/below the line)
+            % you don't need to put a midrule between each line, it often looks better without
+            Width & 3~cm & The width of the object \\
+            Height & 8~cm & The height of the object \\
+            Depth & 14~cm & The depth of the object \\
+            \midrule
+            Shape & ovoid & The geometric shape descriptor of the object \\
+            \bottomrule
+        \end{tabular}
+    \end{center}
+\end{table}
+
+In this case, I've forced the table placement using the \texttt{H} placement argument. This is perhaps a bit more common for simple tables where maybe you just want to make a brief point in a slightly more graphically structured way.
+
+In \autoref{tab:example2}, some of the nice features of the \texttt{tabularx} package are demonstrated, which lets you set properties on a column, and simplifies text-wrapping combined with auto-width calculations. This table is also placed using \texttt{htb} rather than \texttt{H}, so is properly floating---note the effect on the line spacing (the rest of the document has a longer line spacing, which doesn't infiltrate floats).
+
+\begin{table}[htb]
+    \caption[A More Complex Table Example]{A slightly more complex example table, this time using
+        features from the \texttt{tabularx} package.}
+    \label{tab:example2}
+    \begin{center}
+        \begin{tabularx}{\textwidth}{>{\bfseries}l X}
+            % note the extra argument for the tabularx environment to specify the table width
+            % the X column then just expands out to this width
+            \toprule
+            \textbf{Bold} \textbf{Text Wrap and Fill Width} \\
+            \midrule
+            Note & It's much easier to have a column that fills the width of the table and also
+            provides text-wrapping using the \texttt{tabularx} package and the \texttt{X} column
+            specifier, than it is with the regular \texttt{p} column specifier. \\
+            \midrule
+            Also Note & It's also easy to make elements in a column automatically bold with
+            \texttt{tabularx}, without having to specify them as bold on each line. \\
+            \bottomrule
+        \end{tabularx}
+    \end{center}
+\end{table}
+
+

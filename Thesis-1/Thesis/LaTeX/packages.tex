@@ -1,0 +1,114 @@
+%!TEX root = ../Thesis.tex
+
+% APA Citations
+%\usepackage{apacite}
+
+% Fonts and encodings...
+% The standard Computer Modern fonts are in OT1 encoding (Type 3 fonts).
+% Install the package cm-super to get Computer Modern fonts with T1 support.
+% See http://tex.stackexchange.com/questions/1291/why-are-bitmap-fonts-used-automatically
+%
+% See http://tex.stackexchange.com/questions/1390/latin-modern-vs-cm-super where it says
+%    "With cm-super it's recommended to use the fix-cm package to fix a lot of broken design
+%     decisions in cm-super (and in addition this makes the final PDF a bit smaller)"
+%
+% As an alternative, see package ec - computer modern fonts in T1 and TS1 encodings
+%\usepackage{cm-super}          % if your LaTeX distro does not include cm-super
+%\usepackage{fix-cm}
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}     % UTF-8 is a variable-width encoding (codepage) that can
+                                % represent every character in the Unicode character set.
+                                % It was designed for backward compatibility with ASCII
+
+\usepackage{color}              % colours in text
+\usepackage{enumitem}
+\usepackage{fancybox,fancyhdr,setspace}     % layout packages
+\usepackage{amsmath,amssymb,amsthm}         % Maths environments and symbols
+\usepackage{thmtools}                       % Theorem tools 'list of' package (for AMS Theorem)
+
+% Tables...
+\usepackage{supertabular,array}             % multi-page table; array to properly space the table rows
+\usepackage{booktabs}                       % "professional tables"
+\usepackage{tabularx}                       % extra features for tables
+%\usepackage{multirow}                      % multirow within tables
+%\usepackage{colortbl}                      % coloured tables
+
+% Caption formatting (must be before subfig and some other caption/figure related packages)
+\usepackage[margin=10pt,font=small,labelfont=bf,indention=0.75cm,labelsep=endash]{caption}
+\usepackage{float}                          % allow [H] placement for figures
+\usepackage{ifthen}                         % much simpler IF THEN ELSE commands
+
+\usepackage{subfig}                         % fancy sub-figures
+\captionsetup[subfigure]{justification=centerlast,indention=0cm,margin=0pt}
+
+% TODO: work out how to make \autoref{fig:subfig} format as #.##(x) instead of #.##x
+
+\usepackage[bottom,stable]{footmisc}        % footnotes at bottom of page (rather than simply after the lowest text)
+                                            % you can safely ignore the "LaTeX Warning: Command \@makecol  has changed."
+                                            % according to the author of footmisc.
+
+%\usepackage{varioref}                      % fancy page references, like 'on the next page'
+%\usepackage{moreverb}                      % fancy verbatim features, like line numbering
+\usepackage[normalem]{ulem}                 % Strikethrough \sout command
+\usepackage{textcomp}                       % just for the trademark symbol \texttrademark
+\usepackage{gensymb}                        % general symbols package (in text + math modes)
+\usepackage[printonlyused]{acronym}         % acronyms package
+
+% Referencing - natbib is nice
+% Documentation at http://merkel.zoneo.net/Latex/natbib.php
+%
+% Bibliography styles supported by this template are apa-like (default) and ieee
+\ifthenelse{\equal{\tReferenceStyle}{apa-like}}
+    {\usepackage[square,comma,compress,numbers]{natbib}}   % IEEE-like style
+    {\usepackage[authoryear,round,sort]{natbib}}           % APA-like
+
+\usepackage[algochapter,vlined,ruled]{algorithm2e}% algorithms / pseudocode
+\SetAlgoSkip{bigskip}
+
+\usepackage{listings}
+
+\usepackage{dirtree}                        % just for the directory layout figure shown in the
+                                            % chapter `Introduction'. You can probably remove this
+                                            % if you don't want to show any file/dir-tree structures
+
+% Graphics inclusion with hyperlinking in PDFs...
+\usepackage[pdftex]{graphicx}
+% TODO: consider backref or pagebackref options for hyperref (?)
+\definecolor{urlcolour}{rgb}{0,0,0.6}
+
+% Define link colours for easy editing - change them below for final document...
+\usepackage[colorlinks=true, citecolor=red, linkcolor=blue, urlcolor=blue, bookmarks=true, bookmarksnumbered=true, pdftex, plainpages=false, pdfpagelabels]{hyperref}
+
+% !! MUST define all link colours as black for final document
+%\usepackage[colorlinks=true, citecolor=black, linkcolor=black, urlcolor=black, bookmarks=true, bookmarksnumbered=true, pdftex, plainpages=false, pdfpagelabels]{hyperref}
+
+\hypersetup{pdfauthor={\tname}, pdftitle={\tdoctype}, pdfsubject={\ttitle},
+    pdfkeywords={\tkeywords}}
+
+\usepackage{rotating}                       % sideways tables and figures - this must come after graphicx
+
+\usepackage[final]{pdfpages}                % Allows embedding PDFs as pages in the document.
+% It appears that this package must be included AFTER the graphicx package.
+
+% package: showkeys
+% You can uncomment the following lines to make LaTeX print cross-referencing labels in your
+% document, which may make cross-referencing easier if your editor can't autocomplete nicely.
+%\usepackage[color]{showkeys}% show labels for proof-reading
+%\renewcommand{\showkeyslabelformat}[1]{\fbox{\normalfont\tiny\ttfamily#1}}
+%\definecolor{refkey}{gray}{0.9}
+%\definecolor{labelkey}{gray}{0.9}
+
+\usepackage[all]{hypcap}                    % hyperrefs to top of images (must be after hyperref and caption)
+%\hypcapredef{algorithm}
+
+\usepackage{mdframed}                       % TODO: consider [skipbelow=0pt]
+%\usepackage{tikz}
+
+%\usepackage{degrade}
+%\DegSetup{res=300}
+
+
+%%%%%%% ADDED BY LYD
+\usepackage{epstopdf}
+\usepackage[section]{placeins}

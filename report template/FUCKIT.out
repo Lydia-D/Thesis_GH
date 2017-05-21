@@ -18,36 +18,43 @@
 \BOOKMARK [3][-]{subsubsection.3.6.4}{Atmospheric Effects}{subsection.3.6}% 18
 \BOOKMARK [3][-]{subsubsection.3.6.5}{Mutlipath Interference}{subsection.3.6}% 19
 \BOOKMARK [3][-]{subsubsection.3.6.6}{Sagnac Effect}{subsection.3.6}% 20
-\BOOKMARK [3][-]{subsubsection.3.6.7}{GNSS Error Summary}{subsection.3.6}% 21
-\BOOKMARK [2][-]{subsection.3.7}{Multiple Receivers}{section.3}% 22
-\BOOKMARK [2][-]{subsection.3.8}{Current GNSS algorithms}{section.3}% 23
-\BOOKMARK [3][-]{subsubsection.3.8.1}{Standard Positioning Service}{subsection.3.8}% 24
-\BOOKMARK [3][-]{subsubsection.3.8.2}{Differential GPS}{subsection.3.8}% 25
-\BOOKMARK [3][-]{subsubsection.3.8.3}{WAAS DGPS}{subsection.3.8}% 26
-\BOOKMARK [3][-]{subsubsection.3.8.4}{SBAS ?}{subsection.3.8}% 27
-\BOOKMARK [3][-]{subsubsection.3.8.5}{Real Time Kinematic}{subsection.3.8}% 28
-\BOOKMARK [3][-]{subsubsection.3.8.6}{Post Processing Algorithm}{subsection.3.8}% 29
-\BOOKMARK [3][-]{subsubsection.3.8.7}{Single Frequency Precise Point Positioning \(SF-PPP\)}{subsection.3.8}% 30
-\BOOKMARK [3][-]{subsubsection.3.8.8}{Duel Epoch Duel Differencing}{subsection.3.8}% 31
-\BOOKMARK [3][-]{subsubsection.3.8.9}{Summary of Algorithms ?}{subsection.3.8}% 32
-\BOOKMARK [2][-]{subsection.3.9}{Proposed Planar Intersection Algorithm}{section.3}% 33
-\BOOKMARK [1][-]{section.4}{Planar Intersection Algorithm}{}% 34
-\BOOKMARK [2][-]{subsection.4.1}{Assumptions}{section.4}% 35
-\BOOKMARK [3][-]{subsubsection.4.1.1}{Static Receivers}{subsection.4.1}% 36
-\BOOKMARK [3][-]{subsubsection.4.1.2}{Transform asynchronous time}{subsection.4.1}% 37
-\BOOKMARK [3][-]{subsubsection.4.1.3}{Parallel plane assumption}{subsection.4.1}% 38
-\BOOKMARK [2][-]{subsection.4.2}{Algorithm}{section.4}% 39
-\BOOKMARK [3][-]{subsubsection.4.2.1}{Pre-Processing}{subsection.4.2}% 40
-\BOOKMARK [4][-]{paragraph.4.2.1.1}{Select reference receiver }{subsubsection.4.2.1}% 41
-\BOOKMARK [4][-]{paragraph.4.2.1.2}{Collect data of one timestep from all receivers}{subsubsection.4.2.1}% 42
-\BOOKMARK [4][-]{paragraph.4.2.1.3}{Align to reference Epoch time}{subsubsection.4.2.1}% 43
-\BOOKMARK [3][-]{subsubsection.4.2.2}{Distance Optimisation}{subsection.4.2}% 44
-\BOOKMARK [4][-]{paragraph.4.2.2.1}{Average normal Vector}{subsubsection.4.2.2}% 45
-\BOOKMARK [4][-]{paragraph.4.2.2.2}{Difference in Pseudorange}{subsubsection.4.2.2}% 46
-\BOOKMARK [4][-]{paragraph.4.2.2.3}{Optimise Pseudorange}{subsubsection.4.2.2}% 47
-\BOOKMARK [3][-]{subsubsection.4.2.3}{Point Optimisation}{subsection.4.2}% 48
-\BOOKMARK [4][-]{paragraph.4.2.3.1}{Create Planes}{subsubsection.4.2.3}% 49
-\BOOKMARK [4][-]{paragraph.4.2.3.2}{Solve for Intersection}{subsubsection.4.2.3}% 50
-\BOOKMARK [1][-]{section.5}{Method-Simulation}{}% 51
-\BOOKMARK [2][-]{subsection.5.1}{Evaluation}{section.5}% 52
-\BOOKMARK [1][-]{section.6}{Result}{}% 53
+\BOOKMARK [3][-]{subsubsection.3.6.7}{Electrical Interference}{subsection.3.6}% 21
+\BOOKMARK [3][-]{subsubsection.3.6.8}{GNSS Error Summary}{subsection.3.6}% 22
+\BOOKMARK [2][-]{subsection.3.7}{Multiple Receivers}{section.3}% 23
+\BOOKMARK [2][-]{subsection.3.8}{Current GNSS algorithms}{section.3}% 24
+\BOOKMARK [3][-]{subsubsection.3.8.1}{Standard Positioning Service}{subsection.3.8}% 25
+\BOOKMARK [3][-]{subsubsection.3.8.2}{Differential GPS}{subsection.3.8}% 26
+\BOOKMARK [3][-]{subsubsection.3.8.3}{WAAS DGPS}{subsection.3.8}% 27
+\BOOKMARK [3][-]{subsubsection.3.8.4}{SBAS ?}{subsection.3.8}% 28
+\BOOKMARK [3][-]{subsubsection.3.8.5}{Real Time Kinematic}{subsection.3.8}% 29
+\BOOKMARK [3][-]{subsubsection.3.8.6}{Post Processing Algorithm}{subsection.3.8}% 30
+\BOOKMARK [3][-]{subsubsection.3.8.7}{Single Frequency Precise Point Positioning \(SF-PPP\)}{subsection.3.8}% 31
+\BOOKMARK [3][-]{subsubsection.3.8.8}{Duel-Epoch, Double-Differencing Model}{subsection.3.8}% 32
+\BOOKMARK [3][-]{subsubsection.3.8.9}{Summary of Algorithms ?}{subsection.3.8}% 33
+\BOOKMARK [2][-]{subsection.3.9}{Proposed Planar Intersection Algorithm}{section.3}% 34
+\BOOKMARK [1][-]{section.4}{Planar Intersection Algorithm}{}% 35
+\BOOKMARK [2][-]{subsection.4.1}{Assumptions}{section.4}% 36
+\BOOKMARK [3][-]{subsubsection.4.1.1}{Static Receivers}{subsection.4.1}% 37
+\BOOKMARK [3][-]{subsubsection.4.1.2}{Transform asynchronous time}{subsection.4.1}% 38
+\BOOKMARK [3][-]{subsubsection.4.1.3}{Parallel plane assumption}{subsection.4.1}% 39
+\BOOKMARK [2][-]{subsection.4.2}{Algorithm}{section.4}% 40
+\BOOKMARK [3][-]{subsubsection.4.2.1}{Pre-Processing}{subsection.4.2}% 41
+\BOOKMARK [4][-]{paragraph.4.2.1.1}{Select reference receiver }{subsubsection.4.2.1}% 42
+\BOOKMARK [4][-]{paragraph.4.2.1.2}{Collect data of one timestep from all receivers}{subsubsection.4.2.1}% 43
+\BOOKMARK [4][-]{paragraph.4.2.1.3}{Align to reference Epoch time}{subsubsection.4.2.1}% 44
+\BOOKMARK [3][-]{subsubsection.4.2.2}{Distance Optimisation}{subsection.4.2}% 45
+\BOOKMARK [4][-]{paragraph.4.2.2.1}{Average normal Vector}{subsubsection.4.2.2}% 46
+\BOOKMARK [4][-]{paragraph.4.2.2.2}{Difference in Pseudorange}{subsubsection.4.2.2}% 47
+\BOOKMARK [4][-]{paragraph.4.2.2.3}{Optimise Pseudorange}{subsubsection.4.2.2}% 48
+\BOOKMARK [3][-]{subsubsection.4.2.3}{Point Optimisation}{subsection.4.2}% 49
+\BOOKMARK [4][-]{paragraph.4.2.3.1}{Create Planes}{subsubsection.4.2.3}% 50
+\BOOKMARK [4][-]{paragraph.4.2.3.2}{Solve for Intersection}{subsubsection.4.2.3}% 51
+\BOOKMARK [1][-]{section.5}{Method}{}% 52
+\BOOKMARK [2][-]{subsection.5.1}{Creating a Simulation}{section.5}% 53
+\BOOKMARK [3][-]{subsubsection.5.1.1}{Simulate Satellite Locations}{subsection.5.1}% 54
+\BOOKMARK [3][-]{subsubsection.5.1.2}{True Location of Receivers}{subsection.5.1}% 55
+\BOOKMARK [3][-]{subsubsection.5.1.3}{Calculation of Pseudorange}{subsection.5.1}% 56
+\BOOKMARK [3][-]{subsubsection.5.1.4}{Planar Algorithm}{subsection.5.1}% 57
+\BOOKMARK [2][-]{subsection.5.2}{Evaluation}{section.5}% 58
+\BOOKMARK [3][-]{paragraph.5.2.0.1}{Dilution of Precision}{subsection.5.2}% 59
+\BOOKMARK [1][-]{section.6}{Result}{}% 60

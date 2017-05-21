@@ -16,9 +16,10 @@
 \contentsline {subsubsection}{\numberline {3.6.2}Receiver Noise}{2}{subsubsection.3.6.2}
 \contentsline {subsubsection}{\numberline {3.6.3}Ephemeris Errors}{2}{subsubsection.3.6.3}
 \contentsline {subsubsection}{\numberline {3.6.4}Atmospheric Effects}{2}{subsubsection.3.6.4}
-\contentsline {subsubsection}{\numberline {3.6.5}Mutlipath Interference}{2}{subsubsection.3.6.5}
-\contentsline {subsubsection}{\numberline {3.6.6}Sagnac Effect}{2}{subsubsection.3.6.6}
-\contentsline {subsubsection}{\numberline {3.6.7}GNSS Error Summary}{2}{subsubsection.3.6.7}
+\contentsline {subsubsection}{\numberline {3.6.5}Mutlipath Interference}{3}{subsubsection.3.6.5}
+\contentsline {subsubsection}{\numberline {3.6.6}Sagnac Effect}{3}{subsubsection.3.6.6}
+\contentsline {subsubsection}{\numberline {3.6.7}Electrical Interference}{3}{subsubsection.3.6.7}
+\contentsline {subsubsection}{\numberline {3.6.8}GNSS Error Summary}{3}{subsubsection.3.6.8}
 \contentsline {subsection}{\numberline {3.7}Multiple Receivers}{3}{subsection.3.7}
 \contentsline {subsection}{\numberline {3.8}Current GNSS algorithms}{3}{subsection.3.8}
 \contentsline {subsubsection}{\numberline {3.8.1}Standard Positioning Service}{3}{subsubsection.3.8.1}
@@ -28,26 +29,32 @@
 \contentsline {subsubsection}{\numberline {3.8.5}Real Time Kinematic}{3}{subsubsection.3.8.5}
 \contentsline {subsubsection}{\numberline {3.8.6}Post Processing Algorithm}{3}{subsubsection.3.8.6}
 \contentsline {subsubsection}{\numberline {3.8.7}Single Frequency Precise Point Positioning (SF-PPP)}{3}{subsubsection.3.8.7}
-\contentsline {subsubsection}{\numberline {3.8.8}Duel Epoch Duel Differencing}{3}{subsubsection.3.8.8}
+\contentsline {subsubsection}{\numberline {3.8.8}Duel-Epoch, Double-Differencing Model}{3}{subsubsection.3.8.8}
 \contentsline {subsubsection}{\numberline {3.8.9}Summary of Algorithms ?}{4}{subsubsection.3.8.9}
-\contentsline {subsection}{\numberline {3.9}Proposed Planar Intersection Algorithm}{4}{subsection.3.9}
-\contentsline {section}{\numberline {4}Planar Intersection Algorithm}{5}{section.4}
-\contentsline {subsection}{\numberline {4.1}Assumptions}{5}{subsection.4.1}
-\contentsline {subsubsection}{\numberline {4.1.1}Static Receivers}{5}{subsubsection.4.1.1}
-\contentsline {subsubsection}{\numberline {4.1.2}Transform asynchronous time}{6}{subsubsection.4.1.2}
-\contentsline {subsubsection}{\numberline {4.1.3}Parallel plane assumption}{6}{subsubsection.4.1.3}
-\contentsline {subsection}{\numberline {4.2}Algorithm}{6}{subsection.4.2}
-\contentsline {subsubsection}{\numberline {4.2.1}Pre-Processing}{6}{subsubsection.4.2.1}
-\contentsline {paragraph}{\numberline {4.2.1.1}Select reference receiver $\alpha $}{6}{paragraph.4.2.1.1}
-\contentsline {paragraph}{\numberline {4.2.1.2}Collect data of one timestep from all receivers}{6}{paragraph.4.2.1.2}
-\contentsline {paragraph}{\numberline {4.2.1.3}Align to reference Epoch time}{6}{paragraph.4.2.1.3}
-\contentsline {subsubsection}{\numberline {4.2.2}Distance Optimisation}{6}{subsubsection.4.2.2}
-\contentsline {paragraph}{\numberline {4.2.2.1}Average normal Vector}{6}{paragraph.4.2.2.1}
-\contentsline {paragraph}{\numberline {4.2.2.2}Difference in Pseudorange}{6}{paragraph.4.2.2.2}
-\contentsline {paragraph}{\numberline {4.2.2.3}Optimise Pseudorange}{6}{paragraph.4.2.2.3}
-\contentsline {subsubsection}{\numberline {4.2.3}Point Optimisation}{7}{subsubsection.4.2.3}
-\contentsline {paragraph}{\numberline {4.2.3.1}Create Planes}{7}{paragraph.4.2.3.1}
-\contentsline {paragraph}{\numberline {4.2.3.2}Solve for Intersection}{9}{paragraph.4.2.3.2}
-\contentsline {section}{\numberline {5}Method-Simulation}{9}{section.5}
-\contentsline {subsection}{\numberline {5.1}Evaluation}{10}{subsection.5.1}
-\contentsline {section}{\numberline {6}Result}{10}{section.6}
+\contentsline {subsection}{\numberline {3.9}Proposed Planar Intersection Algorithm}{5}{subsection.3.9}
+\contentsline {section}{\numberline {4}Planar Intersection Algorithm}{6}{section.4}
+\contentsline {subsection}{\numberline {4.1}Assumptions}{6}{subsection.4.1}
+\contentsline {subsubsection}{\numberline {4.1.1}Static Receivers}{6}{subsubsection.4.1.1}
+\contentsline {subsubsection}{\numberline {4.1.2}Transform asynchronous time}{7}{subsubsection.4.1.2}
+\contentsline {subsubsection}{\numberline {4.1.3}Parallel plane assumption}{7}{subsubsection.4.1.3}
+\contentsline {subsection}{\numberline {4.2}Algorithm}{7}{subsection.4.2}
+\contentsline {subsubsection}{\numberline {4.2.1}Pre-Processing}{7}{subsubsection.4.2.1}
+\contentsline {paragraph}{\numberline {4.2.1.1}Select reference receiver $\alpha $}{7}{paragraph.4.2.1.1}
+\contentsline {paragraph}{\numberline {4.2.1.2}Collect data of one timestep from all receivers}{7}{paragraph.4.2.1.2}
+\contentsline {paragraph}{\numberline {4.2.1.3}Align to reference Epoch time}{7}{paragraph.4.2.1.3}
+\contentsline {subsubsection}{\numberline {4.2.2}Distance Optimisation}{7}{subsubsection.4.2.2}
+\contentsline {paragraph}{\numberline {4.2.2.1}Average normal Vector}{8}{paragraph.4.2.2.1}
+\contentsline {paragraph}{\numberline {4.2.2.2}Difference in Pseudorange}{8}{paragraph.4.2.2.2}
+\contentsline {paragraph}{\numberline {4.2.2.3}Optimise Pseudorange}{8}{paragraph.4.2.2.3}
+\contentsline {subsubsection}{\numberline {4.2.3}Point Optimisation}{9}{subsubsection.4.2.3}
+\contentsline {paragraph}{\numberline {4.2.3.1}Create Planes}{9}{paragraph.4.2.3.1}
+\contentsline {paragraph}{\numberline {4.2.3.2}Solve for Intersection}{10}{paragraph.4.2.3.2}
+\contentsline {section}{\numberline {5}Method}{11}{section.5}
+\contentsline {subsection}{\numberline {5.1}Creating a Simulation}{11}{subsection.5.1}
+\contentsline {subsubsection}{\numberline {5.1.1}Simulate Satellite Locations}{11}{subsubsection.5.1.1}
+\contentsline {subsubsection}{\numberline {5.1.2}True Location of Receivers}{11}{subsubsection.5.1.2}
+\contentsline {subsubsection}{\numberline {5.1.3}Calculation of Pseudorange}{11}{subsubsection.5.1.3}
+\contentsline {subsubsection}{\numberline {5.1.4}Planar Algorithm}{12}{subsubsection.5.1.4}
+\contentsline {subsection}{\numberline {5.2}Evaluation}{12}{subsection.5.2}
+\contentsline {paragraph}{\numberline {5.2.0.1}Dilution of Precision}{12}{paragraph.5.2.0.1}
+\contentsline {section}{\numberline {6}Result}{13}{section.6}

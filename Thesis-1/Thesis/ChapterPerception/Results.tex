@@ -1,0 +1,52 @@
+%!TEX root = ../Thesis.tex
+
+\section{Equations}\label{sec:equations}
+
+For many people, equations are one of the best things about \LaTeX{}. They're laid out well and are reasonably easy to enter, and can even be generated programmatically, e.g.~from \textsc{Matlab} and its symbolic toolbox (which cannot be said of most publishing software).
+
+For basic in-line numerical or equation elements, you just wrap the text in \$ symbols. For example we could point out that $1+1=2$ or that $e^{i\pi}-1=0$. If you want to number the equation (for referencing) or it's at all complex, try the \texttt{equation} environment.
+
+\begin{equation}
+    \label{eq:oneplusone}
+    1 + 1 = 2
+\end{equation}
+
+Of course you can cross-reference equations just like any other object using a label, letting you refer, for example, to \autoref{eq:oneplusone} or just \eqref{eq:oneplusone}. For something a bit more interesting, check out Erwin Schr\"{o}dinger's famous equation in \autoref{eq:schroedinger}.
+
+\begin{equation}
+    \label{eq:schroedinger}
+    i\hbar\frac{\partial\psi}{\partial t} = \frac{\hbar^2}{2m}\nabla^2\psi + V(\mathbf{r})\psi
+\end{equation}
+
+The \texttt{amsmath} toolbox also provides a lot of useful equation environments that let you structure the layout of equations in various nice ways. Read the documentation for lots of very good info, but here's an example or two.
+
+Aligned equations (with optional equation numbering):
+\begin{align}
+    x &= cos^2(\theta) + \sin^2(\theta) \\
+    \theta &= \frac{\pi}{4} \\
+    y &= x^2 + 5x - 3 \label{eq:before} \\
+    &= 3 \notag
+\end{align}
+
+Multi-line equations:
+\begin{multline}
+    x = 3\sin(\omega) + 2\sin(\phi) + a\sin(\omega) + \sin(\beta) + 2\sin(\gamma) \\
+    + 6\cos(\phi) - 7\cos(\omega) + \cos(\beta) + \cos(\gamma) \\
+    - 2\tan(\alpha) + 3\tan(\pi) - 7\tan(\phi) + 3x
+\end{multline}
+
+Comments in lists of equations and specific horizontal spacing:
+\begin{alignat}{2}
+    x &= y^2 - 8x + 63 & \qquad & \text{from the problem} \label{eq:problem}\\
+    % the \qquad is to set up some spacing between the equation and text 'columns'
+    9x &= y^2 + 63 && \notag \\
+    x &= \frac{3^2 + 63}{9} && \text{substitute $y=3$ from \eqref{eq:before}}\notag \\
+    x &= 8 && \label{eq:solution}
+\end{alignat}
+
+You can do pretty much anything. Google is your friend (but you may need to know the actual names of some symbols you use often!). Documentation may move or go out of date, but you could try looking here: \url{ftp://tug.ctan.org/pub/tex-archive/info/symbols/comprehensive/symbols-a4.pdf}. Otherwise just search for help on ``AMS Math LaTeX'', ``Comprehensive LaTeX Symbol List'' and ``Comprehensive LaTeX Math Symbols''.
+
+\subsection{Learning to Set Equations}\label{sec:setting_equations}
+
+Complicated equations can be a bit daunting when you are starting out with \LaTeX. A nice resource for learning to set equations, or for creating complicated equations, is the \textsc{codecogs} equation editor, at \texttt{http://www.codecogs.com/latex/eqneditor.php}. This editor has many drop down menus for selecting equation structures, which are parsed and displayed as you type. Once your equation is correct, the \LaTeX  \enspace code can be pasted into your document.
+

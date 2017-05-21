@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.3.10)  17 MAY 2017 14:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.3.10)  21 MAY 2017 17:36
 entering extended mode
 **./FUCKIT.tex
 (FUCKIT.tex
@@ -1103,7 +1103,7 @@ Package caption Info: End \AtBeginDocument code.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 
-<./IMAGEtitle2f.jpg, id=218, 181.6386pt x 542.025pt>
+<./IMAGEtitle2f.jpg, id=246, 181.6386pt x 542.025pt>
 File: ./IMAGEtitle2f.jpg Graphic file (type jpg)
  <use ./IMAGEtitle2f.jpg>
 Package pdftex.def Info: ./IMAGEtitle2f.jpg used on input line 111.
@@ -1168,7 +1168,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.49 ...2.3.1}Create Planes}{7}{paragraph.4.2.3.1}
+l.49 ...oint Optimisation}{9}{subsubsection.4.2.3}
                                                    [1
 
 ])
@@ -1192,17 +1192,17 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 174--179
+Underfull \hbox (badness 10000) in paragraph at lines 167--169
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 180--183
+Underfull \hbox (badness 10000) in paragraph at lines 178--183
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 200--204
+Underfull \hbox (badness 10000) in paragraph at lines 184--187
 
  []
 
@@ -1213,6 +1213,10 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [1]
+Underfull \hbox (badness 10000) in paragraph at lines 205--209
+
+ []
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
@@ -1220,24 +1224,44 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [2]
+Underfull \hbox (badness 10000) in paragraph at lines 309--310
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 311--312
+
+ []
+
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[3] <overall_singleS_multiR.jpg, id=317, 1782.66pt x 1336.995pt>
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 313--314
+
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[4] <overall_singleS_multiR.jpg, id=366, 1782.66pt x 1336.995pt>
 File: overall_singleS_multiR.jpg Graphic file (type jpg)
 
 <use overall_singleS_multiR.jpg>
-Package pdftex.def Info: overall_singleS_multiR.jpg used on input line 322.
+Package pdftex.def Info: overall_singleS_multiR.jpg used on input line 354.
 (pdftex.def)             Requested size: 338.58632pt x 253.92969pt.
 
-<overall_multiS_duelR.jpg, id=318, 1782.66pt x 1336.995pt>
+<overall_multiS_duelR.jpg, id=367, 1782.66pt x 1336.995pt>
 File: overall_multiS_duelR.jpg Graphic file (type jpg)
 
 <use overall_multiS_duelR.jpg>
-Package pdftex.def Info: overall_multiS_duelR.jpg used on input line 330.
+Package pdftex.def Info: overall_multiS_duelR.jpg used on input line 362.
 (pdftex.def)             Requested size: 338.58632pt x 253.92969pt.
 
 
@@ -1249,8 +1273,8 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[4 <./overall_singleS_multiR.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 366--377
+[5 <./overall_singleS_multiR.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 401--412
 
  []
 
@@ -1260,24 +1284,34 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[5 <./overall_multiS_duelR.jpg>]
+[6 <./overall_multiS_duelR.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 432--433
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 411.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\alpha' on input line 411.
+ []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 411.
+(hyperref)                removing `math shift' on input line 455.
 
-<solve_distances.jpg, id=329, 1782.66pt x 1336.995pt>
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\alpha' on input line 455.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 455.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[7] <solve_distances.jpg, id=396, 1782.66pt x 1336.995pt>
 File: solve_distances.jpg Graphic file (type jpg)
 
 <use solve_distances.jpg>
-Package pdftex.def Info: solve_distances.jpg used on input line 431.
+Package pdftex.def Info: solve_distances.jpg used on input line 479.
 (pdftex.def)             Requested size: 338.58632pt x 253.92969pt.
 
 
@@ -1286,18 +1320,17 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[6]
+[8 <./solve_distances.jpg>]
 
 Package Fancyhdr Warning: \headheight is too small (12.0pt): 
  Make it at least 13.59999pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[7 <./solve_distances.jpg>] <pointonplane.jpg, id=350, 2055.68pt x 1541.76pt>
+[9] <pointonplane.jpg, id=414, 2055.68pt x 1541.76pt>
 File: pointonplane.jpg Graphic file (type jpg)
-
-<use pointonplane.jpg>
-Package pdftex.def Info: pointonplane.jpg used on input line 502.
+ <use pointonplane.jpg>
+Package pdftex.def Info: pointonplane.jpg used on input line 550.
 (pdftex.def)             Requested size: 338.58632pt x 253.93243pt.
 
 
@@ -1306,13 +1339,29 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[8 <./pointonplane.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 544--545
+[10 <./pointonplane.jpg>]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[11]
+Underfull \hbox (badness 10000) in paragraph at lines 633--634
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 563--572
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 655.
+
+<GDOP.png, id=433, 562.1pt x 451.6875pt>
+File: GDOP.png Graphic file (type png)
+ <use GDOP.png>
+Package pdftex.def Info: GDOP.png used on input line 662.
+(pdftex.def)             Requested size: 338.58632pt x 272.07597pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 668--677
 
  []
 
@@ -1322,7 +1371,7 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[9] (FUCKIT.bbl
+[12] (FUCKIT.bbl
 
 LaTeX Warning: Empty `thebibliography' environment on input line 24.
 
@@ -1333,24 +1382,24 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[10]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 587.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 587.
+[13 <./GDOP.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 692.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 692.
  (FUCKIT.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 587.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 587.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 692.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 692.
 Package rerunfilecheck Info: File `FUCKIT.out' has not changed.
-(rerunfilecheck)             Checksum: 73B298E17396F66CB4B2124FCC1AF55E;4016.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 587.
+(rerunfilecheck)             Checksum: B96B3A9A5144D4EB6FAA227A82C0EA69;4590.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 692.
  ) 
 Here is how much of TeX's memory you used:
- 26391 strings out of 493634
- 553407 string characters out of 3135239
- 701720 words of memory out of 3000000
- 29243 multiletter control sequences out of 15000+200000
- 18619 words of font info for 68 fonts, out of 3000000 for 9000
+ 26431 strings out of 493634
+ 554021 string characters out of 3135239
+ 703147 words of memory out of 3000000
+ 29263 multiletter control sequences out of 15000+200000
+ 19133 words of font info for 70 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 55i,13n,54p,674b,626s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 55i,13n,54p,985b,626s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\Lydia\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\cm\dpi1037\c
 mbcsc10.pk> <C:\Users\Lydia\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\public\cm\
 dpi1493\cmbcsc10.pk><C:/Users/Lydia/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
@@ -1370,10 +1419,12 @@ ydia/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb
 cm/cmr6.pfb><C:/Users/Lydia/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publi
 c/amsfonts/cm/cmr8.pfb><C:/Users/Lydia/AppData/Local/Programs/MiKTeX 2.9/fonts/
 type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Lydia/AppData/Local/Programs/MiKT
-eX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
-Output written on FUCKIT.pdf (13 pages, 913305 bytes).
+eX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Lydia/AppData/Local/P
+rograms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/Lydia/Ap
+pData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on FUCKIT.pdf (16 pages, 989827 bytes).
 PDF statistics:
- 502 PDF objects out of 1000 (max. 8388607)
- 80 named destinations out of 1000 (max. 500000)
- 462 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 584 PDF objects out of 1000 (max. 8388607)
+ 97 named destinations out of 1000 (max. 500000)
+ 523 words of extra memory for PDF output out of 10000 (max. 10000000)
 

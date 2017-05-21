@@ -1,0 +1,47 @@
+%!TEX root = ../Thesis.tex
+
+%%================= Page Layout ======================%%
+% Page Layout
+\setlength{\topmargin}{0cm}
+\setlength{\textheight}{624pt}
+\setlength{\textwidth}{6in}
+\raggedbottom
+
+% use these for two sided (even on left)
+\setlength{\oddsidemargin}{0.0in}
+\setlength{\evensidemargin}{0.267in}
+% use this for one sided printing with thick left margin
+%\setlength{\oddsidemargin}{0.4in}
+
+\setlength{\columnwidth}{\textwidth}
+\setlength{\footskip}{0.3in}
+\setlength{\headheight}{16pt}                       % todo --- apparently 15pt is the minimum (?)
+
+% Paragraph Layout
+\setlength{\parindent}{0em}                         % paragraph indent --- I prefer a space between paragraphs to indents
+\setlength{\parskip}{1.5ex plus0.5ex minus0.5ex}    % space after paragraph (rubber length)
+\renewcommand{\baselinestretch}{1.4}                % line spacing
+
+% Float Settings
+% When using defaults, latex produces many pages with stand-alone figures.
+% These settings are meant to improve this a bit; feel free to fiddle with 
+% them depending on the sizes and quantity of floating environments you use
+\renewcommand{\topfraction}{0.85}
+\renewcommand{\bottomfraction}{0.85}
+\renewcommand{\textfraction}{0.2}
+\renewcommand{\floatpagefraction}{0.2}
+\setcounter{topnumber}{2}
+\setcounter{bottomnumber}{2}
+\setcounter{totalnumber}{4}
+
+%%================= Misc Global Settings =============%%
+% how far down section numbers go (chapter/section/subsection/subsubsection/paragraph...)
+\setcounter{secnumdepth}{2}
+
+% how far down the TOC goes (chapter/section/subsection/subsubsection...)
+%\setcounter{tocdepth}{2}
+
+% Allow pagebreaks in equations
+% Currently set to 1 = "if they absolutely must" (see amsmath documentation for more info)
+\allowdisplaybreaks[1]
+

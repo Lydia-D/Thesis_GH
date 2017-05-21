@@ -16,6 +16,7 @@ function [X,DOP,clockbias] = convergance(X0,PosSat,Rsat)
     maxiterations = 100;
     iter = 0;
         % while convergance
+        
     while max(abs(dX)) > 10^-8 
         H = Jacobian(PosSat,X);
         drho = Rsat - (rangecalc(PosSat,X(1:3))+X(4)); % error in range

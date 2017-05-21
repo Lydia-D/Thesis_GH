@@ -2,7 +2,7 @@
 % 18/5/17
 % solve for all variables at once ->
 
-function [Loc_lin,Omega,avg_norm] = alloptimise(range_com,Sat_com, Abs_com)
+function [Loc_lin,clockbias] = alloptimise(range_com,Sat_com, Abs_com)
 % range_com = pseudoranges at common epoch 
 %       (already accounted for clockbias, rotation of earth, )
 %       -> matrix m receivers by n satellites
@@ -16,17 +16,19 @@ function [Loc_lin,Omega,avg_norm] = alloptimise(range_com,Sat_com, Abs_com)
 % for vector from receiver to satellite-> sat-rec
     numSat = size(Sat_com,1);
     numRec = size(Abs_com,1);
-    all_norm_vecs = zeros([numRec,3,numSat]);
-    for isat = 1:numSat
-        temp = repmat(Sat_com(isat,:),[numRec,1])-Abs_com;
-        all_norm_vecs(:,:,isat) = normalise(temp);
-        %avg_norm(isat,:) = mean(all_norm_vecs(:,:,isat),1);
-        %select = ceil(numRec*rand(1));
-        select = 1;
-        avg_norm(isat,:) = all_norm_vecs(select,:,isat);
-
-    end
-
+%     all_norm_vecs = zeros([numRec,3,numSat]);
+%     for isat = 1:numSat
+%         temp = repmat(Sat_com(isat,:),[numRec,1])-Abs_com;
+%         all_norm_vecs(:,:,isat) = normalise(temp);
+%         %avg_norm(isat,:) = mean(all_norm_vecs(:,:,isat),1);
+%         %select = ceil(numRec*rand(1));
+%         select = 1;
+%         avg_norm(isat,:) = all_norm_vecs(select,:,isat);
+% 
+%     end
+    
+    avg_norm = normalise(Sat_com-ones(numSat,1)*Abs_com(1,:));
+    
     % just have one set of vectors from a rough location
 
 %% calculate difference in ranges between each recevier for each sat
@@ -98,7 +100,7 @@ function [Loc_lin,Omega,avg_norm] = alloptimise(range_com,Sat_com, Abs_com)
         BIG(1+(irec-1)*numSat:irec*numSat,1+(irec-1)*4:(irec)*4) = N;
     end
     
-    
+    % maybe do another itteration solving for D with the new clock biases
     
     pinv = inv((BIG'*BIG))*BIG';
     
@@ -117,7 +119,10 @@ function [Loc_lin,Omega,avg_norm] = alloptimise(range_com,Sat_com, Abs_com)
 %         %Loc_lin(irec,:) = invP*Omega(irec,:)';
 %     end
     
-    Loc_lin=ALL_ans;
+    %Loc_lin=ALL_ans;
+    ALL_ans = reshape(ALL_ans,[4,numRec]);
+    clockbias = ALL_ans(4,:);
+    Loc_lin = ALL_ans(1:3,:)';
 
 
 end

@@ -1,0 +1,223 @@
+%!TEX root = ../Thesis.tex
+
+% Some specific formatting commands for types of text
+
+% highlight for changes
+\definecolor{highlightcolor}{rgb}{1,0,0}    % remove highlights by setting to {0,0,0}
+
+% Todo notes for draft
+% Don't forget that some todo items are markers to actual words in the text that are perhaps  
+% inaccurate, and so need to be replaced --- don't just redefine the \todo macro to \empty !
+\definecolor{todocolour}{rgb}{1,0.3,0.2}
+\definecolor{TODOcolour}{rgb}{1,0,0}
+\newcommand{\todo}[2][brackets]{\textsf{\textcolor{todocolour}{%
+    \ifthenelse{\equal{#1}{brackets}}{[TODO: #2]}{TODO: #2}%
+}}}
+
+% Other things to simplify remembering
+\newcommand{\italics}{\textit}
+\newcommand{\smallcaps}{\textsc}
+\newcommand{\fixedwidth}{\texttt}
+\newcommand{\sans}{\textsf}
+
+% Nice marginpars
+\let\oldmarginpar\marginpar
+\setlength{\marginparwidth}{0.7in}
+\renewcommand\marginpar[1]{\-\oldmarginpar[\raggedleft\scriptsize #1]%
+{\raggedright\scriptsize #1}}
+
+% Some I may not actually use
+\newcommand{\usecase}[1]{\emph{#1}}
+\newcommand{\role}[1]{\emph{#1}}
+\newcommand{\comp}[1]{\textsc{#1}}
+\newcommand{\iface}[1]{\emph{#1}}
+\newcommand{\term}[1]{\emph{#1}}
+\newcommand{\robot}[1]{\emph{#1}}
+\newcommand{\code}[1]{\texttt{#1}}
+\newcommand{\bigO}[1]{\ensuremath{\mathcal{O}\bigl(#1\bigr)}}
+\newcommand{\bigOpar}[1]{\ensuremath{\mathcal{O}\left(#1\right)}}
+\newcommand{\latin}{\emph}                  % (may or may not want latin text italicised)
+
+% Random general stuff...
+\newcommand{\emailaddr}[1]{\href{mailto:#1}{#1}}
+
+% autoref case is set here
+\def\figureautorefname{Figure}
+\def\subfigureautorefname{Figure}
+\def\tableautorefname{Table}
+\def\partautorefname{Part}
+\def\appendixautorefname{Appendix}
+\def\equationautorefname{Equation}
+\def\Itemautorefname{Item}
+\def\chapterautorefname{Chapter}
+\def\sectionautorefname{Section}
+\def\subsectionautorefname{Section}
+\def\subsubsectionautorefname{Section}
+\def\Hfootnoteautorefname{Footnote}
+\def\AMSautorefname{Equation}
+\def\theoremautorefname{Theorem}
+\def\algorithmautorefname{Algorithm}
+\renewcommand{\Autoref}{\autoref}           %?? defines \Autoref to be \autoref
+
+% autoref case is set here
+%\def\figureautorefname{Fig.}
+%\def\subfigureautorefname{Fig.}
+%\def\tableautorefname{Table}
+%\def\subtableautorefname{Table}
+%\def\partautorefname{Part}
+%\def\appendixautorefname{Appendix}
+%\def\equationautorefname{Eq.}
+%\def\Itemautorefname{Item}
+%\def\chapterautorefname{Chapter}
+%\def\sectionautorefname{Sec.}
+%\def\subsectionautorefname{Sec.}
+%\def\subsubsectionautorefname{Sec.}
+%\def\Hfootnoteautorefname{Footnote}
+%\def\AMSautorefname{Eq.}
+%\def\theoremautorefname{Theorem}
+%\def\algorithmautorefname{Algorithm}
+%\renewcommand{\Autoref}{\autoref}
+
+%\figurename         Figure
+%\tablename 	     Table
+%\partname           Part
+%\appendixname       Appendix
+%\equationname       Equation
+%\Itemname           item
+%\chaptername        chapter
+%\sectionname        section
+%\subsectionname     subsection
+%\subsubsectionname  subsubsection
+%\paragraphname      paragraph
+%\Hfootnotename      footnote
+%\AMSname            Equation
+%\theoremname        Theorem
+%\page 	             page
+
+
+% Figures
+
+% Dummy figure file
+\def\dummyfigure{LaTeX/dummy}%
+
+% Includegraphics wrapper macro to include either dummy or real figure
+\newcommand{\incgfx}[2]{%
+    \def\figfilename{\dummyfigure}%
+    \def\testfile{\chapdir/Figures/#2}%
+    \IfFileExists{\testfile.jpg}{\def\figfilename{\testfile}}{}%
+    \IfFileExists{\testfile.png}{\def\figfilename{\testfile}}{}%
+    \IfFileExists{\testfile.pdf}{\def\figfilename{\testfile}}{}%
+    \IfFileExists{\testfile.jpeg}{\def\figfilename{\testfile}}{}%
+    \IfFileExists{\testfile.tif}{\def\figfilename{\testfile}}{}%
+    \IfFileExists{\testfile.tiff}{\def\figfilename{\testfile}}{}%
+    \includegraphics[#1]{\figfilename}%
+}%
+
+% TODO: replace \incgfx with \imgRs
+% TODO: fix \imgRs to convert only if source file exists and if destination doesn't
+% TODO: fix \imgRs to re-sample more generically w/ width/height settings
+% \imgRs{file}{extension}{width_in_pts}{height_in_pts}
+\newcommand{\doConvert}[4]{\immediate\write18{convert #1.#2 -resample #3 -resize #4 #1_RS.#2}}
+\newcommand{\imgRs}[4]{%
+    \doConvert{#1}{#2}{#3}{#4}%
+    \includegraphics[width=#3pt]{#1.rs}%
+}
+
+% Basic figure macro
+% Arguments \fig[placement]{includegraphics opts}{filename}{short caption}{long caption}
+% e.g. \fig{htbp}{width=10cm}{example}{Example Figure}{This is an example figure}
+% If the file does not exist (with extension appropriate for your output document type),
+% a dummy figure will be used instead
+\newcommand{\fig}[5][htb]{
+    \begin{figure}[#1]
+        \begin{center}
+            \incgfx{#2}{#3}
+            \caption[#4]{#5}\label{fig:#3}
+        \end{center}
+    \end{figure}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Some other formatting stuff...
+
+%% Chose your symbols for hierachical itemised lists
+\renewcommand{\labelitemi}{$\bullet$}
+\renewcommand{\labelitemii}{$\blacktriangleright$}
+\renewcommand{\labelitemiii}{$\bigstar$}
+\renewcommand{\labelitemiv}{$\blacklozenge$}
+
+%% Use "List of References" instead of "Bibliography"?
+% A List of References can contain only cited work; a Bibliography can contain
+% entries in addition to cited work.
+\renewcommand{\bibname}{List of References}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+% Hypotheses
+\declaretheorem[numberwithin=chapter,
+    refname={Hypothesis,Hypotheses},
+    Refname={Hypothesis,Hypotheses}]{hypothesis}
+
+% Definitions
+\declaretheorem[numberwithin=chapter,
+    refname={Definition,Definitions},
+    Refname={Definition,Definitions}]{definition}
+
+% Proposition
+\declaretheorem[numberwithin=chapter,
+    refname={Proposition,Propositions},
+    Refname={Proposition,Propositions}]{proposition}
+
+% Theorems
+\declaretheorem[numberwithin=chapter]{theorem}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+% Framed Example Environment
+% Choose a background colour (very light colours are best, but check how they print on 
+% the printer that you'll be printing your final document on, or just stick to a light grey)
+\definecolor{examplebackground}{cmyk}{0, 0.005, 0.06, 0.03}
+% some basic layout
+\newlength{\exmargin}   \setlength{\exmargin}{1em}
+\newlength{\exlinewidth}\setlength{\exlinewidth}{2pt}
+% the theorem style
+\newtheoremstyle{thexample}% name
+    {\topsep}%    Space above
+    {\topsep}%    Space below
+    {}%   Body font
+    {}%           Header indent amount (empty = no indent, \parindent = para indent)
+    {\bfseries}%  Thm head font
+    {}% Punctuation after thm head
+    {0pt}%   Space after thm head (\newline = linebreak)
+    {\thmname{#1}\thmnumber{ #2}\thmnote{ --- #3}}% Thm head spec
+    % \declaretheorem[parent=section, title=Example, style=example, preheadhook=\exprehead{}, postfoothook=\expostfoot{}]{example}
+\declaretheorem[parent=chapter, title=Example, style=thexample]{thexample}
+% re-def'd begin for syntax highlighting bug in TextMate (LaTeX package)
+\def\thbegin{\begin}
+% \def\exprehead{\thbegin{mdframed}[linewidth=1,margin=25]}%
+% \def\expostfoot{\end{mdframed}}%
+\newenvironment{example}[2][]% optional title, mandatory label (or something like it)
+    {\thbegin{mdframed}
+    [linewidth={\exlinewidth},leftmargin={\exmargin},rightmargin={\exmargin},backgroundcolor={examplebackground}]
+    \thbegin{thexample}[#1]#2\hspace{0pt}\nopagebreak
+    \setstretch{1.15}
+
+    \nopagebreak}% guarantee something to break the line from (0pt space)
+    {\end{thexample}\end{mdframed}}%
+\makeatletter
+%\newcommand{\listofexamples}{\@starttoc{loe}}
+% HACK: fix up the line spacing in List of Examples/Theorems
+\renewcommand{\l@thexample}[2]{\@dottedtocline{1}{1.5em}{2.3em}{#1}{#2}\vspace{-1.3\parskip}}
+\makeatother
+% horizontal bar completely across an example box (will need to adjust if margins change)
+\newcommand{\exbar}{
+\newlength{\barwidth}
+\addtolength{\barwidth}{\textwidth}
+\addtolength{\barwidth}{2\exmargin}
+\addtolength{\barwidth}{\exlinewidth}
+\newlength{\baroffset}
+\addtolength{\baroffset}{\exmargin}
+\addtolength{\baroffset}{0.5\exlinewidth}
+\hspace{-\baroffset}\rule[.5\parskip]{\barwidth}{.5\exlinewidth}}
+
+

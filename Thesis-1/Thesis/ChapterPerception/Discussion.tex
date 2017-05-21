@@ -1,0 +1,23 @@
+%!TEX root = ../Thesis.tex
+
+\section{Acronyms}\label{sec:acronyms}
+
+You can use acronyms in your thesis, and have them automatically expanded on first use but abbreviated on subsequent uses. This is done using the \texttt{acronym} package. If you want the acronyms to be listed in the Nomenclature, then they should be defined there using the \texttt{\textbackslash{}acro} macro. Any macro defined in the Nomenclature is available for use in the document, but \emph{only those used in the document} will appear in the acronyms table in the Nomenclature\footnote{You can use the \texttt{\textbackslash{}acused} macro in the Nomenclature (after defining the acronym) to prevent an acronym ever expanding in the text; this is useful for especially common acronyms, which can be looked up in the Nomenclature, but would not ever need to be written out in full in the text.}.
+
+Any acronym used in the document will be automatically expanded on first use, and be abbreviated on subsequent uses, unless you specify expanded/contracted versions. For example, this template was created for use by students at the \ac{ACFR}. In the past, there have been several templates used by students at the \ac{ACFR}, with varying degrees of success. It was decided that the \ac{ACFR} should have a single common template to make this easier for students new to \LaTeX{}, and you are now using it.
+
+But I may want to \emph{pluralise} the acronym like so: \acp{KF} or \acp{GP}. Or I may want to refer to it by its \emph{long} name without even showing it's an acronym: \acl{PCA}. Or maybe repeat it in \emph{full}, because I think the reader probably didn't bother reading where I first defined it: \acf{KF}. And now, just to show some of the other features, I'm going to use a few of the acronyms here:
+
+\begin{itemize}[nolistsep]
+    \item \ac{RTK}
+    \item \ac{INS}\footnote{This one was specified with \texttt{\textbackslash{}acused}.}
+    \item \ac{GPSINS}\footnote{This one redefines the short version to add the `/'.}
+    \item \ac{DGPS}\footnote{This one refers to another acronym within its long version.}
+\end{itemize}
+
+There are options and macros for the \texttt{acronym} package that allow resetting the `used' state of acronyms at various points in the document, for example to allow you to have the first use of each acronym \emph{in each chapter} spelt out in full. 
+
+For example, if I reset \emph{all} acronyms right here using the \texttt{\textbackslash{}acresetall} macro\dots
+\acresetall{}
+% you can also reset individually: \acreset{ACFR}
+the next reference to an acronym will be spelt out in full: \ac{ACFR}, and subsequent usage of the acronym will be abbreviated: \ac{ACFR}.

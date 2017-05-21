@@ -1,0 +1,22 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: Thesis.aux
+A level-1 auxiliary file: FrontMatter/FrontMatter.aux
+A level-1 auxiliary file: ChapterIntro/Intro.aux
+A level-1 auxiliary file: ChapterLiteratureReview/LiteratureReview.aux
+A level-1 auxiliary file: ChapterPerception/Perception.aux
+A level-1 auxiliary file: ChapterEstimation/Estimation.aux
+A level-1 auxiliary file: ChapterExperiments/Experiments.aux
+A level-1 auxiliary file: ChapterConclusion/Conclusion.aux
+The style file: BibTeX/acfrplainnat.bst
+A level-1 auxiliary file: AppendixSomething/Something.aux
+Database file #1: BibTeX/library.bib
+Database file #2: BibTeX/comprehensive.bib
+Warning--entry type for "AS4024.3301" isn't style-file defined
+--line 153 of file BibTeX/comprehensive.bib
+Warning--to sort, need author or key in AS4024.3301
+Warning--empty institution in AS4024.3301
+Warning--empty institution in Beebe2002
+Warning--empty title in Hill2011
+Warning--can't use both author and editor fields in Lynch1996
+Warning--can't use both author and editor fields in Stroustrup2000
+Warning--can't use both volume and number fields in Stroustrup2000
+(There were 8 warnings)

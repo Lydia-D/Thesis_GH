@@ -1,0 +1,136 @@
+\begin{thebibliography}{19}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[AS4(2009)]{AS4024.3301}
+{AS 4024.3301-2009}: Safety of machinery - robots for industrial environments -
+  safety requirements.
+\newblock May 2009.
+\newblock ISBN 0-7337-9152-2.
+
+\bibitem[Allen et~al.(2009)Allen, Hill, Underwood, and Scheding]{Allen2009}
+Tom Allen, Andrew Hill, James Underwood, and Steven Scheding.
+\newblock {Dynamic path planning with multi-agent data fusion: the parallel
+  hierarchical replanner}.
+\newblock In \emph{Proceedings of the IEEE 2009 International Conference on
+  Robotics and Automation}, pages 4445--4450. IEEE Press, May 2009.
+\newblock ISBN 978-1-4244-2788-8.
+
+\bibitem[{Australian Academy of Science}(2010)]{ScienceOfClimateChange2010}
+{Australian Academy of Science}.
+\newblock The science of climate change: Questions and answers., August 2010.
+
+\bibitem[Beebe(2002)]{Beebe2002}
+Nelson H.~F. Beebe.
+\newblock A bibliography of literate programming.
+\newblock http://www.literateprogramming.com/litprog-bib.pdf.
+\newblock March 2002.
+\newblock Version 2.49, accessed 17 July 2001.
+
+\bibitem[Bennewitz et~al.(2002)Bennewitz, Burgard, and Thrun]{Bennewitz2002}
+M.~Bennewitz, W.~Burgard, and S.~Thrun.
+\newblock Learning motion patterns of persons for mobile service robots.
+\newblock In \emph{Proceedings of the IEEE 2002 International Conference on
+  Robotics and Automation}, volume~4, pages 3601--3606, 2002.
+
+\bibitem[Connolly and Scheding(2008)]{Connolly2008}
+Laura~A. Connolly and Steven Scheding.
+\newblock {Comparative analysis of sensors, algorithms, and models within a
+  navigation system}.
+\newblock \emph{Proceedings of the 2008 IEEE International Conference on
+  Multisensor Fusion and Integration for Intelligent Systems}, pages 26--32,
+  August 2008.
+
+\bibitem[Dahiya et~al.(2010)Dahiya, Metta, Valle, and Sandini]{Dahiya2010}
+R.~S. Dahiya, G.~Metta, M.~Valle, and G.~Sandini.
+\newblock Tactile sensing---from humans to humanoids.
+\newblock \emph{IEEE Transactions on Robotics}, 26\penalty0 (1):\penalty0
+  1--20, 2010.
+
+\bibitem[Douillard(2009)]{Douillard2009}
+Bertrand Douillard.
+\newblock \emph{Laser and vision based classification in urban environments}.
+\newblock {PhD} thesis, The University of Sydney, January 2009.
+
+\bibitem[Hill(2011)]{Hill2011}
+Andrew Hill.
+\newblock Personal communication, June 2011.
+
+\bibitem[Johnson-Roberson et~al.(2010)Johnson-Roberson, Pizarro, Williams, and
+  Mahon]{Johnson-Roberson2010}
+Matthew Johnson-Roberson, Oscar Pizarro, Stefan~B. Williams, and Ian Mahon.
+\newblock {Generation and visualization of large-scale three-dimensional
+  reconstructions from underwater robotic surveys}.
+\newblock \emph{Journal of Field Robotics}, 27\penalty0 (1):\penalty0 21--51,
+  2010.
+
+\bibitem[Likhachev et~al.(2005)Likhachev, Ferguson, Gordon, Stentz, and
+  Thrun]{Likhachev2005}
+Maxim Likhachev, David Ferguson, Geoffrey Gordon, Anthony~(Tony) Stentz, and
+  Sebastian Thrun.
+\newblock Anytime dynamic {A*}: the proofs.
+\newblock Technical Report CMU-RI-TR-05-12, Robotics Institute, Carnegie Mellon
+  University, May 2005.
+\newblock URL
+  \url{http://www.ri.cmu.edu/pub_files/pub4/likhachev_maxim_2005_2/likhachev_maxim_2005_2.pdf}.
+\newblock Accessed 17 July 2011.
+
+\bibitem[Lynch(1996)]{Lynch1996}
+Nancy~A. Lynch.
+\newblock \emph{Distributed Algorithms}, chapter 13: Atomic objects, pages
+  397--454.
+\newblock Morgan Kaufmann Publishers, 1996.
+
+\bibitem[Mahon and Williams(2003)]{Mahon2003}
+Ian Mahon and Stefan Williams.
+\newblock {Three-dimensional robotic mapping}.
+\newblock In \emph{Proceedings of the 2003 Australasian Conference on Robotics
+  and Automation}. Australian Robotics and Automation Association, Sydney,
+  Australia, 2003.
+
+\bibitem[Merry(2009)]{Merry2009}
+Laura Merry.
+\newblock Generic architecture design for navigation filtering.
+\newblock {MPhil} thesis, The University of Sydney, August 2009.
+
+\bibitem[Nettleton et~al.(2006)Nettleton, Thrun, Durrant-Whyte, and
+  Sukkarieh]{Nettleton2006}
+E.~Nettleton, S.~Thrun, H.~Durrant-Whyte, and S.~Sukkarieh.
+\newblock Decentralised {SLAM} with low-bandwidth communication for teams of
+  vehicles.
+\newblock In Shinichi Yuta, Hajima Asama, Erwin Prassler, Takashi Tsubouchi,
+  and Sebastian Thrun, editors, \emph{Field and Service Robotics}, volume~24,
+  pages 179--188, 2006.
+
+\bibitem[Rye and Furukawa(2001)]{Rye2001}
+D.C Rye and T.~Furukawa, editors.
+\newblock \emph{Proceedings of the 2001 Australian Conference on Robotics and
+  Automation}, 2001. Australian Robotics and Automation Association, Sydney,
+  Australia.
+
+\bibitem[Stroustrup(2000)]{Stroustrup2000}
+Bjarne Stroustrup.
+\newblock \emph{The C++ Programming Language}, volume~1 of \emph{The Series}.
+\newblock Addison Wesley, The addtess., 2nd edition, Jan. 2000.
+\newblock This is a note.
+
+\bibitem[Underwood et~al.(2010)Underwood, Hill, Peynot, and
+  Scheding]{Underwood2010}
+J.P. Underwood, Andrew Hill, Thierry Peynot, and S.J. Scheding.
+\newblock {Error modeling and calibration of exteroceptive sensors for accurate
+  mapping applications}.
+\newblock \emph{Journal of Field Robotics}, 27\penalty0 (1):\penalty0 2--20,
+  2010.
+
+\bibitem[Williams et~al.(2006)Williams, Dissanayake, and
+  Durrant-Whyte]{Williams2006}
+S.B. Williams, G.~Dissanayake, and H.~Durrant-Whyte.
+\newblock {An efficient approach to the simultaneous localisation and mapping
+  problem}.
+\newblock \emph{Proceedings of the IEEE 2006 International Conference on
+  Robotics and Automation}, pages 406--411, 2006.
+
+\end{thebibliography}
