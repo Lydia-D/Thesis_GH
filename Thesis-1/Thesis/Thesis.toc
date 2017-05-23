@@ -24,14 +24,14 @@
 \contentsline {section}{\numberline {2.5}The GNSS concept}{4}{section.2.5}
 \contentsline {subsection}{\numberline {2.5.1}2D case}{4}{subsection.2.5.1}
 \contentsline {subsection}{\numberline {2.5.2}3D case}{4}{subsection.2.5.2}
-\contentsline {section}{\numberline {2.6}GNSS Error Sources}{4}{section.2.6}
-\contentsline {subsection}{\numberline {2.6.1}Clock Errors}{4}{subsection.2.6.1}
-\contentsline {subsection}{\numberline {2.6.2}Receiver Noise}{4}{subsection.2.6.2}
+\contentsline {section}{\numberline {2.6}GNSS Error Sources}{5}{section.2.6}
+\contentsline {subsection}{\numberline {2.6.1}Clock Errors}{5}{subsection.2.6.1}
+\contentsline {subsection}{\numberline {2.6.2}Receiver Noise}{5}{subsection.2.6.2}
 \contentsline {subsection}{\numberline {2.6.3}Ephemeris Errors}{5}{subsection.2.6.3}
 \contentsline {subsection}{\numberline {2.6.4}Atmospheric Effects}{5}{subsection.2.6.4}
-\contentsline {subsection}{\numberline {2.6.5}Mutlipath Interference}{5}{subsection.2.6.5}
-\contentsline {subsection}{\numberline {2.6.6}Sagnac Effect}{5}{subsection.2.6.6}
-\contentsline {subsection}{\numberline {2.6.7}Electrical Interference}{5}{subsection.2.6.7}
+\contentsline {subsection}{\numberline {2.6.5}Mutlipath Interference}{6}{subsection.2.6.5}
+\contentsline {subsection}{\numberline {2.6.6}Sagnac Effect}{6}{subsection.2.6.6}
+\contentsline {subsection}{\numberline {2.6.7}Electrical Interference}{6}{subsection.2.6.7}
 \contentsline {subsection}{\numberline {2.6.8}GNSS Error Summary}{6}{subsection.2.6.8}
 \contentsline {section}{\numberline {2.7}Multiple Receivers}{6}{section.2.7}
 \contentsline {section}{\numberline {2.8}Current GNSS algorithms}{6}{section.2.8}
@@ -42,7 +42,7 @@
 \contentsline {subsection}{\numberline {2.8.5}Real Time Kinematic}{7}{subsection.2.8.5}
 \contentsline {subsection}{\numberline {2.8.6}Post Processing Algorithm}{7}{subsection.2.8.6}
 \contentsline {subsection}{\numberline {2.8.7}Single Frequency Precise Point Positioning (SF-PPP)}{7}{subsection.2.8.7}
-\contentsline {subsection}{\numberline {2.8.8}Duel-Epoch, Double-Differencing Model}{7}{subsection.2.8.8}
+\contentsline {subsection}{\numberline {2.8.8}Duel-Epoch, Double-Differencing Model}{8}{subsection.2.8.8}
 \contentsline {subsection}{\numberline {2.8.9}Summary of Algorithms ?}{9}{subsection.2.8.9}
 \contentsline {section}{\numberline {2.9}Proposed Planar Intersection Algorithm}{9}{section.2.9}
 \contentsline {chapter}{\numberline {3}Example Chapter on `Perception' Stuff}{12}{chapter.3}
@@ -55,7 +55,7 @@
 \contentsline {subsubsection}{Pre-Processing}{14}{section*.29}
 \contentsline {paragraph}{Select reference receiver $\alpha $}{14}{section*.30}
 \contentsline {paragraph}{Collect data of one timestep from all receivers}{14}{section*.31}
-\contentsline {paragraph}{Align to reference Epoch time}{14}{section*.32}
+\contentsline {paragraph}{Align to reference Epoch time}{15}{section*.32}
 \contentsline {subsubsection}{Distance Optimisation}{15}{section*.33}
 \contentsline {paragraph}{Average normal Vector}{15}{section*.34}
 \contentsline {paragraph}{Difference in Pseudorange}{15}{section*.35}
@@ -73,6 +73,8 @@
 \contentsline {subsubsection}{Planar Algorithm}{22}{section*.47}
 \contentsline {subsection}{\numberline {4.1.2}Evaluation}{23}{subsection.4.1.2}
 \contentsline {paragraph}{Dilution of Precision}{23}{section*.48}
-\contentsline {chapter}{\numberline {5}Conclusion}{26}{chapter.5}
-\contentsline {chapter}{List of References}{27}{section*.50}
-\contentsline {chapter}{\numberline {A}An Example Appendix}{29}{appendix.A}
+\contentsline {section}{\numberline {4.2}Evaluation}{25}{section.4.2}
+\contentsline {subsubsection}{Fake Satellite Positions}{26}{section*.50}
+\contentsline {chapter}{\numberline {5}Conclusion}{27}{chapter.5}
+\contentsline {chapter}{List of References}{28}{section*.52}
+\contentsline {chapter}{\numberline {A}An Example Appendix}{30}{appendix.A}

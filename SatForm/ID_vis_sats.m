@@ -1,7 +1,7 @@
 %% L Drabsch
 % Identify visible satellites for one timestep
 
-function [VisibleSat,VisSat_LG] = ID_vis_sats(X_ECEF,GS_LLH)
+function [VisibleSat,VisSat_LG,VisibleSat_index] = ID_vis_sats(X_ECEF,GS_LLH)
 
 % INPUT: X_ECEF of satellites-> 3 by n satellites
 %        GS_LLH point on gs -> 3 by 1

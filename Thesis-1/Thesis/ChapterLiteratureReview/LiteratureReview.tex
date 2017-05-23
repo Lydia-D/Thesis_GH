@@ -34,15 +34,34 @@ Unfortunately, low cost GNSS receivers rarely provide official access to the GNS
 
 
 \section{GNSS Satellite Signals}
+There are two sets of signals that are sent from every satellite, the pseudorandom binary sequence (PRN code) and the navigation message. 
+
+The PRN code is intentionally complex to know which cycle is being received
+
+L1 frequency of 1575.42 Mhz  - code phase
+Course Acquisition (C/A) code is transmitted on the L1 frequency as 1.023 MHz signal using a bi-phase shift keying modulation technique.
+Navigation message sent at 50 bits per second  
+
+However the receiver does not know which cycle in the PRN code it is looking at. To resolve this ambiguity (how many 1 ms) requires decoding of the data message and analysing the pattern of bits.
+\url{https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-540-principles-of-the-global-positioning-system-spring-2012/lecture-notes/MIT12_540S12_lec7.pdf}
+
 - civilian GNSS using duel frequency, send CDMA, how decryption works\\
 - what is psudorange?\\
 - what is carrier phase\\
 - clock bias\\
 
 
+%The first row shows a C/A code with 1,023 chips; the total length is 1 ms. The second row shows a navigation data bit that has a data rate of 50 Hz; thus, a data bit is 20 ms long and contains 20 C/A codes. Thirty data bits make a word that is 600 ms long as shown in the third row. Ten words make a subframe that is 6 seconds long as shown in row four. The fifth row shows a page that is 30 seconds long and contains 5 subframes. Twenty-five pages make a complete data set that is 12.5 minutes long as shown in the sixth row. The 25 pages of data can be referred to as a superframe http://read.pudn.com/downloads85/ebook/326017/Fundamentals%20of%20Global%20Positioning%20System%20Receivers/booktext05.pdf (pg77)
 
-
-
+% resources about the signals:
+% http://geoconnect.com.au/gps-signals-l1-l2-l5/
+% http://www.trimble.com/gps_tutorial/dgps-advanced4.aspx
+% https://www.e-education.psu.edu/natureofgeoinfo/c5_p14.html
+% http://what-when-how.com/gps/gps-details/
+% https://www.e-education.psu.edu/geog862/node/1742
+% https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-540-principles-of-the-global-positioning-system-spring-2012/lecture-notes/MIT12_540S12_lec7.pdf
+% http://read.pudn.com/downloads85/ebook/326017/Fundamentals%20of%20Global%20Positioning%20System%20Receivers/booktext05.pdf
+% http://www.navipedia.net/index.php/GPS_Navigation_Message
 
 \section{The GNSS concept}
 The base concept behind identifying the position of something using GNSS is remarkably simple. Satellite W sends out a radio signal at time X and it's position Y which the user received at time Z. The time difference is used to calculate the distance from the satellite's position. With this information from multiple satellites, the position of the user is triangulated. 

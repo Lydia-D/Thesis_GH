@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.3.10)  21 MAY 2017 19:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.3.10)  23 MAY 2017 15:18
 entering extended mode
 **./Thesis.tex
 (Thesis.tex
@@ -1527,7 +1527,7 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 80.
 \openout2 = `FrontMatter/FrontMatter.aux'.
 
  (FrontMatter/FrontMatter.tex (FrontMatter/TitlePage.tex
-<FrontMatter/Figures/USYD_Logo_Colour_Stacked.pdf, id=255, 284.52798pt x 284.52
+<FrontMatter/Figures/USYD_Logo_Colour_Stacked.pdf, id=243, 284.52798pt x 284.52
 798pt>
 File: FrontMatter/Figures/USYD_Logo_Colour_Stacked.pdf Graphic file (type pdf)
  <use FrontMatter/Figures/USYD_Logo_Colour_Stacked.pdf>
@@ -1676,46 +1676,59 @@ Underfull \hbox (badness 10000) in paragraph at lines 16--19
 
 
 
-]
-Underfull \hbox (badness 10000) in paragraph at lines 37--41
+] [3]
+Overfull \hbox (143.63701pt too wide) in paragraph at lines 45--47
+\T1/lmr/m/n/12 analysing the pat-tern of bits. [][]$\T1/lmtt/m/n/12 https : / /
+ ocw . mit . edu / courses / earth-[]atmospheric-[]and-[]planetary-[]sciences /
+$
+ []
+
+
+Overfull \hbox (46.85524pt too wide) in paragraph at lines 45--47
+$\T1/lmtt/m/n/12 12-[]540-[]principles-[]of-[]the-[]global-[]positioning-[]syst
+em-[]spring-[]2012 / lecture-[]notes /$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 48--52
 
  []
 
-[3] [4] [5] [6]
-Underfull \hbox (badness 10000) in paragraph at lines 141--142
+[4] [5] [6]
+Underfull \hbox (badness 10000) in paragraph at lines 160--161
 
  []
 
 [7]
-Underfull \hbox (badness 10000) in paragraph at lines 143--144
+Underfull \hbox (badness 10000) in paragraph at lines 162--163
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 145--146
+Underfull \hbox (badness 10000) in paragraph at lines 164--165
 
  []
 
 [8]
-<ChapterLiteratureReview/overall_singleS_multiR.jpg, id=472, 1782.66pt x 1336.9
+<ChapterLiteratureReview/overall_singleS_multiR.jpg, id=458, 1782.66pt x 1336.9
 95pt>
 File: ChapterLiteratureReview/overall_singleS_multiR.jpg Graphic file (type jpg
 )
  <use ChapterLiteratureReview/overall_singleS_multiR.jpg>
 Package pdftex.def Info: ChapterLiteratureReview/overall_singleS_multiR.jpg use
-d on input line 186.
+d on input line 205.
 (pdftex.def)             Requested size: 303.53267pt x 227.65335pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-<ChapterLiteratureReview/overall_multiS_duelR.jpg, id=473, 1782.66pt x 1336.995
+<ChapterLiteratureReview/overall_multiS_duelR.jpg, id=459, 1782.66pt x 1336.995
 pt>
 File: ChapterLiteratureReview/overall_multiS_duelR.jpg Graphic file (type jpg)
  <use ChapterLiteratureReview/overall_multiS_duelR.jpg>
 Package pdftex.def Info: ChapterLiteratureReview/overall_multiS_duelR.jpg used 
-on input line 194.
+on input line 213.
 (pdftex.def)             Requested size: 303.53267pt x 227.65335pt.
 
 
@@ -1742,22 +1755,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 35--36
  []
 
 [13] [14]
-<ChapterPerception/Figures/solve_distances.jpg, id=522, 1782.66pt x 1336.995pt>
+<ChapterPerception/Figures/solve_distances.jpg, id=507, 1782.66pt x 1336.995pt>
 File: ChapterPerception/Figures/solve_distances.jpg Graphic file (type jpg)
 <use ChapterPerception/Figures/solve_distances.jpg>
 Package pdftex.def Info: ChapterPerception/Figures/solve_distances.jpg used on 
-input line 82.
+input line 83.
 (pdftex.def)             Requested size: 303.53267pt x 227.65335pt.
  [15] [16 <./ChapterPerception/Figures/solve_distances.jpg>] [17]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 151.
+(Font)              <10.95> on input line 152.
 
-<ChapterPerception/Figures/pointonplane.jpg, id=550, 2055.68pt x 1541.76pt>
+<ChapterPerception/Figures/pointonplane.jpg, id=536, 2055.68pt x 1541.76pt>
 File: ChapterPerception/Figures/pointonplane.jpg Graphic file (type jpg)
 
 <use ChapterPerception/Figures/pointonplane.jpg>
 Package pdftex.def Info: ChapterPerception/Figures/pointonplane.jpg used on inp
-ut line 153.
+ut line 154.
 (pdftex.def)             Requested size: 303.53267pt x 227.63112pt.
 
 
@@ -1778,42 +1791,54 @@ Chapter 4.
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 42--43
+Underfull \hbox (badness 10000) in paragraph at lines 49--50
 
  []
 
-[22] <ChapterExperiments/Figures/GDOP.png, id=589, 562.1pt x 451.6875pt>
+[22] <ChapterExperiments/Figures/GDOP.png, id=575, 562.1pt x 451.6875pt>
 File: ChapterExperiments/Figures/GDOP.png Graphic file (type png)
 
 <use ChapterExperiments/Figures/GDOP.png>
 Package pdftex.def Info: ChapterExperiments/Figures/GDOP.png used on input line
- 71.
+ 78.
 (pdftex.def)             Requested size: 303.53267pt x 243.90761pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 77--86
+Underfull \hbox (badness 10000) in paragraph at lines 84--88
 
  []
 
-[23] [24 <./ChapterExperiments/Figures/GDOP.png>])) [25]
+[23] [24 <./ChapterExperiments/Figures/GDOP.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 118--123
+
+ []
+
+[25]
+<ChapterExperiments/Figures/orbit_distance.pdf, id=592, 963.6pt x 542.025pt>
+File: ChapterExperiments/Figures/orbit_distance.pdf Graphic file (type pdf)
+
+<use ChapterExperiments/Figures/orbit_distance.pdf>
+Package pdftex.def Info: ChapterExperiments/Figures/orbit_distance.pdf used on 
+input line 136.
+(pdftex.def)             Requested size: 303.53267pt x 136.76035pt.
+)) [26 <./ChapterExperiments/Figures/orbit_distance.pdf>]
 \openout2 = `ChapterConclusion/Conclusion.aux'.
 
-
-(ChapterConclusion/Conclusion.tex
+ (ChapterConclusion/Conclusion.tex
 Chapter 5.
-) [26
+) [27
 
 
 
-] (Thesis.bbl [27
+] (Thesis.bbl [28
 
 
 
-]) [28]
+]) [29]
 \openout2 = `AppendixSomething/Something.aux'.
 
  (AppendixSomething/Something.tex
 Appendix A.
-) [29
+) [30
 
 
 ]
@@ -1832,15 +1857,9 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 116.
 (ChapterConclusion/Conclusion.aux) (AppendixSomething/Something.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 116.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 116.
+Package rerunfilecheck Info: File `Thesis.out' has not changed.
+(rerunfilecheck)             Checksum: FDFB4959504A16C04784AAEDB7293A42;4182.
 
-
-Package rerunfilecheck Warning: File `Thesis.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `Thesis.out':
-(rerunfilecheck)             Before: FCF447CA10387C493FA1F86B5789864C;4415
-(rerunfilecheck)             After:  0CB237983C92D0E110389B63126C0EF6;4120.
 
 LaTeX Warning: There were undefined references.
 
@@ -1851,56 +1870,39 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 116.
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 22381 strings out of 493634
- 380677 string characters out of 3135239
- 476714 words of memory out of 3000000
- 25115 multiletter control sequences out of 15000+200000
+ 22376 strings out of 493634
+ 380768 string characters out of 3135239
+ 476256 words of memory out of 3000000
+ 25110 multiletter control sequences out of 15000+200000
  69113 words of font info for 58 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
  42i,13n,43p,10420b,10777s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{table.A.2} has been referenced but 
-does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{table.A.1} has been referenced but does not exist, 
-replaced by a fixed one
-
-pdfTeX warning (dest): name{section.A.4} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.A.3} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.A.2} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.A.1} has been referenced but does not exist
-, replaced by a fixed one
-
-{C:/Users/Lydia/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mathit.
-enc}{C:/Users/Lydia/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-rm.
-enc}{C:/Users/Lydia/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm-mat
-hex.enc}{C:/Users/Lydia/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/lm/lm
--mathsy.enc}{C:/Users/Lydia/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/l
-m/lm-ec.enc}<C:/Users/Lydia/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publi
-c/lm/lmbx10.pfb><C:/Users/Lydia/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/p
-ublic/lm/lmbx12.pfb><C:/Users/Lydia/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
-e1/public/lm/lmbx8.pfb><C:/Users/Lydia/AppData/Local/Programs/MiKTeX 2.9/fonts/
-type1/public/lm/lmex10.pfb><C:/Users/Lydia/AppData/Local/Programs/MiKTeX 2.9/fo
-nts/type1/public/lm/lmmi10.pfb><C:/Users/Lydia/AppData/Local/Programs/MiKTeX 2.
-9/fonts/type1/public/lm/lmmi12.pfb><C:/Users/Lydia/AppData/Local/Programs/MiKTe
-X 2.9/fonts/type1/public/lm/lmmi6.pfb><C:/Users/Lydia/AppData/Local/Programs/Mi
-KTeX 2.9/fonts/type1/public/lm/lmmi8.pfb><C:/Users/Lydia/AppData/Local/Programs
-/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/Users/Lydia/AppData/Local/Progr
-ams/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Users/Lydia/AppData/Local/Pr
-ograms/MiKTeX 2.9/fonts/type1/public/lm/lmr6.pfb><C:/Users/Lydia/AppData/Local/
-Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Users/Lydia/AppData/Loca
-l/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmri12.pfb><C:/Users/Lydia/AppData/
-Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Users/Lydia/AppD
-ata/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb><C:/Users/Lydia/A
-ppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmtt12.pfb>
-Output written on Thesis.pdf (43 pages, 1172661 bytes).
+{C:/Users/Lydia/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvi
+ps/lm/lm-mathit.enc}{C:/Users/Lydia/AppData/Local/Programs/MiKTeX 2.9/fonts/enc
+/dvips/lm/lm-rm.enc}{C:/Users/Lydia/AppData/Local/Programs/MiKTeX 2.9/fonts/enc
+/dvips/lm/lm-mathex.enc}{C:/Users/Lydia/AppData/Local/Programs/MiKTeX 2.9/fonts
+/enc/dvips/lm/lm-mathsy.enc}{C:/Users/Lydia/AppData/Local/Programs/MiKTeX 2.9/f
+onts/enc/dvips/lm/lm-ec.enc}<C:/Users/Lydia/AppData/Local/Programs/MiKTeX 2.9/f
+onts/type1/public/lm/lmbx10.pfb><C:/Users/Lydia/AppData/Local/Programs/MiKTeX 2
+.9/fonts/type1/public/lm/lmbx12.pfb><C:/Users/Lydia/AppData/Local/Programs/MiKT
+eX 2.9/fonts/type1/public/lm/lmbx8.pfb><C:/Users/Lydia/AppData/Local/Programs/M
+iKTeX 2.9/fonts/type1/public/lm/lmex10.pfb><C:/Users/Lydia/AppData/Local/Progra
+ms/MiKTeX 2.9/fonts/type1/public/lm/lmmi10.pfb><C:/Users/Lydia/AppData/Local/Pr
+ograms/MiKTeX 2.9/fonts/type1/public/lm/lmmi12.pfb><C:/Users/Lydia/AppData/Loca
+l/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmmi6.pfb><C:/Users/Lydia/AppData/L
+ocal/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmmi8.pfb><C:/Users/Lydia/AppDat
+a/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/Users/Lydia/App
+Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Users/Lydia/
+AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr6.pfb><C:/Users/Lydi
+a/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C:/Users/Ly
+dia/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmri12.pfb><C:/User
+s/Lydia/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/
+Users/Lydia/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb><
+C:/Users/Lydia/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmtt12.p
+fb>
+Output written on Thesis.pdf (44 pages, 1436300 bytes).
 PDF statistics:
- 744 PDF objects out of 1000 (max. 8388607)
- 181 named destinations out of 1000 (max. 500000)
- 535 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 751 PDF objects out of 1000 (max. 8388607)
+ 180 named destinations out of 1000 (max. 500000)
+ 522 words of extra memory for PDF output out of 10000 (max. 10000000)
 

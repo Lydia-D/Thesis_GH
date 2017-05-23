@@ -10,24 +10,14 @@ function [Loc_lin,clockbias] = alloptimise(range_com,Sat_com, Abs_com)
 % epoch
 % Abs_com = location of receivers as calculated in ECEF frame m x [x,y,z]
 
-%% calculate normal vectors from each recevier to each satellite
-% & calculate average normal vector for each satellite
-% 3D matrix? - need to average across 
-% for vector from receiver to satellite-> sat-rec
-    numSat = size(Sat_com,1);
-    numRec = size(Abs_com,1);
-%     all_norm_vecs = zeros([numRec,3,numSat]);
-%     for isat = 1:numSat
-%         temp = repmat(Sat_com(isat,:),[numRec,1])-Abs_com;
-%         all_norm_vecs(:,:,isat) = normalise(temp);
-%         %avg_norm(isat,:) = mean(all_norm_vecs(:,:,isat),1);
-%         %select = ceil(numRec*rand(1));
-%         select = 1;
-%         avg_norm(isat,:) = all_norm_vecs(select,:,isat);
-% 
-%     end
+numSat = size(Sat_com,1);
+numRec = size(Abs_com,1);
+
+%% calculate normal vectors from approximate location to each sat
+
+
     
-    avg_norm = normalise(Sat_com-ones(numSat,1)*Abs_com(1,:));
+    avg_norm = normalise2(Sat_com-ones(numSat,1)*Abs_com(1,:));
     
     % just have one set of vectors from a rough location
 

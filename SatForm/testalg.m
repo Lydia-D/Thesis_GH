@@ -23,9 +23,14 @@ GS_LLH = [-deg2rad(33);deg2rad(151);0];
 X_alpha_ECEF = llhgc2ecef(GS_LLH);  % global
 Sats_all_ECEF = squeeze(X_ECEFstore(:,1,:));
 
-[VisibleSat,VisSat_LG_pol] = ID_vis_sats(Sats_all_ECEF,GS_LLH);
+el = deg2rad([42,74,55,33]);
+az = [0.1,pi/2+0.1,pi+0.1,3*pi/2+0.1];
+allSats = sat_ned2ecef(el,az,GS_LLH);
+allSats = allSats';
+
+%[VisibleSat,VisSat_LG_pol] = ID_vis_sats(Sats_all_ECEF,GS_LLH);
 %% edit how many sats were picked up
-allSats = VisibleSat(:,:)'; %3 by numSat
+%allSats = VisibleSat(:,:)'; %3 by numSat
 
 numSat = size(allSats,1);
 
@@ -37,11 +42,11 @@ end
 
 
 %% True locations of all receviers
-numRec = 5;
-Rec_dispersion = 10; % in meters, how far apart to have the receivers
-Rec_displacement = Rec_dispersion*rand([3,numRec-1]);
-%numRec = 2;
-%Rec_displacement = [0;0;10000];
+% numRec = 5;
+% Rec_dispersion = 10; % in meters, how far apart to have the receivers
+% Rec_displacement = Rec_dispersion*rand([3,numRec-1]);
+numRec = 2;
+Rec_displacement = [0;0;10];
 allRec = [X_alpha_ECEF,X_alpha_ECEF*ones(1,numRec-1)+Rec_displacement];
 allRec = allRec';
 
@@ -50,7 +55,7 @@ allRec = allRec';
 % all_range = matrix m receivers by n satellites
 all_range = []; % columns = each satellite: rows = between each receiver
 for isat=1:numSat
-    all_range = [all_range,calcrange(allRec,allSats(isat,:))];
+    all_range = [all_range,calcrange2(allRec,allSats(isat,:))];
 end
 % add constant error (based on time) for each satellite based on time
 % in seconds 1 by numSats
@@ -60,8 +65,9 @@ Isoph = (7+3*rand([1,numSat]))/c; % ~5 m of errror (time = 5/c)
 clockbias_sat = (1.5+0.5*rand([1,numSat]))/c;
 sat_error_time = Tropo+Isoph+clockbias_sat ;
 clockbias_rec = 10^(-6)+10*rand([numRec,1]);  %(1+0.5*rand([numRec,1]))/c; % microsecond errors
-
-range_error = all_range+0*rand(size(all_range)) - c*clockbias_rec*ones(1,numSat) + c*ones(numRec,1)*sat_error_time;
+%epoch_diff = c*(10^(-4)*rand(size(all_range)));
+%randomerror = 
+range_error = all_range - c*clockbias_rec*ones(1,numSat) + c*ones(numRec,1)*sat_error_time;
 
 
 %% NLLS

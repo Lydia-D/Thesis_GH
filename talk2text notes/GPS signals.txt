@@ -1,0 +1,17 @@
+Note_2, 22 May 2017
+-------------------
+What the raw GPS signals are: 
+02 ranging codes coarse acquisition code pictures available to the public you do not have access to the Precision code coarse acquisition code also called pseudo random binary sequence pR and Co repeat every millisecond do sequences only match up or strongly correlated there exactly aligned it's satellite transmitter unique pairing code that is the actual encoding for the code division multiple access so that you can recognise the different side lights on the same frequency the code is 1023 bits long and navigation message is modulated on top of a coarse acquisition code 50 bits per second 
+
+navigation code: Uline 
+Three components first component GPS date and time satellite status second part  ephemeris data third part almanac data contains information and status on or satellite location p.m. Second part highly detailed valid for no more than 4 hours third party valid for 180days 
+PRN signal and identify that signal from that satellite and then download ephemeris data. Position fixed from a satellite cannot be calculated until it has an accurate and complete copy of the data low-cost GPS receivers only have one frequency but more expensive receivers had to frequencies so that the ionospheric delay can be measured and removed that is called a dual frequency receiver. 
+
+The ranging code allows receiver to determine the travel time of a radio signal that is the PR and sequence how does the receiver know when the signal is transmitted? 
+ https://www.e-education.psu.edu/natureofgeoinfo/c5_p18.html 
+Timing of transmissions is always known because these satellites have extremely accurate atomic clocks is the time sent as a part of the PRN code. Do I have a problem of integer ambiguity between my receivers.? GPS receiver determines the travel time of a signal from a satellite pairing the pseudo random noise no code it's generating with an identical code in the signal from the satellite it's quiet it's cold until it's 6 up with the satellite code the amount has to slide is equal to the signals travel time they can match but be a little bit out of phase. http://www.trimble.com/gps_tutorial/sub_phases.aspx 
+Code phase GPS comparing pseudo-random Co peppa cycle wit almost and micro second at the speed of light a micro second is 300 metres of error receiver designers have come up with way the signals almost perfectly in face still get 3 to 6 metres of error. 
+
+Display the error in the studio Rangers when you have calculated it show that even with a thousand kilometres of error on a particular signal you can still solve it to millimetre precision. A paragraph carrier phase ambiguity; use code phase techniques which is the pseudo range then use it to get close then use the carrier phase which has a much higher frequency to get it closer but as the carrier phase is more uniform it is harder to count and so introduces and ambiguity. Show an image of Pseudo random code put in a box my travel time or satellite directly overhead travel time is about zero point zero six seconds. Both the receiver and the satellite play The Code at the same time the clock error is part of when that time starts playing it the code coming from the satellite is a little delayed how long is a whole pseudo-random code do you miss it can you have integers of the code. http://www.trimble.com/gps_tutorial/dgps-advanced2.aspx 
+
+Speechnotes :) https://speechnotes.co

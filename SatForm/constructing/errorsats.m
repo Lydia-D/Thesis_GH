@@ -42,7 +42,7 @@ T_equ = 7347737.336;
 GS_LLH = [-deg2rad(33);deg2rad(151);0];
 
 t1 = 0; % at epoch
-t2 = 1; % in seconds after t1
+t2 = 10^-5; % in seconds after t1
 [X_ECIstore,X_ECEFstore,X_LLHGCstore] = keplerorbit3D(ClassPara,[t1;t2],T_equ);
 [VisibleSat1,~] = ID_vis_sats(squeeze(X_ECEFstore(:,1,:)),GS_LLH);
 [VisibleSat2,~] = ID_vis_sats(squeeze(X_ECEFstore(:,2,:)),GS_LLH);
