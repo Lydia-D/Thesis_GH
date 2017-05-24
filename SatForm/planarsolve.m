@@ -24,6 +24,7 @@ function [Loc_lin,clockbias] = planarsolve(range_com,Sat_com,numRec, GS_ECEF)
         all_RHO = [all_RHO;range_com(i+1:end,:)-ones(numRec-i,1)*range_com(i,:)];
     end
 
+    
 
 %% construct Phi matrix -> only fn of num_Rec-> same Phi for all Omega_s
 

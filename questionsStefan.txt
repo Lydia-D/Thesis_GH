@@ -1,0 +1,5 @@
+Questions for stefan
+- Do I include the Matlab code for my simulation in the appendix and refer to it? Do I hand in the .m files at the end?
+- Should I include other relative positioning solutions other than GPS? I was trying to frame it as making the current GPS algorithms more accurate with less external hardware and complexity.
+- How fine the maths should I include?
+- Can you have a look at the contents page please and see if my structure is sound?

@@ -2,6 +2,7 @@
 clear
 clc
 close all
+addpath('./fromspace3')
 constants();
 %% approximate location
 GS_LLH = [-deg2rad(33);deg2rad(151);0]; % sydney
@@ -14,7 +15,7 @@ GS_ECEF = llhgc2ecef(GS_LLH);  % global
 % Rec_dispersion = 10; % in meters, how far apart to have the receivers
 % Rec_displacement = Rec_dispersion*rand([3,numRec-1]);
 numRec = 4;
-Rec_displacement = 100*[5,0,10,0;0,10,0,0;0,0,0,10];   % use NED coords
+Rec_displacement = [5,0,10,0;0,10,0,0;0,0,0,10];   % use NED coords
 Rec_ecef_local = lg2ecef(Rec_displacement,GS_LLH);
 allRec = GS_ECEF*ones(1,numRec)+Rec_ecef_local;
 true_rel_alpha = Rec_displacement(:,2:end)-repmat(Rec_displacement(:,1),[1,3]);
@@ -41,9 +42,9 @@ end
 
 
 %% Calculate range and add errors
-Estruc.satmag = 10^-4;
-Estruc.recmag = 10^-6;
-Estruc.random = 10^-7;
+Estruc.satmag = 10^-2;
+Estruc.recmag = 10^-2;
+Estruc.random = 10^-5;
 range_error = rangesim(allRec,allSat,Estruc);
 
 %% Find Relative positions

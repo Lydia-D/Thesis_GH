@@ -1,6 +1,7 @@
 %% L Drabsch
 % 20/5/17
 % solve for all variables at once/variable number of satellites 
+% not every recevier sees the same satellites
 
 function [Loc_lin,clockbias] = alloptimise_varsat(range_com,Sat_com, Abs_com,rec_index_sats)
 % range_com = pseudoranges at common epoch 
