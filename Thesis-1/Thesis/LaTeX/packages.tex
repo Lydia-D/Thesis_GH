@@ -59,9 +59,9 @@
 % Documentation at http://merkel.zoneo.net/Latex/natbib.php
 %
 % Bibliography styles supported by this template are apa-like (default) and ieee
-\ifthenelse{\equal{\tReferenceStyle}{apa-like}}
-    {\usepackage[square,comma,compress,numbers]{natbib}}   % IEEE-like style
-    {\usepackage[authoryear,round,sort]{natbib}}           % APA-like
+%\ifthenelse{\equal{\tReferenceStyle}{apa-like}}
+%    {\usepackage[square,comma,compress,numbers]{natbib}}   % IEEE-like style
+%    {\usepackage[authoryear,round,sort]{natbib}}           % APA-like
 
 \usepackage[algochapter,vlined,ruled]{algorithm2e}% algorithms / pseudocode
 \SetAlgoSkip{bigskip}
@@ -78,10 +78,10 @@
 \definecolor{urlcolour}{rgb}{0,0,0.6}
 
 % Define link colours for easy editing - change them below for final document...
-\usepackage[colorlinks=true, citecolor=red, linkcolor=blue, urlcolor=blue, bookmarks=true, bookmarksnumbered=true, pdftex, plainpages=false, pdfpagelabels]{hyperref}
+%\usepackage[colorlinks=true, citecolor=red, linkcolor=blue, urlcolor=blue, bookmarks=true, bookmarksnumbered=true, pdftex, plainpages=false, pdfpagelabels]{hyperref}
 
 % !! MUST define all link colours as black for final document
-%\usepackage[colorlinks=true, citecolor=black, linkcolor=black, urlcolor=black, bookmarks=true, bookmarksnumbered=true, pdftex, plainpages=false, pdfpagelabels]{hyperref}
+\usepackage[colorlinks=true, citecolor=black, linkcolor=black, urlcolor=black, bookmarks=true, bookmarksnumbered=true, pdftex, plainpages=false, pdfpagelabels]{hyperref}
 
 \hypersetup{pdfauthor={\tname}, pdftitle={\tdoctype}, pdfsubject={\ttitle},
     pdfkeywords={\tkeywords}}

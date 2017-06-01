@@ -31,7 +31,7 @@
 %%==================== Citation and Reference Style =========================%%
 % Choose a reference style from: {apa-like, ieee} or adjust natbib and
 % bibliography settings yourself if you prefer something else.
-\newcommand{\tReferenceStyle}{ieee}
+%\newcommand{\tReferenceStyle}{ieee}
 
 %%==================== Included Packages ====================================%%
 % If you need to include extra packages, put them into this file; you may want
@@ -76,8 +76,8 @@
 \include{ChapterIntro/Intro}						% Chapter 1
 \include{ChapterLiteratureReview/LiteratureReview}	% Chapter 2
 \include{ChapterPerception/Perception}				% Chapter 3
-\include{ChapterExperiments/Experiments}			% Chapter 5
-\include{ChapterConclusion/Conclusion}				% Chapter 6
+\include{ChapterExperiments/Experiments}			% Chapter 4
+\include{ChapterConclusion/Conclusion}				% Chapter 5
 
 %%==================== List of References ===================================%%
 % Note that the List of References goes after the chapters but before the
@@ -97,12 +97,13 @@
     % used field, and adjusted 'misc' to make more sense for the way I used it.
 
     % Bibliography styles supported by this template are apa-like (default) and ieee
-    \ifthenelse{\equal{\tReferenceStyle}{ieee}}
-        {\bibliographystyle{BibTeX/acfrplainnat}}    % IEEE-like style (or use plainnat)
-        {\bibliographystyle{BibTeX/apalike}}         % APA-like style (or use apalikeAkkaNat)
+    \bibliographystyle{ieeetrans}
+    %\ifthenelse{\equal{\tReferenceStyle}{ieee}}
+        %{\bibliographystyle{BibTeX/acfrplainnat}}    % IEEE-like style (or use plainnat)
+        %{\bibliographystyle{BibTeX/apalike}}         % APA-like style (or use apalikeAkkaNat)
 
     \begin{raggedright}     % because you often get ugly whitespace if justified...
-        \bibliography{BibTeX/library,BibTeX/comprehensive}
+        \bibliography{BibTeX/thesis_bib}
     \end{raggedright}
 
 \end{singlespace}

@@ -14,11 +14,46 @@
 %%=======================================================%%
 
 \section{Background and Motivation}
+Localisation, outdoors GNSS
+- accuracy 
+
+Localisation is an integral part of the modern world.
+
+- GNSS - talk about different constellations then pick GPS as the topic as it is the most avalible atm but galelaio and gps will soon combine
+
+
+
+
+
+
+
 
 \section{Problem Summary}
+- get high drift using dead reckoning in robotics data
+- for outdoor solutions, gps is the easiest solution as it is already setup
+- however due to the high error in accuracy, it doesn't really solve the drift problem small scale, other data is required such as laser beacons, it is only used as global drift correction
+- embedded systems often have minimal computational space/time/processing available 
+- current algorithms that have minimal setup have high computation costs
+- simple differential algorithms have high setup that require access to a known node, or access to realtime error information from the internet
+
+%- has low update rates compared to accelerometer data
+
+what is the problem to be solved?
+
+- find a way to have accurate (how accurate?) localisation data with minimal calibration or setup using low cost receivers and low computational requirements  
+- a system that has requirements for high accuracy typically needs it for between parts of the system in which case there will be a receiver on each part, or be accurate to a specific location in th field, not to the global reference frame. Therefore differencing systems
 
 \section{Principle Contributions}
-
+this is what ive achieved
+ 
+- contribution: description
+\begin{itemize}
+\item I carried out the literature survey in order to identify what areas of GNSS can be built on.
+\item I made the conceptual breakdown of the planar algorithm and the construction of the residuals: It is then solved using the generic solution for an overdetermined, non-homogeneous, linear system using least squares.
+\item I wrote a simulation in Matlab: The simulation calculates the pseudorange from all visible satellites to all receivers and adds randomised error in a controlled way to mimic different types of error. It then implements the epoch alignment and planar algorithm  
+\item I used existing subfunctions as a part of my simulation that I had previously written: The subfunctions were all written as a part of Assignment 2 of the unit of study AERO4701 Space Engineering 3 in Semester 1 2016. The code that was adapted were; coordinate frame transforms, creation of plots in polar and cartesian frames, GPS constellation data, non-linear least squares solution of absolute position using pseudoranges.
+\item I carried out the analysis with influence from my supervisor.
+\end{itemize}
 \section{Outline}
 
 epoch synchrosation followed by two fold optimisation process\\

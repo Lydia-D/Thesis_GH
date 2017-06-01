@@ -1,0 +1,29 @@
+%!TEX root = ../Thesis.tex
+
+\section{Assumptions}
+All the assumptions are based on each other so need a pre-statement
+\subsection{Approximate Location}
+
+
+
+\subsection{Static Receivers}
+All receivers are assumed to be static for the time in between all receivers to get a sample reading. This makes for an easier transform to align the satellite positions to a common epoch. It also ignores the problem of how the pseudorange from each receiver would be sent to either all of the receivers or to a central device for computation and the time delay associated with that. \\
+
+For the dynamic case, it is likely that the data would be a part of a system containing other signals that describe the motion such as dead reckoning. In that case, the location of the receiver at the common epoch time can be back calculated to minimise the dynamic error. The incorporation of moving receivers is an area to explore for future work on the algorithm. However, there are existing algorithms in the literature XX where the relative motion is tracked with sub meter accuracy that may be more appropriate for complex dynamic systems.
+
+
+\subsection{Parallel plane assumption}
+It as assumed for the plane equations that all receivers point to a satellite along the same vector. This is valid for a dispersion of receivers for 10km for an error of XX. This is synonymous to if the satellites were at infinity and all the receiver vectors are parallel to a satellite
+
+
+
+\begin{eqnarray}
+\delta &=& \tan^{-1}\left(\frac{d}{a}\right) \label{Eq:parplane delta}\\
+e &=& 2d\tan\delta \label{Eq: parplane e(d)}\\
+\eqref{Eq:parplane delta} \& \eqref{Eq: parplane e(d)}\Rightarrow e&=&\frac{2d^2}{a}
+\end{eqnarray}
+Where a is the altitude, d is the distance between two receivers and e is the error in the plane created. The worst configuration for error in the vector normal to the plane is if the satellite is directly above the receivers at the smallest distance from the Earth in orbit, $a>20000\;km$. For d=5 km the perpendicular error is 2.5 m
+
+
+
+

@@ -27,29 +27,6 @@ https://www.e-education.psu.edu/geog862/node/1759 - errors in pseduorange
 
 http://www.insidegnss.com/node/2898 - how to get pseudorange from raw data
 
-\subsection{Assumptions}
-\subsubsection{Static Receivers}
-All receivers are static for the time in between all receivers get a GPS lock. This makes for an easier transform to align the satellite positions to a common time. It also ignores the problem of how the pseudorange from each receiver would be sent to either all of the receivers or to a central device for computation and the time delay associated with that. The incorporation of moving receivers is an area to explore for future work on the algorithm.
-
-\subsubsection{Transform asynchronous time}
-any two receivers will not be synchronized. The earliest time between all the receivers will be used as the time reference point. The satellite position in the future time steps were backcalculated to find the difference in the pseudorange. As the time between receivers will be $\approx$ 1 second, this extra distance is only in the vacuum of space and is not affected by potential nonlinear affects such as ionosphere and troposphere errors that affect the speed of light.\\
-
-The error in the normal vector due to the time difference is
-
-There have been many advances in the field, therefore to test the planar algorithm itself it is assumed that the asynchronous time is transformed to a common epoch time.
-
-\subsubsection{Parallel plane assumption}
-It as assumed for the plane equations that all receivers point to a satellite along the same vector. This is valid for a dispersion of receivers for 10km for an error of XX. This is synonymous to if the satellites were at infinity and all the receiver vectors are parallel to a satellite
-
-
-
-\begin{eqnarray}
-\delta &=& \tan^{-1}\left(\frac{d}{a}\right) \label{Eq:parplane delta}\\
-e &=& 2d\tan\delta \label{Eq: parplane e(d)}\\
-\eqref{Eq:parplane delta} \& \eqref{Eq: parplane e(d)}\Rightarrow e&=&\frac{2d^2}{a}
-\end{eqnarray}
-Where a is the altitude, d is the distance between two receivers and e is the error in the plane created. The worst configuration for error in the vector normal to the plane is if the satellite is directly above the receivers at the smallest distance from the Earth in orbit, $a>20000\;km$. For d=5 km the perpendicular error is 2.5 m
-
 
 
 

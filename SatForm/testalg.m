@@ -4,7 +4,7 @@
 close all
 clear
 addpath('./fromspace3')
-plotyes = 0;
+plotyes = 1;
 dt = 0.1; % seconds
 days = 1;
 T_equ = 7347737.336;

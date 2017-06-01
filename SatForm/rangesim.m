@@ -23,10 +23,10 @@ for isat=1:numSat
     all_range = [all_range,calcrange(allRec,allSat(:,isat))];
 end
 
-Sat_error = Estruc.satmag+ Estruc.satmag/10*rand([1,numSat]);
-Rec_error = Estruc.recmag+ Estruc.recmag/10*rand([numRec,1]);
-Rand_error = Estruc.random+Estruc.random/10*rand([numRec,numSat]);
-range_error = all_range + Rand_error*c - c*Rec_error*ones(1,numSat) + c*ones(numRec,1)*Sat_error;
+Sat_error = Estruc.satmag+ Estruc.satmag*10*rand([1,numSat]);
+Rec_error = Estruc.recmag+ Estruc.recmag*10*rand([numRec,1]);
+Rand_error = Estruc.random+Estruc.random*10*rand([numRec,numSat]);
+range_error = all_range + Rand_error*c + c*Rec_error*ones(1,numSat) + c*ones(numRec,1)*Sat_error;
 
 
 end

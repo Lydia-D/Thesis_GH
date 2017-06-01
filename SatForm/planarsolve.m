@@ -25,31 +25,34 @@ function [Loc_lin,clockbias] = planarsolve(range_com,Sat_com,numRec, GS_ECEF)
     end
 
     
-
-%% construct Phi matrix -> only fn of num_Rec-> same Phi for all Omega_s
-
-    Phi = zeros(size(all_RHO,1),numRec-1);
-    %Phi(1:numRec-1,1:numRec-1) = eye(numRec-1);
-    offset = 1;
-    for i = 1:numRec-1
-        Phi(offset:offset+numRec-i-1,i:end) = -1*eye(numRec-i);
-        if i>1
-           Phi(offset:offset+numRec-i-1,i-1) = ones(numRec-i,1);
-        end
-        offset = offset + numRec-i;
-    end
-    
-
-%% Solve for Omega_s for all s
-
-    % calculate pseudoinverse:
-    invPhi = inv(Phi'*Phi)*Phi';
-    % distances from alpha along each normal vector numRec-1 by numSat
-    Omega = zeros(numRec-1,numSat);
-    for isat=1:numSat
-        Omega(:,isat) = invPhi*all_RHO(:,isat);
-    end
+% 
+% %% construct Phi matrix -> only fn of num_Rec-> same Phi for all Omega_s
+% 
+%     Phi = zeros(size(all_RHO,1),numRec-1);
+%     %Phi(1:numRec-1,1:numRec-1) = eye(numRec-1);
+%     offset = 1;
+%     for i = 1:numRec-1
+%         Phi(offset:offset+numRec-i-1,i:end) = -1*eye(numRec-i);
+%         if i>1
+%            Phi(offset:offset+numRec-i-1,i-1) = ones(numRec-i,1);
+%         end
+%         offset = offset + numRec-i;
+%     end
+%     
+% 
+% %% Solve for Omega_s for all s
+% 
+%     % calculate pseudoinverse:
+%     invPhi = inv(Phi'*Phi)*Phi';
+%     % distances from alpha along each normal vector numRec-1 by numSat
+%     Omega = zeros(numRec-1,numSat);
+%     for isat=1:numSat
+%         Omega(:,isat) = invPhi*all_RHO(:,isat);
+%     end
    
+    %% dont optimise
+    Omega = -all_RHO(1:numRec-1,:);
+    
 %% Make Planes and solve for intersection
     % avg_norm is a matrix of normal vectors numSat by x,y,z
     % Omega = matrix of distances from alpha (numRec-1) by numSat

@@ -2,7 +2,13 @@
 % 18/5/17
 % solve for all variables at once ->
 
-function [Loc_lin,clockbias] = alloptimise_transepoch(range_com,Sat_com, Abs_com,X_ECEF_vis,numRec)
+% - the pseudorange is calculated as the time taken from the satellite to the
+% receiver, including the clock bias
+% - each receiver sends its own data to a central device with all the
+% information: pseudoranges from each sat, everyone gets same nav message
+
+
+function [Loc_lin,clockbias] = alloptimise_transepoch(range_com,X_ECEF_meas_vis, Abs_com,X_ECEF_real_vis,numRec,numSat)
 % range_com = pseudoranges at common epoch 
 %       (already accounted for clockbias, rotation of earth, )
 %       -> matrix m receivers by n satellites
@@ -10,13 +16,15 @@ function [Loc_lin,clockbias] = alloptimise_transepoch(range_com,Sat_com, Abs_com
 % epoch
 % Abs_com = location of receivers as calculated in ECEF frame m x [x,y,z]
 
-numSat = size(Sat_com,1);
+% X_ECEF_meas_vis (xyz,time,sat)
+
+%numSat = size(X_ECEF_meas_vis,1);
 
 %% calculate normal vectors from approximate location to each sat
 
 
     % Sat_com -> one timestep at 0
-    avg_norm = normalise2(Sat_com-ones(numSat,1)*Abs_com(1,:));
+    avg_norm = normalise(squeeze(X_ECEF_meas_vis(:,1,:))-Abs_com*ones(1,numSat));
     
     % just have one set of vectors from a rough location
 
@@ -35,8 +43,8 @@ numSat = size(Sat_com,1);
             for isat = 1:numSat
             % transform torec to time at fromrec
             % know location of sats
-            trans_s = (X_ECEF_vis(:,fromrec,isat)- X_ECEF_vis(:,torec,isat));
-            trans_p = -dot(avg_norm(isat,:)',trans_s);
+            trans_s = (X_ECEF_meas_vis(:,fromrec,isat)- X_ECEF_meas_vis(:,torec,isat));
+            trans_p = -dot(avg_norm(:,isat),trans_s);
 %             trans_p = 0;
             diffp = range_com(torec,isat) - (range_com(fromrec,isat)+trans_p);
             all_RHO{isat} = [all_RHO{isat};diffp];
@@ -86,7 +94,7 @@ numSat = size(Sat_com,1);
     planes = zeros(size(Omega,1));
     offset = 0;
     
-    N = [avg_norm,ones(numSat,1)]; % numSats by 4
+    N = [avg_norm',ones(numSat,1)]; % numSats by 4
     
     
     % solve for [b_alpha;xbeta;ybeta;zbeta;b_beta;xgamma...]  PX=D

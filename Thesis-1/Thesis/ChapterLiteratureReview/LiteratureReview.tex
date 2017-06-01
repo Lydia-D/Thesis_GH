@@ -12,18 +12,18 @@
 - why use relative positioning\\
 - knowing where you are positioned is important for data gathering, motion detecting and tracking, path planning\\
 - formation flying, drones\\
-\section{Relative Positioning Technology}
-- line of sight methods\\
-- pre-setup requirements\\
-- long calibration setup?\\
+- data fusion, needed for drift correction
 
-
-- last one being GNSS
-\section{GNSS Operational Components}
+\section{GPS Operational Components}
 \subsection{Space Segment}
 - current GNSS: explain GPS, GLONASS, galelao, chinese one constellations and how it works
 - what orbits are they in and why?: altitude\\
 inbetween the two radiation belts?
+
+The GPS constellation consists of 32 operational satellites in six different orbital planes
+
+
+
 \subsection{User Segment}
 - typical accuracy for civilian accessable gps\\
 - military has more precise stuff\\
@@ -31,12 +31,19 @@ inbetween the two radiation belts?
 Unfortunately, low cost GNSS receivers rarely provide official access to the GNSS raw data. Previous studies have used customised bluetooth headsets or customised android platform mobile phones to investigate algorithms on low-cost GNSS receivers. More expensive receivers do allow raw data to be utilised, however they also provide other mechanisms such as duel frequencies and more accurate clocks, rendering the new algorithm *obtuse*. The mindset of *crowd-sourcing*/customising/flexible technology is changing the way manufactures build GNSS receivers. The new Android OS platform Nougat 7.0 provides the developer raw GNSS data at the software level.  
 
 \subsection{Control Segment}
+On the ground spread all over the world, are control stations that monitor the satellites. 
+
+-Locations of control stations and why they're there
+
+Uses Herrick-Gibbs algorithm to determine the orbit of the satellite. A satellite is tracked over a ground station for a period of time and its position is measured. From three position vectors the velocity vector can be calculated and the orbital parameters are estimated. 
 
 
 \section{GNSS Satellite Signals}
-There are two sets of signals that are sent from every satellite, the pseudorandom binary sequence (PRN code) and the navigation message. 
+There are two sets of signals that are sent from every satellite, the pseudorandom binary sequence (PRN code) and the navigation message.
 
-The PRN code is intentionally complex to know which cycle is being received
+Low cost GPS receivers only have access to  \cite{GPSrec}
+
+The PRN code is intentionally complex to stop jamming 
 
 L1 frequency of 1575.42 Mhz  - code phase
 Course Acquisition (C/A) code is transmitted on the L1 frequency as 1.023 MHz signal using a bi-phase shift keying modulation technique.
@@ -110,7 +117,19 @@ The ionosphere is the upper layer of the atmosphere ranging from 50 to 500 km
 
 \section{Multiple Receivers}
 - problems arising with multiple receivers
-- 
+
+A single sample of pseudoranges from any two receivers will not be taken at the exact same time without a connecting network to implement control. This means that the satellite positions at the time of each signal transmission will be actually different. The primary issue with calculating the change in pseudorange from the 
+
+In \cite{HighAccDiffTrack} they precisely align the epoch by accounting for the differing Sagnac effect between two receivers and accounting for the clock biases of the receivers. The Sagnac effect manifests in the multiple receivers case by the signal propagation time for a measurement taken at $t_2$ would be different than if it was taken at $t_1$, the Earth will have rotated by different amounts. 
+\begin{enumerate}
+\item The clock bias is calculated by solving for the individual absolute position of a receiver using least squares. This is necessary in order to 
+\item  
+\end{enumerate}
+
+
+
+
+
 
 \section{Current GNSS algorithms}
 - just reference implementation papers?
@@ -193,6 +212,9 @@ It uses the assumption that all satellites in the constellation are such a great
 
 
 \section{Proposed Planar Intersection Algorithm}
+- Fit better in the next chapter, put in references to literature
+- these are assumptions, heres why, rationale, these ppl also did it
+
 Following the literature, the two main options for increasing the accuracy is extensive modelling of the errors, or some type of differencing algorithm. Error modelling requires external hardware, internet connection and extra computation time which increases the budget requirements. Whereas 
 
 
