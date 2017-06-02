@@ -1,47 +1,53 @@
 \relax 
 \providecommand\hyper@newdestlabel[2]{}
 \providecommand\zref@newlabel[2]{}
-\@writefile{toc}{\contentsline {chapter}{\numberline {3}Algorithm Solution}{14}{chapter.3}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {3}Algorithm Solution}{18}{chapter.3}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \@writefile{loa}{\addvspace {10\p@ }}
-\newlabel{ch:perception}{{3}{14}{Algorithm Solution}{chapter.3}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.1}Planar Intersection Algorithm}{14}{section.3.1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.1}Algorithm}{15}{subsection.3.1.1}}
-\@writefile{toc}{\contentsline {subsubsection}{Pre-Processing}{15}{section*.26}}
-\@writefile{toc}{\contentsline {paragraph}{Select reference receiver $\alpha $}{15}{section*.27}}
-\@writefile{toc}{\contentsline {paragraph}{Collect data of one timestep from all receivers}{15}{section*.28}}
-\newlabel{timetransform}{{3.1.1}{15}{Align to reference Epoch time}{section*.29}{}}
-\@writefile{toc}{\contentsline {paragraph}{Align to reference Epoch time}{15}{section*.29}}
-\@writefile{toc}{\contentsline {subsubsection}{Distance Optimisation}{15}{section*.30}}
-\@writefile{toc}{\contentsline {paragraph}{Average normal Vector}{15}{section*.31}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces text\relax }}{16}{figure.caption.34}}
-\newlabel{key}{{3.1}{16}{text\relax }{figure.caption.34}{}}
-\@writefile{toc}{\contentsline {paragraph}{Difference in Pseudorange}{16}{section*.32}}
-\@writefile{toc}{\contentsline {paragraph}{Optimise Pseudorange}{16}{section*.33}}
-\@writefile{toc}{\contentsline {subsubsection}{Point Optimisation}{17}{section*.35}}
-\@writefile{toc}{\contentsline {paragraph}{Create Planes}{17}{section*.36}}
-\newlabel{genplane}{{3.6}{17}{Create Planes}{equation.3.1.6}{}}
-\newlabel{Eq:f}{{3.10}{18}{Create Planes}{equation.3.1.10}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.2}{\ignorespaces Find position $f_\omega ^s$ on the plane\relax }}{19}{figure.caption.37}}
-\newlabel{fig:pointonplane}{{3.2}{19}{Find position $f_\omega ^s$ on the plane\relax }{figure.caption.37}{}}
-\@writefile{toc}{\contentsline {paragraph}{Solve for Intersection}{19}{section*.38}}
-\newlabel{Eq: P with alphat}{{3.22}{20}{Solve for Intersection}{equation.3.1.22}{}}
+\newlabel{ch:perception}{{3}{18}{Algorithm Solution}{chapter.3}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.1}Proposed Planar Intersection Algorithm}{19}{section.3.1}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces 2D representation\relax }}{19}{figure.caption.24}}
+\newlabel{fig:overall_singleS_multiR}{{3.1}{19}{2D representation\relax }{figure.caption.24}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.2}{\ignorespaces \relax }}{20}{figure.caption.25}}
+\newlabel{fig:overall_multiS_duelR}{{3.2}{20}{\relax }{figure.caption.25}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {3.2}Assumptions}{20}{section.3.2}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.2.1}Approximate Location}{20}{subsection.3.2.1}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.2.2}Static Receivers}{20}{subsection.3.2.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.3}Transform asynchronous time}{21}{subsection.3.2.3}}
-\newlabel{Eq:deltarho}{{3.27}{22}{Transform asynchronous time}{equation.3.2.25}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.3}{\ignorespaces Vector Epoch Synchronisation\relax }}{23}{figure.caption.39}}
-\newlabel{Fig:epochsync}{{3.3}{23}{Vector Epoch Synchronisation\relax }{figure.caption.39}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.4}Parallel plane assumption}{24}{subsection.3.2.4}}
-\newlabel{Eq:parplane delta}{{3.30}{24}{Parallel plane assumption}{equation.3.2.30}{}}
-\newlabel{Eq: parplane e(d)}{{3.31}{24}{Parallel plane assumption}{equation.3.2.30}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.3}Summary}{24}{section.3.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.3}Parallel plane assumption}{21}{subsection.3.2.3}}
+\newlabel{Eq:parplane delta}{{3.2}{21}{Parallel plane assumption}{equation.3.2.2}{}}
+\newlabel{Eq: parplane e(d)}{{3.3}{21}{Parallel plane assumption}{equation.3.2.2}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.3}Epoch Alignment}{22}{section.3.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.1}Satellite Time}{22}{subsection.3.3.1}}
+\newlabel{Eq:deltarho}{{3.8}{22}{Satellite Time}{equation.3.3.6}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.3}{\ignorespaces Vector Epoch Synchronisation\relax }}{24}{figure.caption.26}}
+\newlabel{Fig:epochsync}{{3.3}{24}{Vector Epoch Synchronisation\relax }{figure.caption.26}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.4}Planar Intersection Algorithm}{25}{section.3.4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.1}Algorithm}{26}{subsection.3.4.1}}
+\@writefile{toc}{\contentsline {subsubsection}{Pre-Processing}{26}{section*.27}}
+\@writefile{toc}{\contentsline {paragraph}{Select reference receiver $\alpha $}{26}{section*.28}}
+\@writefile{toc}{\contentsline {paragraph}{Collect data of one timestep from all receivers}{26}{section*.29}}
+\newlabel{timetransform}{{3.4.1}{26}{Align to reference Epoch time}{section*.30}{}}
+\@writefile{toc}{\contentsline {paragraph}{Align to reference Epoch time}{26}{section*.30}}
+\@writefile{toc}{\contentsline {subsubsection}{Distance Optimisation}{26}{section*.31}}
+\@writefile{toc}{\contentsline {paragraph}{Average normal Vector}{26}{section*.32}}
+\@writefile{toc}{\contentsline {paragraph}{Difference in Pseudorange}{26}{section*.33}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.4}{\ignorespaces text\relax }}{27}{figure.caption.35}}
+\newlabel{key}{{3.4}{27}{text\relax }{figure.caption.35}{}}
+\@writefile{toc}{\contentsline {paragraph}{Optimise Pseudorange}{27}{section*.34}}
+\@writefile{toc}{\contentsline {subsubsection}{Point Optimisation}{28}{section*.36}}
+\@writefile{toc}{\contentsline {paragraph}{Create Planes}{28}{section*.37}}
+\newlabel{genplane}{{3.16}{28}{Create Planes}{equation.3.4.16}{}}
+\newlabel{Eq:f}{{3.20}{29}{Create Planes}{equation.3.4.20}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.5}{\ignorespaces Find position $f_\omega ^s$ on the plane\relax }}{30}{figure.caption.38}}
+\newlabel{fig:pointonplane}{{3.5}{30}{Find position $f_\omega ^s$ on the plane\relax }{figure.caption.38}{}}
+\@writefile{toc}{\contentsline {paragraph}{Solve for Intersection}{30}{section*.39}}
+\newlabel{Eq: P with alphat}{{3.32}{31}{Solve for Intersection}{equation.3.4.32}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.5}Summary}{31}{section.3.5}}
 \@setckpt{ChapterPerception/Perception}{
-\setcounter{page}{25}
-\setcounter{equation}{32}
-\setcounter{enumi}{0}
+\setcounter{page}{32}
+\setcounter{equation}{33}
+\setcounter{enumi}{2}
 \setcounter{enumii}{0}
 \setcounter{enumiii}{0}
 \setcounter{enumiv}{0}
@@ -49,12 +55,12 @@
 \setcounter{mpfootnote}{0}
 \setcounter{part}{0}
 \setcounter{chapter}{3}
-\setcounter{section}{3}
+\setcounter{section}{5}
 \setcounter{subsection}{0}
 \setcounter{subsubsection}{0}
 \setcounter{paragraph}{0}
 \setcounter{subparagraph}{0}
-\setcounter{figure}{3}
+\setcounter{figure}{5}
 \setcounter{table}{0}
 \setcounter{parentequation}{0}
 \setcounter{thmt@dummyctr}{0}
@@ -73,7 +79,7 @@
 \setcounter{algocfproc}{0}
 \setcounter{algocf}{0}
 \setcounter{lstnumber}{1}
-\setcounter{Item}{0}
+\setcounter{Item}{2}
 \setcounter{Hfootnote}{0}
 \setcounter{bookmark@seq@number}{55}
 \setcounter{r@tfl@t}{0}

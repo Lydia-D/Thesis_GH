@@ -1,0 +1,84 @@
+%!TEX root = ../Thesis.tex
+
+\section{Current GNSS algorithms}
+- just reference implementation papers?
+- algorithms to make it more accurate\\
+- use for motion tracking\\
+- performance vs cost trade off\\
+(http://ieeexplore.ieee.org.ezproxy1.library.usyd.edu.au/document/7530542/)
+\subsection{Standard Positioning Service}
+- single frequency and multi frequency to remove atmospheric affects
+\subsection{Differential GPS}
+
+
+- explain what it is\\
+- what setup is required \\
+- abs vs rel \\
+- degree of accuracy
+\subsection{WAAS DGPS}
+
+\subsection{SBAS  ?}
+
+\subsection{Real Time Kinematic}
+
+\subsection{Post Processing Algorithm}
+
+\subsection{Single Frequency Precise Point Positioning (SF-PPP)}
+Rademakers \textcolor{red}{how to say reference?} at University of Delft in the Netherlands developed a solution for finding the absolute position in open areas to a horizontal accuracy of 0.5 m. It uses a single frequency, single antenna low cost GPS receiver by connecting to the internet and using real time information to model all errors. The errors they corrected with the potential improvements are outlined in Table \ref{Table:SFPPP error table}. 
+\begin{table}
+\centering
+\caption{Error Components and Potential Improvements for SF-PPP}
+\label{Table:SFPPP error table}
+\begin{tabular}{|l|l|}
+\hline
+\textbf{Error component} &\textbf{ Potential Improvement} \\\hline
+ Ionosphere: Klobuchar model & 7 m \\\hline
+ Troposphere: Saastamoinen model & 2.5 m \\\hline
+Ephemeris data &  1 m \\\hline
+ Satellite clock drift & 1.5 m \\\hline
+ Differential code bias & 50 cm \\\hline
+ Phase windup: rotation of the antenna & dm \\\hline
+ Sagnac effect & 30 m \\\hline
+ ROA: satellite orbit correction & up to 10 cm \\\hline
+ Relativistic clock correction & up to 21 m \\\hline
+ Moon-Earth interaction & 5cm (Hor) and 30 cm (Ver)\\\hline
+\end{tabular}
+\end{table}
+
+
+\subsection{Duel-Epoch, Double-Differencing Model} \label{DEDD}
+In the paper by the Institute of Software Integrated Systems, Vanderbilt University called \textit{High-Accuracy Differential Tracking of Low-Cost GPS Receivers}, Hedgecock and party developed a new algorithm for relative motion tracking for multiple receivers. They used low cost GPS receivers with access to raw measurement data to produce centimeter-scale tracking accuracy. Each receiver was shared the whole networks data and ran the localisation algorithm independently to avoid having a single point of failure.\\
+
+The algorithm uses the change in carrier phase through time of each receiver to estimate the change in relative ranges between a satellite and two receivers. It does not require a reference satellite, a reference node or an integer ambiguity solution. It does require the clock bias for each receiver at each point in time as solved for by non-linear least squares for the absolute position before running the algorithm itself. To reiterate, it does not directly solve for the relative position but the relative motion. However, neither of the initial positions of the receivers need to be precisely known in order for the relative motion to be accurate. Due to the time dependency, consistent satellite locks of at least four satellites are required, otherwise reinitialisation must occur. The calculated change was projected onto the unit direction vector from receiver to satellite. The system of these tracking equations was solved via least squares optimisation. \\
+
+It uses the assumption that all satellites in the constellation are such a great distance from the surface of the Earth that the unit vector from both receivers are parallel to each individual satellite, as long as it is in the same geographical region. How far apart the receivers can be for this assumption to hold was not stated.\\ 
+
+
+
+
+- how many receivers?\\
+- why and how it aligns epoch\\
+- uses difference in time for a single receiver to find change in motion.
+
+
+
+- have this one last as it is the most similar\\
+- needs instantaneous relative distance for first point, to speed up processing and make the first few time steps more accurate, also when locking onto new satellites
+
+
+\subsection{Summary of Algorithms ?}
+
+% types of algorithms making gps more accurate: table with columns = types of analysis, rows= types of algorithms
+- dynamic tracking (need temporal measurements) vs static measurement - no temporal\\
+- post processing vs pre-processing vs realtime\\
+- ground structure vs free standing\\
+- absolute vs relative\\
+- accuracy (how much)\\
+- computation time/space required\\
+- what error is each method removing\\
+- what piece of data it needs (if raw)\\
+- calibration required\\
+- robustness -> if a satellite goes out of view does it need to re-calibrate? passing information between receivers-> is one a reference? single point of failure
+
+
+

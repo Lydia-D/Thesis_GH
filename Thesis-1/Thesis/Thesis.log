@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.3.10)  1 JUN 2017 00:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.3.10)  2 JUN 2017 23:49
 entering extended mode
 **./Thesis.tex
 (Thesis.tex
@@ -1551,44 +1551,44 @@ File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 
 ] (FrontMatter/Dedication.tex)
 [4] (Thesis.toc
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 12.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 10.
 
 ("C:\Users\Lydia\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\ot1lmr.fd"
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 12.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 10.
 
 ("C:\Users\Lydia\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\omllmm.fd"
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 12.
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 10.
 
 
 ("C:\Users\Lydia\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\omslmsy.fd"
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 12.
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 10.
 
 
 ("C:\Users\Lydia\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\omxlmex.fd"
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 12.
+(Font)              <12> on input line 10.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 12.
+(Font)              <8> on input line 10.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 12.
-LaTeX Font Info:    Try loading font information for U+msa on input line 12.
+(Font)              <6> on input line 10.
+LaTeX Font Info:    Try loading font information for U+msa on input line 10.
 
 ("C:\Users\Lydia\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 12.
+LaTeX Font Info:    Try loading font information for U+msb on input line 10.
 ("C:\Users\Lydia\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for TS1+lmr on input line 12.
+LaTeX Font Info:    Try loading font information for TS1+lmr on input line 10.
 ("C:\Users\Lydia\AppData\Local\Programs\MiKTeX 2.9\tex\latex\lm\ts1lmr.fd"
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -1613,26 +1613,15 @@ File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
  [9
 
 
-] (Thesis.loa)
-\tf@loa=\write9
-\openout9 = `Thesis.loa'.
-
- [10
-
-
-] (Thesis.loe)
-[11
-
-
 ] (FrontMatter/Nomenclature.tex
 Overfull \hbox (17.17133pt too wide) in paragraph at lines 10--13
 [] 
  []
 
-) [12
+) [10
 
 
-] (FrontMatter/Glossary.tex) [13
+] (FrontMatter/Glossary.tex) [11
 
 
 ])
@@ -1655,100 +1644,133 @@ Underfull \hbox (badness 10000) in paragraph at lines 62--64
 
  (ChapterLiteratureReview/LiteratureReview.tex
 Chapter 2.
-[4
+(ChapterLiteratureReview/GPSOperationalComponents.tex [4
+
+
+
+] [5])
+(ChapterLiteratureReview/Signals.tex
+
+LaTeX Warning: Citation `postprocessing multi' on page 6 undefined on input lin
+e 4.
+
+[6]
+Overfull \hbox (387.98041pt too wide) in paragraph at lines 23--24
+[][][]$\T1/lmtt/m/n/12 https : / / ocw . mit . edu / courses / earth-[]atmosphe
+ric-[]and-[]planetary-[]sciences / 12-[]540-[]principles-[]of-[]the-[]global-[]
+positioning-[]system-[]spring-[]2012 /$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--29
+
+ []
+
+[7]) (ChapterLiteratureReview/Trilateration.tex
+<ChapterLiteratureReview/trilateration.pdf, id=468, 963.6pt x 542.025pt>
+File: ChapterLiteratureReview/trilateration.pdf Graphic file (type pdf)
+
+<use ChapterLiteratureReview/trilateration.pdf>
+Package pdftex.def Info: ChapterLiteratureReview/trilateration.pdf used on inpu
+t line 15.
+(pdftex.def)             Requested size: 303.53267pt x 170.7305pt.
+
+<ChapterLiteratureReview/trilaterationtime.pdf, id=469, 722.7pt x 542.025pt>
+File: ChapterLiteratureReview/trilaterationtime.pdf Graphic file (type pdf)
+
+<use ChapterLiteratureReview/trilaterationtime.pdf>
+Package pdftex.def Info: ChapterLiteratureReview/trilaterationtime.pdf used on 
+input line 22.
+(pdftex.def)             Requested size: 303.53267pt x 227.64894pt.
+)
+(ChapterLiteratureReview/ErrorSources.tex [8 <./ChapterLiteratureReview/trilate
+ration.pdf>] [9 <./ChapterLiteratureReview/trilaterationtime.pdf>] [10]
+[11]) (ChapterLiteratureReview/MultipleReceivers.tex [12])
+(ChapterLiteratureReview/CurrentGNSSAlgorithms.tex [13]
+Underfull \hbox (badness 10000) in paragraph at lines 50--51
+
+ []
+
+[14]
+Underfull \hbox (badness 10000) in paragraph at lines 52--53
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 54--55
+
+ []
+
+[15]) (ChapterLiteratureReview/LitSummary.tex) [16]) [17]
+\openout2 = `ChapterPerception/Perception.aux'.
+
+
+(ChapterPerception/Perception.tex
+Chapter 3.
+[18
 
 
 
 ]
-Overfull \hbox (48.74965pt too wide) in paragraph at lines 34--35
-[]\T1/lmr/m/n/12 Low cost GPS re-ceivers only have ac-cess to [[]] 
- []
-
-
-Overfull \hbox (143.63701pt too wide) in paragraph at lines 42--44
-\T1/lmr/m/n/12 analysing the pat-tern of bits. [][]$\T1/lmtt/m/n/12 https : / /
- ocw . mit . edu / courses / earth-[]atmospheric-[]and-[]planetary-[]sciences /
-$
- []
-
-
-Overfull \hbox (46.85524pt too wide) in paragraph at lines 42--44
-$\T1/lmtt/m/n/12 12-[]540-[]principles-[]of-[]the-[]global-[]positioning-[]syst
-em-[]spring-[]2012 / lecture-[]notes /$
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 45--49
-
- []
-
-[5] [6] [7] [8]
-Underfull \hbox (badness 10000) in paragraph at lines 157--158
-
- []
-
-[9]
-Underfull \hbox (badness 10000) in paragraph at lines 159--160
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 161--162
-
- []
-
-[10]
-<ChapterLiteratureReview/overall_singleS_multiR.jpg, id=486, 1782.66pt x 1336.9
+<ChapterLiteratureReview/overall_singleS_multiR.jpg, id=553, 1782.66pt x 1336.9
 95pt>
 File: ChapterLiteratureReview/overall_singleS_multiR.jpg Graphic file (type jpg
 )
  <use ChapterLiteratureReview/overall_singleS_multiR.jpg>
 Package pdftex.def Info: ChapterLiteratureReview/overall_singleS_multiR.jpg use
-d on input line 205.
+d on input line 36.
 (pdftex.def)             Requested size: 303.53267pt x 227.65335pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-<ChapterLiteratureReview/overall_multiS_duelR.jpg, id=487, 1782.66pt x 1336.995
+<ChapterLiteratureReview/overall_multiS_duelR.jpg, id=554, 1782.66pt x 1336.995
 pt>
 File: ChapterLiteratureReview/overall_multiS_duelR.jpg Graphic file (type jpg)
  <use ChapterLiteratureReview/overall_multiS_duelR.jpg>
 Package pdftex.def Info: ChapterLiteratureReview/overall_multiS_duelR.jpg used 
-on input line 213.
+on input line 44.
 (pdftex.def)             Requested size: 303.53267pt x 227.65335pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[11]) [12 <./ChapterLiteratureReview/overall_singleS_multiR.jpg>] [13 <./Chapte
-rLiteratureReview/overall_multiS_duelR.jpg>]
-\openout2 = `ChapterPerception/Perception.aux'.
+[19 <./ChapterLiteratureReview/overall_singleS_multiR.jpg>]
+(ChapterPerception/Assumptions.tex
+Underfull \hbox (badness 10000) in paragraph at lines 10--11
 
- (ChapterPerception/Perception.tex
-Chapter 3.
-(ChapterPerception/Algorithm.tex
+ []
+
+[20 <./ChapterLiteratureReview/overall_multiS_duelR.jpg>])
+(ChapterPerception/EpochAlign.tex
+Underfull \hbox (badness 10000) in paragraph at lines 5--6
+
+ []
+
+[21] [22]
+<ChapterPerception/Figures/epochalignment.pdf, id=587, 963.6pt x 542.025pt>
+File: ChapterPerception/Figures/epochalignment.pdf Graphic file (type pdf)
+
+<use ChapterPerception/Figures/epochalignment.pdf>
+Package pdftex.def Info: ChapterPerception/Figures/epochalignment.pdf used on i
+nput line 43.
+(pdftex.def)             Requested size: 260.17464pt x 216.69714pt.
+)
+(ChapterPerception/Algorithm.tex [23] [24 <./ChapterPerception/Figures/epochali
+gnment.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 4--15
 
  []
 
-[14
-
-
-
-] [15]
-<ChapterPerception/Figures/solve_distances.jpg, id=518, 1782.66pt x 1336.995pt>
+[25]
+<ChapterPerception/Figures/solve_distances.jpg, id=619, 1782.66pt x 1336.995pt>
 File: ChapterPerception/Figures/solve_distances.jpg Graphic file (type jpg)
 <use ChapterPerception/Figures/solve_distances.jpg>
 Package pdftex.def Info: ChapterPerception/Figures/solve_distances.jpg used on 
 input line 60.
 (pdftex.def)             Requested size: 303.53267pt x 227.65335pt.
- [16 <./ChapterPerception/Figures/solve_distances.jpg>] [17]
+ [26] [27 <./ChapterPerception/Figures/solve_distances.jpg>] [28]
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10.95> on input line 129.
 
-<ChapterPerception/Figures/pointonplane.jpg, id=543, 2055.68pt x 1541.76pt>
+<ChapterPerception/Figures/pointonplane.jpg, id=650, 2055.68pt x 1541.76pt>
 File: ChapterPerception/Figures/pointonplane.jpg Graphic file (type jpg)
 
 <use ChapterPerception/Figures/pointonplane.jpg>
@@ -1759,45 +1781,26 @@ ut line 131.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[18] [19 <./ChapterPerception/Figures/pointonplane.jpg>])
-(ChapterPerception/Assumptions.tex
-Underfull \hbox (badness 10000) in paragraph at lines 10--11
+[29] [30 <./ChapterPerception/Figures/pointonplane.jpg>])
 
- []
-
-[20]
-Underfull \hbox (badness 10000) in paragraph at lines 15--16
-
- []
-
-[21]
-<ChapterPerception/Figures/epochalignment.pdf, id=571, 963.6pt x 542.025pt>
-File: ChapterPerception/Figures/epochalignment.pdf Graphic file (type pdf)
-
-<use ChapterPerception/Figures/epochalignment.pdf>
-Package pdftex.def Info: ChapterPerception/Figures/epochalignment.pdf used on i
-nput line 49.
-(pdftex.def)             Requested size: 260.17464pt x 216.69714pt.
- [22] [23 <./ChapterPerception/Figures/epochalignment.pdf>])
-
-LaTeX Warning: Reference `ch:estimation' on page 24 undefined on input line 20.
+LaTeX Warning: Reference `ch:estimation' on page 31 undefined on input line 66.
 
 
-) [24]
+) [31]
 \openout2 = `ChapterExperiments/Experiments.aux'.
 
  (ChapterExperiments/Experiments.tex
 Chapter 4.
-(ChapterExperiments/SectionSimulation.tex [25
+(ChapterExperiments/SectionSimulation.tex [32
 
 
 
-] [26]
+] [33]
 Underfull \hbox (badness 10000) in paragraph at lines 53--54
 
  []
 
-[27] <ChapterExperiments/Figures/GDOP.png, id=634, 562.1pt x 451.6875pt>
+[34] <ChapterExperiments/Figures/GDOP.png, id=695, 562.1pt x 451.6875pt>
 File: ChapterExperiments/Figures/GDOP.png Graphic file (type png)
 
 <use ChapterExperiments/Figures/GDOP.png>
@@ -1809,30 +1812,30 @@ Underfull \hbox (badness 10000) in paragraph at lines 88--92
 
  []
 
-) (ChapterExperiments/SectionExample.tex [28 <./ChapterExperiments/Figures/GDOP
+) (ChapterExperiments/SectionExample.tex [35 <./ChapterExperiments/Figures/GDOP
 .png>]
 Underfull \hbox (badness 10000) in paragraph at lines 34--39
 
  []
 
-[29]
-<ChapterExperiments/Figures/orbit_distance.pdf, id=648, 963.6pt x 542.025pt>
+[36]
+<ChapterExperiments/Figures/orbit_distance.pdf, id=708, 963.6pt x 542.025pt>
 File: ChapterExperiments/Figures/orbit_distance.pdf Graphic file (type pdf)
 
 <use ChapterExperiments/Figures/orbit_distance.pdf>
 Package pdftex.def Info: ChapterExperiments/Figures/orbit_distance.pdf used on 
 input line 52.
 (pdftex.def)             Requested size: 303.53267pt x 136.76035pt.
-)) [30 <./ChapterExperiments/Figures/orbit_distance.pdf>]
+)) [37 <./ChapterExperiments/Figures/orbit_distance.pdf>]
 \openout2 = `ChapterConclusion/Conclusion.aux'.
 
  (ChapterConclusion/Conclusion.tex
 Chapter 5.
-) [31
+) [38
 
 
 
-] (Thesis.bbl) [32
+] (Thesis.bbl) [39
 
 
 
@@ -1841,16 +1844,13 @@ Chapter 5.
 
  (AppendixSomething/Something.tex
 Appendix A.
-) [33
+) [40
 
 
 ]
 
 Package caption Warning: Unused \captionsetup[subfigure] on input line 43.
 See the caption package documentation for explanation.
-
-\tf@loe=\write10
-\openout10 = `Thesis.loe'.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 117.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 117.
@@ -1861,7 +1861,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 117.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 117.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 117.
 Package rerunfilecheck Info: File `Thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 4FE856FBE8B158F1802217D7AF69ECC5;4416.
+(rerunfilecheck)             Checksum: EA594B46FB14676A04B8457D30BA03D4;4441.
 
 
 LaTeX Warning: There were undefined references.
@@ -1873,18 +1873,18 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 117.
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 22017 strings out of 493634
- 376214 string characters out of 3135239
- 468773 words of memory out of 3000000
- 24759 multiletter control sequences out of 15000+200000
+ 22083 strings out of 493634
+ 378088 string characters out of 3135239
+ 470044 words of memory out of 3000000
+ 24793 multiletter control sequences out of 15000+200000
  69113 words of font info for 58 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 42i,13n,43p,10420b,10648s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 42i,13n,43p,10420b,10681s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/Lydia/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvi
 ps/lm/lm-mathit.enc}{C:/Users/Lydia/AppData/Local/Programs/MiKTeX 2.9/fonts/enc
 /dvips/lm/lm-rm.enc}{C:/Users/Lydia/AppData/Local/Programs/MiKTeX 2.9/fonts/enc
-/dvips/lm/lm-mathsy.enc}{C:/Users/Lydia/AppData/Local/Programs/MiKTeX 2.9/fonts
-/enc/dvips/lm/lm-mathex.enc}{C:/Users/Lydia/AppData/Local/Programs/MiKTeX 2.9/f
+/dvips/lm/lm-mathex.enc}{C:/Users/Lydia/AppData/Local/Programs/MiKTeX 2.9/fonts
+/enc/dvips/lm/lm-mathsy.enc}{C:/Users/Lydia/AppData/Local/Programs/MiKTeX 2.9/f
 onts/enc/dvips/lm/lm-ec.enc}<C:/Users/Lydia/AppData/Local/Programs/MiKTeX 2.9/f
 onts/type1/public/lm/lmbx10.pfb><C:/Users/Lydia/AppData/Local/Programs/MiKTeX 2
 .9/fonts/type1/public/lm/lmbx12.pfb><C:/Users/Lydia/AppData/Local/Programs/MiKT
@@ -1903,9 +1903,9 @@ s/Lydia/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/
 Users/Lydia/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb><
 C:/Users/Lydia/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmtt12.p
 fb>
-Output written on Thesis.pdf (47 pages, 1699318 bytes).
+Output written on Thesis.pdf (52 pages, 1891549 bytes).
 PDF statistics:
- 779 PDF objects out of 1000 (max. 8388607)
- 169 named destinations out of 1000 (max. 500000)
- 557 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 845 PDF objects out of 1000 (max. 8388607)
+ 181 named destinations out of 1000 (max. 500000)
+ 567 words of extra memory for PDF output out of 10000 (max. 10000000)
 

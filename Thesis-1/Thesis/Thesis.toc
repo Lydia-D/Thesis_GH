@@ -4,77 +4,77 @@
 \contentsline {chapter}{Contents}{v}{section*.7}
 \contentsline {chapter}{List of Figures}{viii}{section*.9}
 \contentsline {chapter}{List of Tables}{ix}{section*.11}
-\contentsline {chapter}{List of Algorithms}{x}{section*.13}
-\contentsline {chapter}{List of Theorems}{xi}{section*.15}
-\contentsline {chapter}{Nomenclature}{xii}{section*.17}
-\contentsline {chapter}{Glossary}{xiii}{section*.21}
+\contentsline {chapter}{Nomenclature}{x}{section*.13}
+\contentsline {chapter}{Glossary}{xi}{section*.17}
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Background and Motivation}{1}{section.1.1}
 \contentsline {section}{\numberline {1.2}Problem Summary}{1}{section.1.2}
 \contentsline {section}{\numberline {1.3}Principle Contributions}{2}{section.1.3}
 \contentsline {section}{\numberline {1.4}Outline}{3}{section.1.4}
 \contentsline {chapter}{\numberline {2}Literature Review}{4}{chapter.2}
-\contentsline {section}{\numberline {2.1}Position Requirements}{4}{section.2.1}
-\contentsline {section}{\numberline {2.2}GNSS Operational Components}{4}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Space Segment}{4}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}User Segment}{5}{subsection.2.2.2}
-\contentsline {subsection}{\numberline {2.2.3}Control Segment}{5}{subsection.2.2.3}
-\contentsline {section}{\numberline {2.3}GNSS Satellite Signals}{5}{section.2.3}
-\contentsline {section}{\numberline {2.4}The GNSS concept}{6}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}2D case}{6}{subsection.2.4.1}
-\contentsline {subsection}{\numberline {2.4.2}3D case}{6}{subsection.2.4.2}
-\contentsline {section}{\numberline {2.5}GNSS Error Sources}{6}{section.2.5}
-\contentsline {subsection}{\numberline {2.5.1}Clock Errors}{6}{subsection.2.5.1}
-\contentsline {subsection}{\numberline {2.5.2}Receiver Noise}{7}{subsection.2.5.2}
-\contentsline {subsection}{\numberline {2.5.3}Ephemeris Errors}{7}{subsection.2.5.3}
-\contentsline {subsection}{\numberline {2.5.4}Atmospheric Effects}{7}{subsection.2.5.4}
-\contentsline {subsection}{\numberline {2.5.5}Mutlipath Interference}{7}{subsection.2.5.5}
-\contentsline {subsection}{\numberline {2.5.6}Sagnac Effect}{7}{subsection.2.5.6}
-\contentsline {subsection}{\numberline {2.5.7}Electrical Interference}{7}{subsection.2.5.7}
-\contentsline {subsection}{\numberline {2.5.8}GNSS Error Summary}{8}{subsection.2.5.8}
-\contentsline {section}{\numberline {2.6}Multiple Receivers}{8}{section.2.6}
-\contentsline {section}{\numberline {2.7}Current GNSS algorithms}{8}{section.2.7}
-\contentsline {subsection}{\numberline {2.7.1}Standard Positioning Service}{8}{subsection.2.7.1}
-\contentsline {subsection}{\numberline {2.7.2}Differential GPS}{8}{subsection.2.7.2}
-\contentsline {subsection}{\numberline {2.7.3}WAAS DGPS}{9}{subsection.2.7.3}
-\contentsline {subsection}{\numberline {2.7.4}SBAS ?}{9}{subsection.2.7.4}
-\contentsline {subsection}{\numberline {2.7.5}Real Time Kinematic}{9}{subsection.2.7.5}
-\contentsline {subsection}{\numberline {2.7.6}Post Processing Algorithm}{9}{subsection.2.7.6}
-\contentsline {subsection}{\numberline {2.7.7}Single Frequency Precise Point Positioning (SF-PPP)}{9}{subsection.2.7.7}
-\contentsline {subsection}{\numberline {2.7.8}Duel-Epoch, Double-Differencing Model}{9}{subsection.2.7.8}
-\contentsline {subsection}{\numberline {2.7.9}Summary of Algorithms ?}{11}{subsection.2.7.9}
-\contentsline {section}{\numberline {2.8}Proposed Planar Intersection Algorithm}{11}{section.2.8}
-\contentsline {chapter}{\numberline {3}Algorithm Solution}{14}{chapter.3}
-\contentsline {section}{\numberline {3.1}Planar Intersection Algorithm}{14}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}Algorithm}{15}{subsection.3.1.1}
-\contentsline {subsubsection}{Pre-Processing}{15}{section*.26}
-\contentsline {paragraph}{Select reference receiver $\alpha $}{15}{section*.27}
-\contentsline {paragraph}{Collect data of one timestep from all receivers}{15}{section*.28}
-\contentsline {paragraph}{Align to reference Epoch time}{15}{section*.29}
-\contentsline {subsubsection}{Distance Optimisation}{15}{section*.30}
-\contentsline {paragraph}{Average normal Vector}{15}{section*.31}
-\contentsline {paragraph}{Difference in Pseudorange}{16}{section*.32}
-\contentsline {paragraph}{Optimise Pseudorange}{16}{section*.33}
-\contentsline {subsubsection}{Point Optimisation}{17}{section*.35}
-\contentsline {paragraph}{Create Planes}{17}{section*.36}
-\contentsline {paragraph}{Solve for Intersection}{19}{section*.38}
+\contentsline {section}{\numberline {2.1}GPS Operational Components}{5}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Space Segment}{5}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}User Segment}{5}{subsection.2.1.2}
+\contentsline {subsection}{\numberline {2.1.3}Ground Control Segment}{6}{subsection.2.1.3}
+\contentsline {section}{\numberline {2.2}GPS Satellite Signals}{6}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Course Acquisition Code}{6}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Navigation Message}{7}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}Raw Data}{7}{subsection.2.2.3}
+\contentsline {section}{\numberline {2.3}Trilateration}{8}{section.2.3}
+\contentsline {section}{\numberline {2.4}GPS Error Sources}{10}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Mutlipath Interference}{10}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}Atmospheric Effects}{10}{subsection.2.4.2}
+\contentsline {subsection}{\numberline {2.4.3}Receiver Noise}{10}{subsection.2.4.3}
+\contentsline {subsection}{\numberline {2.4.4}Ephemeris Error}{11}{subsection.2.4.4}
+\contentsline {subsection}{\numberline {2.4.5}Clock Bias}{11}{subsection.2.4.5}
+\contentsline {subsection}{\numberline {2.4.6}Sagnac Effect}{11}{subsection.2.4.6}
+\contentsline {subsection}{\numberline {2.4.7}GPS Error Summary}{12}{subsection.2.4.7}
+\contentsline {section}{\numberline {2.5}Multiple Receivers}{12}{section.2.5}
+\contentsline {subsection}{\numberline {2.5.1}Align Reception time}{12}{subsection.2.5.1}
+\contentsline {section}{\numberline {2.6}Current GNSS algorithms}{13}{section.2.6}
+\contentsline {subsection}{\numberline {2.6.1}Standard Positioning Service}{13}{subsection.2.6.1}
+\contentsline {subsection}{\numberline {2.6.2}Differential GPS}{13}{subsection.2.6.2}
+\contentsline {subsection}{\numberline {2.6.3}WAAS DGPS}{14}{subsection.2.6.3}
+\contentsline {subsection}{\numberline {2.6.4}SBAS ?}{14}{subsection.2.6.4}
+\contentsline {subsection}{\numberline {2.6.5}Real Time Kinematic}{14}{subsection.2.6.5}
+\contentsline {subsection}{\numberline {2.6.6}Post Processing Algorithm}{14}{subsection.2.6.6}
+\contentsline {subsection}{\numberline {2.6.7}Single Frequency Precise Point Positioning (SF-PPP)}{14}{subsection.2.6.7}
+\contentsline {subsection}{\numberline {2.6.8}Duel-Epoch, Double-Differencing Model}{14}{subsection.2.6.8}
+\contentsline {subsection}{\numberline {2.6.9}Summary of Algorithms ?}{16}{subsection.2.6.9}
+\contentsline {section}{\numberline {2.7}Moving Forward}{16}{section.2.7}
+\contentsline {chapter}{\numberline {3}Algorithm Solution}{18}{chapter.3}
+\contentsline {section}{\numberline {3.1}Proposed Planar Intersection Algorithm}{19}{section.3.1}
 \contentsline {section}{\numberline {3.2}Assumptions}{20}{section.3.2}
 \contentsline {subsection}{\numberline {3.2.1}Approximate Location}{20}{subsection.3.2.1}
 \contentsline {subsection}{\numberline {3.2.2}Static Receivers}{20}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}Transform asynchronous time}{21}{subsection.3.2.3}
-\contentsline {subsection}{\numberline {3.2.4}Parallel plane assumption}{24}{subsection.3.2.4}
-\contentsline {section}{\numberline {3.3}Summary}{24}{section.3.3}
-\contentsline {chapter}{\numberline {4}Experiments That Prove Things}{25}{chapter.4}
-\contentsline {section}{\numberline {4.1}Simulation Creation}{25}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Creating a Simulation}{25}{subsection.4.1.1}
-\contentsline {subsubsection}{Simulate Satellite Locations}{25}{section*.40}
-\contentsline {subsubsection}{True Location of Receivers}{26}{section*.42}
-\contentsline {subsubsection}{Calculation of Pseudorange}{26}{section*.43}
-\contentsline {subsubsection}{Planar Algorithm}{27}{section*.45}
-\contentsline {subsection}{\numberline {4.1.2}Evaluation}{27}{subsection.4.1.2}
-\contentsline {paragraph}{Dilution of Precision}{28}{section*.46}
-\contentsline {section}{\numberline {4.2}Evaluation}{29}{section.4.2}
-\contentsline {subsubsection}{Fake Satellite Positions}{29}{section*.48}
-\contentsline {chapter}{\numberline {5}Conclusion}{31}{chapter.5}
-\contentsline {chapter}{List of References}{32}{section*.50}
-\contentsline {chapter}{\numberline {A}An Example Appendix}{33}{appendix.A}
+\contentsline {subsection}{\numberline {3.2.3}Parallel plane assumption}{21}{subsection.3.2.3}
+\contentsline {section}{\numberline {3.3}Epoch Alignment}{22}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Satellite Time}{22}{subsection.3.3.1}
+\contentsline {section}{\numberline {3.4}Planar Intersection Algorithm}{25}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Algorithm}{26}{subsection.3.4.1}
+\contentsline {subsubsection}{Pre-Processing}{26}{section*.27}
+\contentsline {paragraph}{Select reference receiver $\alpha $}{26}{section*.28}
+\contentsline {paragraph}{Collect data of one timestep from all receivers}{26}{section*.29}
+\contentsline {paragraph}{Align to reference Epoch time}{26}{section*.30}
+\contentsline {subsubsection}{Distance Optimisation}{26}{section*.31}
+\contentsline {paragraph}{Average normal Vector}{26}{section*.32}
+\contentsline {paragraph}{Difference in Pseudorange}{26}{section*.33}
+\contentsline {paragraph}{Optimise Pseudorange}{27}{section*.34}
+\contentsline {subsubsection}{Point Optimisation}{28}{section*.36}
+\contentsline {paragraph}{Create Planes}{28}{section*.37}
+\contentsline {paragraph}{Solve for Intersection}{30}{section*.39}
+\contentsline {section}{\numberline {3.5}Summary}{31}{section.3.5}
+\contentsline {chapter}{\numberline {4}Experiments That Prove Things}{32}{chapter.4}
+\contentsline {section}{\numberline {4.1}Simulation Creation}{32}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Creating a Simulation}{32}{subsection.4.1.1}
+\contentsline {subsubsection}{Simulate Satellite Locations}{32}{section*.40}
+\contentsline {subsubsection}{True Location of Receivers}{33}{section*.42}
+\contentsline {subsubsection}{Calculation of Pseudorange}{33}{section*.43}
+\contentsline {subsubsection}{Planar Algorithm}{34}{section*.45}
+\contentsline {subsection}{\numberline {4.1.2}Evaluation}{34}{subsection.4.1.2}
+\contentsline {paragraph}{Dilution of Precision}{35}{section*.46}
+\contentsline {section}{\numberline {4.2}Evaluation}{36}{section.4.2}
+\contentsline {subsubsection}{Fake Satellite Positions}{36}{section*.48}
+\contentsline {chapter}{\numberline {5}Conclusion}{38}{chapter.5}
+\contentsline {chapter}{List of References}{39}{section*.50}
+\contentsline {chapter}{\numberline {A}An Example Appendix}{40}{appendix.A}

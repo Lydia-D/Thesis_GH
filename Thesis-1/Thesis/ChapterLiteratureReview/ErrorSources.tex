@@ -1,0 +1,41 @@
+%!TEX root = ../Thesis.tex
+
+\section{GPS Error Sources} \label{sec:error sources}
+There are many sources of error that plague the GPS data. These errors are categorised into six types; multipath, atmospheric effects, receiver noise, ephemeris error, clock bias and Sagnac effect.
+
+\subsection{Mutlipath Interference}
+Multipath is the case where the radio signal is reflected off objects before reaching the receiver, which increases the distance travelled. It is especially prevalent in built-up areas with tall buildings. 
+
+\subsection{Atmospheric Effects}
+The distance from a satellite to a user is calculated by the time difference when the radio signal was sent and when it was received multiplied by the speed of light. However, the speed of light is reduced when in the atmosphere compared to that in space.
+The ionosphere is the upper layer of the atmosphere ranging from 50 to 500 km. It consists of ionized particles that create fluctuating electric fields in the atmosphere that perturb the radio signals that travel through it. This effect can be modelled but is still a significant source of error, approximately 5 m \cite{trimble_errors}. The troposphere is the lowest part of the atmosphere up to 50 km that varies in temperature and pressure with weather patterns. The radio signals are refracted through the medium, but as it is only for a short period of time this error is significantly less than that of the ionosphere at approximately 0.5 m error \cite{trimble_errors}.
+
+\subsection{Receiver Noise}
+In any electronic components, especially low cost components, thermal noise introduces error into the system. Thermal noise is caused by the random motion of electrons in conducting materials. The construction of the electrical components are not identical, which also cause slightly different solutions from receiver to receiver. This can contribute approximately 0.3 m of error \cite{trimble_errors}.
+
+\subsection{Ephemeris Error}
+The ephemeris error is the error in the navigation data describing the orbital parameters of the satellite \cite{Kaplan_ephemeriserror}. This information is approximated and updated every 2-4 hours by the control segment to minimise the error. The approximation is based on a prediction model of the orbital parameters, as there are many forces that act on a satellite that can alter the orbit. These include gravitational affects of other masses in the solar system such as the Moon, the Sun, even Jupiter and the outer planets affect the gravitational potential of objects in orbit around Earth. The non-spherical Earth, solar radiation pressure, slight atmospheric pressure are all forces that manipulate the orbit. The satellites also undergo station keeping manoeuvres to manage the orbit, which the requires the ephemeris data to update. This inaccuracy contributes about 2.5 m in error \cite{trimble_errors}.
+
+\subsection{Clock Bias}
+The clock on the satellites and receivers are not exact with the true GPS time. Low-cost receivers are built with cheap quartz crystal oscillators that keep time to $1\mu s$ accuracy. The clocks on the satellites however are atomic clocks that have accuracy on the order of $1 ns$. In addition to this, ground control can measure the satellite clock bias and send back that information to be stored in the navigation message. \cite{zinas_2015}
+
+\subsection{Sagnac Effect}
+The sagnac effect is a more intrinsic source of error. It is due to the rotation of the Earth during the time of the signal transmission. The transmission time is between 0.06-0.08 seconds in which time the Earth has rotated approximately 30 m. If the ephemeris data was in an inertial frame (ECI) there would not be a problem. However, the data is in the Earth-Centred Earth-Fixed (ECEF) frame which is a frame that rotates with the Earth to allow users to calculate their positions independent of time \cite{HighAccDiffTrack}.
+
+\subsection{GPS Error Summary}
+All of the errors mentioned above can be categorised into three types; satellite correlated, receiver correlated, and uncorrelated errors. That is, a particular type of error may be consistent between all receivers from a particular satellite, or consistent between all satellite measurements for a particular receiver, or neither. See Table \ref{Table:error catagory}.
+
+\begin{table}
+\centering
+\caption{Categorisation of Errors}
+\label{Table:error catagory}
+\begin{tabular}{|c|c|c|}
+\hline
+Satellite & Receiver & Uncorrelated \\\hline
+satellite clock bias & receiver clock bias & multipath \\
+ionospheric delay & receiver noise& Sagnac \\
+tropospheric delay & &  \\
+ephemeris error & & \\\hline
+\end{tabular}
+\end{table}
+

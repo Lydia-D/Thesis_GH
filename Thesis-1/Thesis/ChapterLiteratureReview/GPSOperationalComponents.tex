@@ -1,0 +1,33 @@
+%!TEX root = ../Thesis.tex
+
+
+\section{GPS Operational Components}
+There are three components to the whole GPS system; the space segment, the user segment, and the ground control segment. The satellite sends radio signals towards the Earth which is received by both users and ground control centers. The ground control tracks the satellite and the data to analyse the satellite parameters and returns periodic updates to the satellite about its status. The satellite then updates its signal to the new parameters. The user receives the signal from the satellite with the updated parameters.
+
+\subsection{Space Segment}
+- current GNSS: explain GPS, GLONASS, galelao, chinese one constellations and how it works
+- what orbits are they in and why?: altitude\\
+inbetween the two radiation belts?
+
+The GPS constellation consists of 32 operational satellites in six different orbital planes
+
+
+
+\subsection{User Segment}
+The user is a passive participant in the GPS system.
+- typical accuracy for civilian accessable gps\\
+- military has more precise stuff\\
+- lower cost receivers have only one frequency band, error in timing\\
+Unfortunately, low cost GNSS receivers rarely provide official access to the GPS raw data. Previous studies have used customised bluetooth headsets or customised android platform mobile phones to investigate algorithms on low-cost GPS receivers. More expensive receivers do allow raw data to be utilised, however they also provide other mechanisms such as duel frequencies and more accurate clocks, rendering the new algorithm *obtuse*. The mindset of *crowd-sourcing*/customising/flexible technology is changing the way manufactures build GPS receivers. The new Android OS platform Nougat 7.0 provides the developer raw GPS data at the software level.  
+
+\subsection{Ground Control Segment}
+On the ground spread all over the world, are control stations that monitor the satellites. 
+- tracking -> distance and angle - active as it sends back information
+-Locations of control stations and why they're there
+
+Uses Herrick-Gibbs algorithm to determine the orbit of the satellite. A satellite is tracked over a ground station for a period of time and its position is measured. From three position vectors the velocity vector can be calculated and the ephemeris parameters are estimated. The ephemeris parameters describe the orbit of the satellite and are used to calculate the position of the satellite at any point in time by the user segment. The time parameters and clock corrections of the satellite are also calculated by the ground control station and sent back in the navigation message.
+The ephemeris data is highly accurate and updated every two hours.
+
+
+
+

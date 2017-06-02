@@ -4,55 +4,55 @@
 \BOOKMARK [0][-]{section*.7}{Contents}{}% 4
 \BOOKMARK [0][-]{section*.9}{List of Figures}{}% 5
 \BOOKMARK [0][-]{section*.11}{List of Tables}{}% 6
-\BOOKMARK [0][-]{section*.13}{List of Algorithms}{}% 7
-\BOOKMARK [0][-]{section*.15}{List of Theorems}{}% 8
-\BOOKMARK [0][-]{section*.17}{Nomenclature}{}% 9
-\BOOKMARK [0][-]{section*.21}{Glossary}{}% 10
-\BOOKMARK [0][-]{chapter.1}{1 Introduction}{}% 11
-\BOOKMARK [1][-]{section.1.1}{1.1 Background and Motivation}{chapter.1}% 12
-\BOOKMARK [1][-]{section.1.2}{1.2 Problem Summary}{chapter.1}% 13
-\BOOKMARK [1][-]{section.1.3}{1.3 Principle Contributions}{chapter.1}% 14
-\BOOKMARK [1][-]{section.1.4}{1.4 Outline}{chapter.1}% 15
-\BOOKMARK [0][-]{chapter.2}{2 Literature Review}{}% 16
-\BOOKMARK [1][-]{section.2.1}{2.1 Position Requirements}{chapter.2}% 17
-\BOOKMARK [1][-]{section.2.2}{2.2 GNSS Operational Components}{chapter.2}% 18
-\BOOKMARK [2][-]{subsection.2.2.1}{2.2.1 Space Segment}{section.2.2}% 19
-\BOOKMARK [2][-]{subsection.2.2.2}{2.2.2 User Segment}{section.2.2}% 20
-\BOOKMARK [2][-]{subsection.2.2.3}{2.2.3 Control Segment}{section.2.2}% 21
-\BOOKMARK [1][-]{section.2.3}{2.3 GNSS Satellite Signals}{chapter.2}% 22
-\BOOKMARK [1][-]{section.2.4}{2.4 The GNSS concept}{chapter.2}% 23
-\BOOKMARK [2][-]{subsection.2.4.1}{2.4.1 2D case}{section.2.4}% 24
-\BOOKMARK [2][-]{subsection.2.4.2}{2.4.2 3D case}{section.2.4}% 25
-\BOOKMARK [1][-]{section.2.5}{2.5 GNSS Error Sources}{chapter.2}% 26
-\BOOKMARK [2][-]{subsection.2.5.1}{2.5.1 Clock Errors}{section.2.5}% 27
-\BOOKMARK [2][-]{subsection.2.5.2}{2.5.2 Receiver Noise}{section.2.5}% 28
-\BOOKMARK [2][-]{subsection.2.5.3}{2.5.3 Ephemeris Errors}{section.2.5}% 29
-\BOOKMARK [2][-]{subsection.2.5.4}{2.5.4 Atmospheric Effects}{section.2.5}% 30
-\BOOKMARK [2][-]{subsection.2.5.5}{2.5.5 Mutlipath Interference}{section.2.5}% 31
-\BOOKMARK [2][-]{subsection.2.5.6}{2.5.6 Sagnac Effect}{section.2.5}% 32
-\BOOKMARK [2][-]{subsection.2.5.7}{2.5.7 Electrical Interference}{section.2.5}% 33
-\BOOKMARK [2][-]{subsection.2.5.8}{2.5.8 GNSS Error Summary}{section.2.5}% 34
-\BOOKMARK [1][-]{section.2.6}{2.6 Multiple Receivers}{chapter.2}% 35
-\BOOKMARK [1][-]{section.2.7}{2.7 Current GNSS algorithms}{chapter.2}% 36
-\BOOKMARK [2][-]{subsection.2.7.1}{2.7.1 Standard Positioning Service}{section.2.7}% 37
-\BOOKMARK [2][-]{subsection.2.7.2}{2.7.2 Differential GPS}{section.2.7}% 38
-\BOOKMARK [2][-]{subsection.2.7.3}{2.7.3 WAAS DGPS}{section.2.7}% 39
-\BOOKMARK [2][-]{subsection.2.7.4}{2.7.4 SBAS ?}{section.2.7}% 40
-\BOOKMARK [2][-]{subsection.2.7.5}{2.7.5 Real Time Kinematic}{section.2.7}% 41
-\BOOKMARK [2][-]{subsection.2.7.6}{2.7.6 Post Processing Algorithm}{section.2.7}% 42
-\BOOKMARK [2][-]{subsection.2.7.7}{2.7.7 Single Frequency Precise Point Positioning \(SF-PPP\)}{section.2.7}% 43
-\BOOKMARK [2][-]{subsection.2.7.8}{2.7.8 Duel-Epoch, Double-Differencing Model}{section.2.7}% 44
-\BOOKMARK [2][-]{subsection.2.7.9}{2.7.9 Summary of Algorithms ?}{section.2.7}% 45
-\BOOKMARK [1][-]{section.2.8}{2.8 Proposed Planar Intersection Algorithm}{chapter.2}% 46
-\BOOKMARK [0][-]{chapter.3}{3 Algorithm Solution}{}% 47
-\BOOKMARK [1][-]{section.3.1}{3.1 Planar Intersection Algorithm}{chapter.3}% 48
-\BOOKMARK [2][-]{subsection.3.1.1}{3.1.1 Algorithm}{section.3.1}% 49
-\BOOKMARK [1][-]{section.3.2}{3.2 Assumptions}{chapter.3}% 50
-\BOOKMARK [2][-]{subsection.3.2.1}{3.2.1 Approximate Location}{section.3.2}% 51
-\BOOKMARK [2][-]{subsection.3.2.2}{3.2.2 Static Receivers}{section.3.2}% 52
-\BOOKMARK [2][-]{subsection.3.2.3}{3.2.3 Transform asynchronous time}{section.3.2}% 53
-\BOOKMARK [2][-]{subsection.3.2.4}{3.2.4 Parallel plane assumption}{section.3.2}% 54
-\BOOKMARK [1][-]{section.3.3}{3.3 Summary}{chapter.3}% 55
+\BOOKMARK [0][-]{section*.13}{Nomenclature}{}% 7
+\BOOKMARK [0][-]{section*.17}{Glossary}{}% 8
+\BOOKMARK [0][-]{chapter.1}{1 Introduction}{}% 9
+\BOOKMARK [1][-]{section.1.1}{1.1 Background and Motivation}{chapter.1}% 10
+\BOOKMARK [1][-]{section.1.2}{1.2 Problem Summary}{chapter.1}% 11
+\BOOKMARK [1][-]{section.1.3}{1.3 Principle Contributions}{chapter.1}% 12
+\BOOKMARK [1][-]{section.1.4}{1.4 Outline}{chapter.1}% 13
+\BOOKMARK [0][-]{chapter.2}{2 Literature Review}{}% 14
+\BOOKMARK [1][-]{section.2.1}{2.1 GPS Operational Components}{chapter.2}% 15
+\BOOKMARK [2][-]{subsection.2.1.1}{2.1.1 Space Segment}{section.2.1}% 16
+\BOOKMARK [2][-]{subsection.2.1.2}{2.1.2 User Segment}{section.2.1}% 17
+\BOOKMARK [2][-]{subsection.2.1.3}{2.1.3 Ground Control Segment}{section.2.1}% 18
+\BOOKMARK [1][-]{section.2.2}{2.2 GPS Satellite Signals}{chapter.2}% 19
+\BOOKMARK [2][-]{subsection.2.2.1}{2.2.1 Course Acquisition Code}{section.2.2}% 20
+\BOOKMARK [2][-]{subsection.2.2.2}{2.2.2 Navigation Message}{section.2.2}% 21
+\BOOKMARK [2][-]{subsection.2.2.3}{2.2.3 Raw Data}{section.2.2}% 22
+\BOOKMARK [1][-]{section.2.3}{2.3 Trilateration}{chapter.2}% 23
+\BOOKMARK [1][-]{section.2.4}{2.4 GPS Error Sources}{chapter.2}% 24
+\BOOKMARK [2][-]{subsection.2.4.1}{2.4.1 Mutlipath Interference}{section.2.4}% 25
+\BOOKMARK [2][-]{subsection.2.4.2}{2.4.2 Atmospheric Effects}{section.2.4}% 26
+\BOOKMARK [2][-]{subsection.2.4.3}{2.4.3 Receiver Noise}{section.2.4}% 27
+\BOOKMARK [2][-]{subsection.2.4.4}{2.4.4 Ephemeris Error}{section.2.4}% 28
+\BOOKMARK [2][-]{subsection.2.4.5}{2.4.5 Clock Bias}{section.2.4}% 29
+\BOOKMARK [2][-]{subsection.2.4.6}{2.4.6 Sagnac Effect}{section.2.4}% 30
+\BOOKMARK [2][-]{subsection.2.4.7}{2.4.7 GPS Error Summary}{section.2.4}% 31
+\BOOKMARK [1][-]{section.2.5}{2.5 Multiple Receivers}{chapter.2}% 32
+\BOOKMARK [2][-]{subsection.2.5.1}{2.5.1 Align Reception time}{section.2.5}% 33
+\BOOKMARK [1][-]{section.2.6}{2.6 Current GNSS algorithms}{chapter.2}% 34
+\BOOKMARK [2][-]{subsection.2.6.1}{2.6.1 Standard Positioning Service}{section.2.6}% 35
+\BOOKMARK [2][-]{subsection.2.6.2}{2.6.2 Differential GPS}{section.2.6}% 36
+\BOOKMARK [2][-]{subsection.2.6.3}{2.6.3 WAAS DGPS}{section.2.6}% 37
+\BOOKMARK [2][-]{subsection.2.6.4}{2.6.4 SBAS ?}{section.2.6}% 38
+\BOOKMARK [2][-]{subsection.2.6.5}{2.6.5 Real Time Kinematic}{section.2.6}% 39
+\BOOKMARK [2][-]{subsection.2.6.6}{2.6.6 Post Processing Algorithm}{section.2.6}% 40
+\BOOKMARK [2][-]{subsection.2.6.7}{2.6.7 Single Frequency Precise Point Positioning \(SF-PPP\)}{section.2.6}% 41
+\BOOKMARK [2][-]{subsection.2.6.8}{2.6.8 Duel-Epoch, Double-Differencing Model}{section.2.6}% 42
+\BOOKMARK [2][-]{subsection.2.6.9}{2.6.9 Summary of Algorithms ?}{section.2.6}% 43
+\BOOKMARK [1][-]{section.2.7}{2.7 Moving Forward}{chapter.2}% 44
+\BOOKMARK [0][-]{chapter.3}{3 Algorithm Solution}{}% 45
+\BOOKMARK [1][-]{section.3.1}{3.1 Proposed Planar Intersection Algorithm}{chapter.3}% 46
+\BOOKMARK [1][-]{section.3.2}{3.2 Assumptions}{chapter.3}% 47
+\BOOKMARK [2][-]{subsection.3.2.1}{3.2.1 Approximate Location}{section.3.2}% 48
+\BOOKMARK [2][-]{subsection.3.2.2}{3.2.2 Static Receivers}{section.3.2}% 49
+\BOOKMARK [2][-]{subsection.3.2.3}{3.2.3 Parallel plane assumption}{section.3.2}% 50
+\BOOKMARK [1][-]{section.3.3}{3.3 Epoch Alignment}{chapter.3}% 51
+\BOOKMARK [2][-]{subsection.3.3.1}{3.3.1 Satellite Time}{section.3.3}% 52
+\BOOKMARK [1][-]{section.3.4}{3.4 Planar Intersection Algorithm}{chapter.3}% 53
+\BOOKMARK [2][-]{subsection.3.4.1}{3.4.1 Algorithm}{section.3.4}% 54
+\BOOKMARK [1][-]{section.3.5}{3.5 Summary}{chapter.3}% 55
 \BOOKMARK [0][-]{chapter.4}{4 Experiments That Prove Things}{}% 56
 \BOOKMARK [1][-]{section.4.1}{4.1 Simulation Creation}{chapter.4}% 57
 \BOOKMARK [2][-]{subsection.4.1.1}{4.1.1 Creating a Simulation}{section.4.1}% 58

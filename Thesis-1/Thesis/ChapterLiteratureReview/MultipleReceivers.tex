@@ -1,0 +1,17 @@
+%! TEX root = ../Thesis.tex
+
+
+\section{Multiple Receivers}
+- problems arising with multiple receivers
+
+A single sample of pseudoranges from any two receivers will not be taken at the exact same time without a connecting network to implement control. This means that the satellite positions at the time of each signal transmission will be actually different. The primary issue with calculating the change in pseudorange is identifying the transmission time 
+
+
+\subsection{Align Reception time}
+In \cite{HighAccDiffTrack}, they align the reception time of multiple receivers
+
+They precisely align the epoch by accounting for the differing Sagnac effect between two receivers and accounting for the clock biases of the receivers. The Sagnac effect manifests in the multiple receivers case by the signal propagation time for a measurement taken at $t_2$ would be different than if it was taken at $t_1$, the Earth will have rotated by different amounts. 
+\begin{enumerate}
+\item The clock bias is calculated by solving for the individual absolute position of a receiver using least squares. This is necessary in order to 
+\item  
+\end{enumerate}

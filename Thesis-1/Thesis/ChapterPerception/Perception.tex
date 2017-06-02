@@ -5,6 +5,51 @@
 \chapter{Algorithm Solution}\label{ch:perception}
 
 %%%%%%%%%%%%%%%%%%%% Introduction %%%%%%%%%%%%%%%%%%%
+The common theme throughout the literature is to use differencing to minimise errors, both through time and space.
+
+For a single receiver, differencing through time 
+
+For a single receiver differencing through space, a second known location is still required. This is set up externally and services a set area.
+
+However for multiple receivers, spacial differencing is available. Even though with multiple receivers there is the added pre-processing with the sending of data between nodes and computation for epoch alignment. When differencing through time, the epoch alignment is required at the receiver end. That is, to manipulate the measurements as if the receivers took readings at the same time. Depending on how precise the alignment required for a system is, the computation time may require a numerical iteration solution.
+
+When double-differencing, that is for both time and space for a single receiver.
+
+When differencing through space between the receivers, the epoch alignment is required at the satellite end. The time the satellite sent the 
+- make some ideas for when the receivers are moving - your giving the time of the positions between the receivers as different 
+
+
+
+\section{Proposed Planar Intersection Algorithm}
+- Fit better in the next chapter, put in references to literature
+- these are assumptions, heres why, rationale, these ppl also did it
+
+Following the literature, the two main options for increasing the accuracy is extensive modelling of the errors, or some type of differencing algorithm. Error modelling requires external hardware, internet connection and extra computation time which increases the budget requirements. Whereas 
+
+
+
+This new algorithm is derived from taking the difference in pseudorange between multiple receivers from one satellite and expressing the distances as planes.
+\begin{figure}[h]
+\centering
+\caption{2D representation}
+\label{fig:overall_singleS_multiR}
+\includegraphics[width=0.7\linewidth]{ChapterLiteratureReview/overall_singleS_multiR.jpg}
+\end{figure}
+
+With multiple satellites in view, the intersection of planes for a particular receiver is the position of the receiver.
+\begin{figure}[h]
+\centering
+\caption{}
+\label{fig:overall_multiS_duelR}
+\includegraphics[width=0.7\linewidth]{ChapterLiteratureReview/overall_multiS_duelR.jpg}
+\end{figure}
+
+With this strategy, some of the errors that plague the absolute position are negated for the relative position. 
+\begin{eqnarray}
+\rho_i = \rho_n -cb_\omega + c(T_s + I_s+\nu_s+b_s)
+\end{eqnarray}
+where $\rho_n$ is the real range with the following sources of error; $b_\omega$ is the receiver clock bias, $T_s$ is the tropospheric error, $I_s$ is the ionospheric error, $\nu_s$ is the relativistic error and $b_s$ is the satellite clock bias.
+
 
 
 
