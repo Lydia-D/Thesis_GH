@@ -3,8 +3,8 @@ A level-1 auxiliary file: FrontMatter/FrontMatter.aux
 A level-1 auxiliary file: ChapterIntro/Intro.aux
 A level-1 auxiliary file: ChapterLiteratureReview/LiteratureReview.aux
 White space in argument---line 15 of file ChapterLiteratureReview/LiteratureReview.aux
- : \citation{postprocessing
- :                          multi}
+ : \citation{signal
+ :                  spec}
 I'm skipping whatever remains of this command
 A level-1 auxiliary file: ChapterPerception/Perception.aux
 A level-1 auxiliary file: ChapterExperiments/Experiments.aux
@@ -25,6 +25,10 @@ I'm skipping whatever remains of this entry
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
 ** Sorting version - not for normal IEEE work.
+Name 1 in "National Coordination Office for Space-Based Positioning, Navigation, and Timing" has a comma at the end for entry signalspec
+while executing---line 2589 of file ieeetrans.bst
+Name 1 in "National Coordination Office for Space-Based Positioning, Navigation, and Timing" has a comma at the end for entry signalspec
+while executing---line 2601 of file ieeetrans.bst
 
 Done.
-(There were 3 error messages)
+(There were 5 error messages)

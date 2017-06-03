@@ -28,14 +28,45 @@ W.~Hedgecock, M.~Maroti, J.~Sallai, P.~Volgyesi, and A.~Ledeczi,
   Services (MobiSys {\textquoteright}13)}, ACM.\hskip 1em plus 0.5em minus
   0.4em\relax Taipei, Taiwan: ACM, 06/2013 2013.
 
+\bibitem{mit_signals}
+T.~Herring, Ed., \emph{Principles of the Global Positioning System}.\hskip 1em
+  plus 0.5em minus 0.4em\relax MIT, 2012.
+
+\bibitem{CA_oxts}
+\BIBentryALTinterwordspacing
+O.~Inertial+GPS, ``Coarse acquisition,'' 2014. [Online]. Available:
+  \url{http://www.oxts.com/glossary/coarse-acquisition/}
+\BIBentrySTDinterwordspacing
+
 \bibitem{Kaplan_ephemeriserror}
 E.~Kaplan, \emph{{Understanding GPS - Principles and applications}},
   2nd~ed.\hskip 1em plus 0.5em minus 0.4em\relax Artech House, 2005.
+
+\bibitem{signalspec}
+\BIBentryALTinterwordspacing
+N.~National Coordination Office~for Space-Based~Positioning and Timing,
+  ``Global positioning system standard positioning service signal
+  specification,'' GPS Navstar, Technical Report, June 1995. [Online].
+  Available:
+  \url{http://www.gps.gov/technical/ps/1995-SPS-signal-specification.pdf}
+\BIBentrySTDinterwordspacing
 
 \bibitem{trimble_errors}
 \BIBentryALTinterwordspacing
 Trimble, ``Trimble gps tutorial- error correction,'' 2017. [Online]. Available:
   \url{http://www.trimble.com/gps_tutorial/howgps-error2.aspx}
+\BIBentrySTDinterwordspacing
+
+\bibitem{trimble_PRN}
+\BIBentryALTinterwordspacing
+------, ``Trimble gps tutorial-pseudo random code,'' 2017. [Online]. Available:
+  \url{http://www.trimble.com/gps_tutorial/sub_pseudo.aspx}
+\BIBentrySTDinterwordspacing
+
+\bibitem{whatwhenhow}
+\BIBentryALTinterwordspacing
+what-when how, ``Gps details,'' 2014. [Online]. Available:
+  \url{http://what-when-how.com/gps/gps-details/}
 \BIBentrySTDinterwordspacing
 
 \bibitem{zinas_2015}

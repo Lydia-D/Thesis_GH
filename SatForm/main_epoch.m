@@ -59,8 +59,8 @@ end
 
 
 %% Calculate range and add errors
-Estruc.satmag = 10^-7;
-Estruc.recmag = 10^-5;
+Estruc.satmag = 0*10^-7;
+Estruc.recmag = 0*10^-5;
 Estruc.random = 0*10^-9;
 range_error = rangesim(allRec,allSat,Estruc);
 

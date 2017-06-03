@@ -1,31 +1,41 @@
 %!TEX root = ../Thesis.tex
 
 \section{GPS Satellite Signals}
-The are two frequencies that GPS uses; L1 frequency at 1575.42 MHz and L2 at 1227.60 MHz \cite{postprocessing multi}.
+The are two frequencies that GPS uses; L1 frequency at 1575.42 MHz and L2 at 1227.60 MHz \cite{signal spec}. There are two sets of signals that are sent from every satellite, the pseudorandom binary sequence (PRN code) and the navigation message.
 
-There are two sets of signals that are sent from every satellite, the pseudorandom binary sequence (PRN code) and the navigation message.
+\subsection{PRN}
+Coarse Acquisition Code, or C/A code, is transmitted on the L1 frequency as a 1.023 MHz signal of 1023 bits. Civilians have access to the C/A code and is what is used in receivers. There is another code modulated onto the L1 and L2 frequencies called the P (Precise) code as a 10.23 MHz signal \cite{CA_oxts}. As it is 10 times faster it is more accurate, and is restricted to military use. Both of these codes are modulated as pseudo random number (PRN) codes and repeat constantly, which have the property of the appearance of random noise but are very precisely defined. It is because it is precisely defined, the GPS receiver can recreate the PRN code at the same time the satellite does. By comparing the incoming signal and the self-generated code the time delay is measured, see Figure \ref{fig:PRNtime}. As the C/A code repeats every millisecond, only a time range of 1 ms needs to be searched \cite{trimble_PRN}.
 
-\subsection{Course Acquisition Code}
-The course acquisition code (C/A) 
 
-Low cost GPS receivers only have access to 
+\cite{mit_signals}
 
-The PRN code is intentionally complex to stop jamming 
+\begin{figure}
+\centering
+\caption{Pseudorange measurement from the time delay of the PRN code \cite{whatwhenhow}}
+\label{fig:PRNtime}
+\includegraphics[width=0.7\linewidth]{ChapterLiteratureReview/PRNtime.png}
+\end{figure}
 
-L1 frequency of 1575.42 Mhz  - code phase
-Course Acquisition (C/A) code is transmitted on the L1 frequency as 1.023 MHz signal using a bi-phase shift keying modulation technique.
-Navigation message sent at 50 bits per second  
 
 
 \subsection{Navigation Message}
-The navigation message is a low 
+The navigation message is a low frequency signal added to the L1 code at a rate of 50 bps. It has three components \cite{signalspec};
+\begin{enumerate}
+\item GPS date and time with satellite status at the time the signal was sent
+\item Ephemeris data: valid for up to 4 hours
+\item Almanac data: valid for 180 days
+\end{enumerate}
+The almanac data 
 
-\url{https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-540-principles-of-the-global-positioning-system-spring-2012/lecture-notes/MIT12_540S12_lec7.pdf}
 
-- civilian GNSS using duel frequency, send CDMA, how decryption works\\
-- what is psudorange?\\
-- what is carrier phase\\
-- clock bias\\
+\begin{figure}
+\centering
+\caption{Navigation Message Content and Format Overview \cite{signalspec}}
+\label{fig:NavMessage}
+\includegraphics[width=0.7\linewidth]{ChapterLiteratureReview/NavMessage}
+\end{figure}
+
+
 
 \subsection{Raw Data}
 There is a lot of data contained in the total signal, but the following are what is important to this thesis:
@@ -47,6 +57,6 @@ There is a lot of data contained in the total signal, but the following are what
 % https://www.e-education.psu.edu/natureofgeoinfo/c5_p14.html
 % http://what-when-how.com/gps/gps-details/
 % https://www.e-education.psu.edu/geog862/node/1742
-% https://ocw.mit.edu/courses/earth-atmospheric-and-planetary-sciences/12-540-principles-of-the-global-positioning-system-spring-2012/lecture-notes/MIT12_540S12_lec7.pdf
+% http://indico.ictp.it/event/a09138/session/24/contribution/14/material/0/0.pdf
 % http://read.pudn.com/downloads85/ebook/326017/Fundamentals%20of%20Global%20Positioning%20System%20Receivers/booktext05.pdf
 % http://www.navipedia.net/index.php/GPS_Navigation_Message

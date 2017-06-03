@@ -4,11 +4,7 @@ function range_error = rangesim(allRec,allSat,Estruc)
 % allSat = matrix of satellite locations in ECEF 3 by numSat
 
 
-% errorstruct: magnitude of error in seconds
-%     .tropo = troposphere 
-%     .isoph = ionosphere
-%     .satcb = clock bias from satellite
-%     .reccb = receiver clock bias
+
 % controlled error: 
 %     .satmag = satellite correlated *10^-6
 %     .recmag = recevier correlated *10^-6

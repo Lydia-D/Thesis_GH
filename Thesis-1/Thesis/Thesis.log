@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.3.10)  2 JUN 2017 23:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.3.10)  4 JUN 2017 05:54
 entering extended mode
 **./Thesis.tex
 (Thesis.tex
@@ -1520,7 +1520,7 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 80.
 \openout2 = `FrontMatter/FrontMatter.aux'.
 
  (FrontMatter/FrontMatter.tex (FrontMatter/TitlePage.tex
-<FrontMatter/Figures/USYD_Logo_Colour_Stacked.pdf, id=255, 284.52798pt x 284.52
+<FrontMatter/Figures/USYD_Logo_Colour_Stacked.pdf, id=259, 284.52798pt x 284.52
 798pt>
 File: FrontMatter/Figures/USYD_Logo_Colour_Stacked.pdf Graphic file (type pdf)
  <use FrontMatter/Figures/USYD_Logo_Colour_Stacked.pdf>
@@ -1651,23 +1651,27 @@ Chapter 2.
 ] [5])
 (ChapterLiteratureReview/Signals.tex
 
-LaTeX Warning: Citation `postprocessing multi' on page 6 undefined on input lin
-e 4.
+LaTeX Warning: Citation `signal spec' on page 6 undefined on input line 4.
 
-[6]
-Overfull \hbox (387.98041pt too wide) in paragraph at lines 23--24
-[][][]$\T1/lmtt/m/n/12 https : / / ocw . mit . edu / courses / earth-[]atmosphe
-ric-[]and-[]planetary-[]sciences / 12-[]540-[]principles-[]of-[]the-[]global-[]
-positioning-[]system-[]spring-[]2012 /$
- []
+[6] <ChapterLiteratureReview/PRNtime.png, id=483, 642.4pt x 347.2975pt>
+File: ChapterLiteratureReview/PRNtime.png Graphic file (type png)
 
+<use ChapterLiteratureReview/PRNtime.png>
+Package pdftex.def Info: ChapterLiteratureReview/PRNtime.png used on input line
+ 16.
+(pdftex.def)             Requested size: 303.53267pt x 164.09892pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 25--29
+<ChapterLiteratureReview/NavMessage.png, id=488, 350.05782pt x 231.86626pt>
+File: ChapterLiteratureReview/NavMessage.png Graphic file (type png)
 
- []
-
-[7]) (ChapterLiteratureReview/Trilateration.tex
-<ChapterLiteratureReview/trilateration.pdf, id=468, 963.6pt x 542.025pt>
+<use ChapterLiteratureReview/NavMessage.png>
+Package pdftex.def Info: ChapterLiteratureReview/NavMessage.png used on input l
+ine 35.
+(pdftex.def)             Requested size: 303.53267pt x 201.06393pt.
+ [7 <./ChapterLiteratureReview/PRNtime.png>] [8 <./ChapterLiteratureReview/NavM
+essage.png>])
+(ChapterLiteratureReview/Trilateration.tex
+<ChapterLiteratureReview/trilateration.pdf, id=505, 963.6pt x 542.025pt>
 File: ChapterLiteratureReview/trilateration.pdf Graphic file (type pdf)
 
 <use ChapterLiteratureReview/trilateration.pdf>
@@ -1675,7 +1679,7 @@ Package pdftex.def Info: ChapterLiteratureReview/trilateration.pdf used on inpu
 t line 15.
 (pdftex.def)             Requested size: 303.53267pt x 170.7305pt.
 
-<ChapterLiteratureReview/trilaterationtime.pdf, id=469, 722.7pt x 542.025pt>
+<ChapterLiteratureReview/trilaterationtime.pdf, id=506, 722.7pt x 542.025pt>
 File: ChapterLiteratureReview/trilaterationtime.pdf Graphic file (type pdf)
 
 <use ChapterLiteratureReview/trilaterationtime.pdf>
@@ -1683,36 +1687,39 @@ Package pdftex.def Info: ChapterLiteratureReview/trilaterationtime.pdf used on
 input line 22.
 (pdftex.def)             Requested size: 303.53267pt x 227.64894pt.
 )
-(ChapterLiteratureReview/ErrorSources.tex [8 <./ChapterLiteratureReview/trilate
-ration.pdf>] [9 <./ChapterLiteratureReview/trilaterationtime.pdf>] [10]
-[11]) (ChapterLiteratureReview/MultipleReceivers.tex [12])
-(ChapterLiteratureReview/CurrentGNSSAlgorithms.tex [13]
-Underfull \hbox (badness 10000) in paragraph at lines 50--51
+(ChapterLiteratureReview/ErrorSources.tex [9] [10 <./ChapterLiteratureReview/tr
+ilateration.pdf> <./ChapterLiteratureReview/trilaterationtime.pdf
 
- []
-
-[14]
+pdfTeX warning: pdflatex.exe (file ./ChapterLiteratureReview/trilaterationtime.
+pdf): PDF inclusion: multiple pdfs with page group included in a single page
+>] [11] [12]) (ChapterLiteratureReview/MultipleReceivers.tex [13])
+(ChapterLiteratureReview/CurrentGNSSAlgorithms.tex [14]
 Underfull \hbox (badness 10000) in paragraph at lines 52--53
 
  []
 
-
+[15]
 Underfull \hbox (badness 10000) in paragraph at lines 54--55
 
  []
 
-[15]) (ChapterLiteratureReview/LitSummary.tex) [16]) [17]
+
+Underfull \hbox (badness 10000) in paragraph at lines 56--57
+
+ []
+
+[16]) (ChapterLiteratureReview/LitSummary.tex) [17]) [18]
 \openout2 = `ChapterPerception/Perception.aux'.
 
 
 (ChapterPerception/Perception.tex
 Chapter 3.
-[18
+[19
 
 
 
 ]
-<ChapterLiteratureReview/overall_singleS_multiR.jpg, id=553, 1782.66pt x 1336.9
+<ChapterLiteratureReview/overall_singleS_multiR.jpg, id=590, 1782.66pt x 1336.9
 95pt>
 File: ChapterLiteratureReview/overall_singleS_multiR.jpg Graphic file (type jpg
 )
@@ -1721,7 +1728,7 @@ Package pdftex.def Info: ChapterLiteratureReview/overall_singleS_multiR.jpg use
 d on input line 36.
 (pdftex.def)             Requested size: 303.53267pt x 227.65335pt.
 
-<ChapterLiteratureReview/overall_multiS_duelR.jpg, id=554, 1782.66pt x 1336.995
+<ChapterLiteratureReview/overall_multiS_duelR.jpg, id=591, 1782.66pt x 1336.995
 pt>
 File: ChapterLiteratureReview/overall_multiS_duelR.jpg Graphic file (type jpg)
  <use ChapterLiteratureReview/overall_multiS_duelR.jpg>
@@ -1732,20 +1739,20 @@ on input line 44.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[19 <./ChapterLiteratureReview/overall_singleS_multiR.jpg>]
+[20 <./ChapterLiteratureReview/overall_singleS_multiR.jpg>]
 (ChapterPerception/Assumptions.tex
-Underfull \hbox (badness 10000) in paragraph at lines 10--11
+Underfull \hbox (badness 10000) in paragraph at lines 11--12
 
  []
 
-[20 <./ChapterLiteratureReview/overall_multiS_duelR.jpg>])
+[21 <./ChapterLiteratureReview/overall_multiS_duelR.jpg>] [22])
 (ChapterPerception/EpochAlign.tex
 Underfull \hbox (badness 10000) in paragraph at lines 5--6
 
  []
 
-[21] [22]
-<ChapterPerception/Figures/epochalignment.pdf, id=587, 963.6pt x 542.025pt>
+[23]
+<ChapterPerception/Figures/epochalignment.pdf, id=622, 963.6pt x 542.025pt>
 File: ChapterPerception/Figures/epochalignment.pdf Graphic file (type pdf)
 
 <use ChapterPerception/Figures/epochalignment.pdf>
@@ -1753,24 +1760,24 @@ Package pdftex.def Info: ChapterPerception/Figures/epochalignment.pdf used on i
 nput line 43.
 (pdftex.def)             Requested size: 260.17464pt x 216.69714pt.
 )
-(ChapterPerception/Algorithm.tex [23] [24 <./ChapterPerception/Figures/epochali
+(ChapterPerception/Algorithm.tex [24] [25 <./ChapterPerception/Figures/epochali
 gnment.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 4--15
 
  []
 
-[25]
-<ChapterPerception/Figures/solve_distances.jpg, id=619, 1782.66pt x 1336.995pt>
+[26]
+<ChapterPerception/Figures/solve_distances.jpg, id=655, 1782.66pt x 1336.995pt>
 File: ChapterPerception/Figures/solve_distances.jpg Graphic file (type jpg)
 <use ChapterPerception/Figures/solve_distances.jpg>
 Package pdftex.def Info: ChapterPerception/Figures/solve_distances.jpg used on 
 input line 60.
 (pdftex.def)             Requested size: 303.53267pt x 227.65335pt.
- [26] [27 <./ChapterPerception/Figures/solve_distances.jpg>] [28]
+ [27] [28 <./ChapterPerception/Figures/solve_distances.jpg>] [29]
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10.95> on input line 129.
 
-<ChapterPerception/Figures/pointonplane.jpg, id=650, 2055.68pt x 1541.76pt>
+<ChapterPerception/Figures/pointonplane.jpg, id=686, 2055.68pt x 1541.76pt>
 File: ChapterPerception/Figures/pointonplane.jpg Graphic file (type jpg)
 
 <use ChapterPerception/Figures/pointonplane.jpg>
@@ -1781,26 +1788,26 @@ ut line 131.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[29] [30 <./ChapterPerception/Figures/pointonplane.jpg>])
+[30] [31 <./ChapterPerception/Figures/pointonplane.jpg>])
 
-LaTeX Warning: Reference `ch:estimation' on page 31 undefined on input line 66.
+LaTeX Warning: Reference `ch:estimation' on page 32 undefined on input line 66.
 
 
-) [31]
+) [32]
 \openout2 = `ChapterExperiments/Experiments.aux'.
 
  (ChapterExperiments/Experiments.tex
 Chapter 4.
-(ChapterExperiments/SectionSimulation.tex [32
+(ChapterExperiments/SectionSimulation.tex [33
 
 
 
-] [33]
+] [34]
 Underfull \hbox (badness 10000) in paragraph at lines 53--54
 
  []
 
-[34] <ChapterExperiments/Figures/GDOP.png, id=695, 562.1pt x 451.6875pt>
+[35] <ChapterExperiments/Figures/GDOP.png, id=731, 562.1pt x 451.6875pt>
 File: ChapterExperiments/Figures/GDOP.png Graphic file (type png)
 
 <use ChapterExperiments/Figures/GDOP.png>
@@ -1812,30 +1819,60 @@ Underfull \hbox (badness 10000) in paragraph at lines 88--92
 
  []
 
-) (ChapterExperiments/SectionExample.tex [35 <./ChapterExperiments/Figures/GDOP
+) (ChapterExperiments/SectionExample.tex [36 <./ChapterExperiments/Figures/GDOP
 .png>]
 Underfull \hbox (badness 10000) in paragraph at lines 34--39
 
  []
 
-[36]
-<ChapterExperiments/Figures/orbit_distance.pdf, id=708, 963.6pt x 542.025pt>
+[37]
+<ChapterExperiments/Figures/orbit_distance.pdf, id=744, 963.6pt x 542.025pt>
 File: ChapterExperiments/Figures/orbit_distance.pdf Graphic file (type pdf)
 
 <use ChapterExperiments/Figures/orbit_distance.pdf>
 Package pdftex.def Info: ChapterExperiments/Figures/orbit_distance.pdf used on 
 input line 52.
 (pdftex.def)             Requested size: 303.53267pt x 136.76035pt.
-)) [37 <./ChapterExperiments/Figures/orbit_distance.pdf>]
+
+Overfull \hbox (29.33888pt too wide) in paragraph at lines 58--58
+[]\T1/lmr/bx/n/17.28 Planar As-sump-tion and In-ter-sec-tion Least squares
+ []
+
+[38 <./ChapterExperiments/Figures/orbit_distance.pdf>]
+Package epstopdf Info: Source file: <ChapterExperiments/Figures/plane_total_nor
+th1_pow4.eps>
+(epstopdf)                    date: 2017-06-04 05:53:00
+(epstopdf)                    size: 2562802 bytes
+(epstopdf)             Output file: <ChapterExperiments/Figures/plane_total_nor
+th1_pow4-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-06-04 05:54:06
+(epstopdf)                    size: 332888 bytes
+(epstopdf)             Command: <epstopdf --outfile=ChapterExperiments/Figures/
+plane_total_north1_pow4-eps-converted-to.pdf ChapterExperiments/Figures/plane_t
+otal_north1_pow4.eps>
+(epstopdf)             \includegraphics on input line 73.
+Package epstopdf Info: Output file is already uptodate.
+
+<ChapterExperiments/Figures/plane_total_north1_pow4-eps-converted-to.pdf, id=76
+6, 670.505pt x 452.69125pt>
+File: ChapterExperiments/Figures/plane_total_north1_pow4-eps-converted-to.pdf G
+raphic file (type pdf)
+
+<use ChapterExperiments/Figures/plane_total_north1_pow4-eps-converted-to.pdf>
+Package pdftex.def Info: ChapterExperiments/Figures/plane_total_north1_pow4-eps
+-converted-to.pdf used on input line 73.
+(pdftex.def)             Requested size: 303.53267pt x 204.9249pt.
+)) [39 <./ChapterExperiments/Figures/plane_total_north1_pow4-eps-converted-to.p
+df>]
 \openout2 = `ChapterConclusion/Conclusion.aux'.
 
  (ChapterConclusion/Conclusion.tex
 Chapter 5.
-) [38
+) [40
 
 
 
-] (Thesis.bbl) [39
+] (Thesis.bbl) [41
 
 
 
@@ -1844,7 +1881,7 @@ Chapter 5.
 
  (AppendixSomething/Something.tex
 Appendix A.
-) [40
+) [42
 
 
 ]
@@ -1861,7 +1898,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 117.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 117.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 117.
 Package rerunfilecheck Info: File `Thesis.out' has not changed.
-(rerunfilecheck)             Checksum: EA594B46FB14676A04B8457D30BA03D4;4441.
+(rerunfilecheck)             Checksum: 985265FC658F74015791B72165712BED;4536.
 
 
 LaTeX Warning: There were undefined references.
@@ -1873,13 +1910,13 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 117.
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 22083 strings out of 493634
- 378088 string characters out of 3135239
- 470044 words of memory out of 3000000
- 24793 multiletter control sequences out of 15000+200000
+ 22140 strings out of 493634
+ 379232 string characters out of 3135239
+ 469443 words of memory out of 3000000
+ 24822 multiletter control sequences out of 15000+200000
  69113 words of font info for 58 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 42i,13n,43p,10420b,10681s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 42i,13n,44p,10420b,10679s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/Lydia/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvi
 ps/lm/lm-mathit.enc}{C:/Users/Lydia/AppData/Local/Programs/MiKTeX 2.9/fonts/enc
 /dvips/lm/lm-rm.enc}{C:/Users/Lydia/AppData/Local/Programs/MiKTeX 2.9/fonts/enc
@@ -1903,9 +1940,9 @@ s/Lydia/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/
 Users/Lydia/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb><
 C:/Users/Lydia/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmtt12.p
 fb>
-Output written on Thesis.pdf (52 pages, 1891549 bytes).
+Output written on Thesis.pdf (54 pages, 2270431 bytes).
 PDF statistics:
- 845 PDF objects out of 1000 (max. 8388607)
- 181 named destinations out of 1000 (max. 500000)
- 567 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 897 PDF objects out of 1000 (max. 8388607)
+ 195 named destinations out of 1000 (max. 500000)
+ 590 words of extra memory for PDF output out of 10000 (max. 10000000)
 

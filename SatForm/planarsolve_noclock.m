@@ -2,7 +2,7 @@
 % 18/5/17
 % solve for all variables at once ->
 
-function [Loc_lin,clockbias] = planarsolve_epoch(range_com,Sat_com,numRec, GS_ECEF)
+function [Loc_lin] = planarsolve_noclock(range_com,Sat_com,numRec, GS_ECEF)
     global c
 
 % range_com = pseudoranges at common epoch 
@@ -90,7 +90,7 @@ function [Loc_lin,clockbias] = planarsolve_epoch(range_com,Sat_com,numRec, GS_EC
     %planes = zeros(size(Omega,1));
     offset = 0;
     
-    N = [avg_norm',ones(numSat,1)]; % numSats by 4
+    N = [avg_norm']; % numSats by 4
     
     % weigthed least squares: square matrix of number of equations to solve
     % length = numRec*numSat **SOME SATS LESS RELEIABLE** pinv = inv((BIG'*W*BIG))*BIG'*W;
@@ -101,12 +101,12 @@ function [Loc_lin,clockbias] = planarsolve_epoch(range_com,Sat_com,numRec, GS_EC
     
     % solve for [xalpha;yalpha;zalpha;b_alpha;xbeta...] PX=D
     % individual planes + alpha plane intersection but with clockbias linked
-    BIG = zeros(numSat*numRec,4*numRec);
+    BIG = zeros(numSat*numRec,3*numRec);
     %BIG(:,4) = -1*ones(size(BIG,1),1);
-    BIG(:,1:4) = -1*repmat(N(:,1:4),[numRec,1]);
+    BIG(:,1:3) = -1*repmat(N(:,1:3),[numRec,1]);
    
     for irec = 1:numRec
-        BIG(1+(irec-1)*numSat:irec*numSat,1+(irec-1)*4:(irec)*4) = N;
+        BIG(1+(irec-1)*numSat:irec*numSat,1+(irec-1)*3:(irec)*3) = N;
     end
         
     pinv = inv((BIG'*BIG))*BIG';
@@ -127,8 +127,8 @@ function [Loc_lin,clockbias] = planarsolve_epoch(range_com,Sat_com,numRec, GS_EC
 %     end
     
     %Loc_lin=ALL_ans;
-    ALL_ans = reshape(ALL_ans,[4,numRec]);
-    clockbias = ALL_ans(4,:);
+    ALL_ans = reshape(ALL_ans,[3,numRec]);
+    %clockbias = ALL_ans(4,:);
     Loc_lin = ALL_ans(1:3,:)';
 
 

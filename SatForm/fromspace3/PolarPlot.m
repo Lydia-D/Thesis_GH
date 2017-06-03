@@ -1,7 +1,7 @@
 % polar plot   polar(theta,rho) where theta is azmuth and rho is elevation
 % in degreeds
 
-function fighandle = PolarPlot()
+function fighandle = PolarPlot(fighandle)
     d_el = 15;
     d_spk = 30;
     grey    = 0.65*[1 1 1];
@@ -17,7 +17,7 @@ function fighandle = PolarPlot()
     elLab       = [90:-d_el:0];             % Elevation label
 
     %% Plot spoke lines
-    fighandle = figure;
+    figure(fighandle);
     hold all
     azAngles  = [180:-d_spk: 0];
     azLab.textup = [270:d_spk:360-d_spk, 0:d_spk:90]; % from left to right

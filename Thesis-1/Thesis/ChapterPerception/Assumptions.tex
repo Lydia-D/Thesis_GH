@@ -2,8 +2,9 @@
 
 \section{Assumptions}
 All the assumptions are based on each other so need a pre-statement
-\subsection{Approximate Location}
 
+\subsection{Approximate Global Location}
+An approximate location is required for where the system is on the Earth within 1 km of all of the receivers. This is to calculate the normal direction vectors to each of the satellites. A simple solution to this is to set the reference receiver to calculate it's absolute position first using NLLS. This will give the system a reference of within 20 m at worst, well within the acceptable parameters.
 
 
 \subsection{Static Receivers}
@@ -14,7 +15,6 @@ For the dynamic case, it is likely that the data would be a part of a system con
 
 \subsection{Parallel plane assumption}
 It as assumed for the plane equations that all receivers point to a satellite along the same vector. This is valid for a dispersion of receivers for 10km for an error of XX. This is synonymous to if the satellites were at infinity and all the receiver vectors are parallel to a satellite
-
 
 
 \begin{eqnarray}
