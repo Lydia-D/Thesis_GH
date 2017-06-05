@@ -32,9 +32,9 @@ $t_2 = t_{sampleoffset}- |v|/c$
 
 The vector $v$ is the measured pseudorange of a receiver from a particular visible satellite at $t_2$ with an unknown direction vector. The direction vector is unknown because the position of the receiver is what is being solved for. The vector $\eta$ describes the known direction vector from the single approximate location of the geographic region to the common epoch of a particular visible satellite. It is the magnitude of $\eta$ that describes what the pseudorange would have been if the measurement was taken at the common epoch. The difference between the  $|\eta|-|v|$
 
-Because of the asynchronous time, some of the satellite correlated errors would not correlate as well as if it was from the same point in time. This is because the path through the ionosphere and troposphere is not exactly the same, however the 
+Because of the asynchronous time, some of the satellite correlated errors would not correlate as well as if it was from the same point in time. This is because the path through the ionosphere and troposphere is not exactly the same. 
 
-Error as the clock bias is unknown at this point. In the literature, an approximate clock bias is calculated through NLLS first then the epoch is transformed to process an updated pseudorange. The updated pseudorange is then used again in NLLS and the process is repeated until convergence is reached.
+%Error as the clock bias is unknown at this point. In the literature, an approximate clock bias is calculated through NLLS first then the epoch is transformed to process an updated pseudorange. The updated pseudorange is then used again in NLLS and the process is repeated until convergence is reached.
 
 \begin{figure}
 \centering

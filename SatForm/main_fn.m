@@ -27,17 +27,19 @@ numRec = 2;
 
 numSat = 10;
 
-elset = 1;
+elset = 75;
 %Sconfig_el = [20,21,19,20];
 %Sconfig_el = [elset,elset+1,elset-1,elset+2,elset-2];
-Sconfig_el = [elset-2,elset+1,elset-1,elset+2];
-
+%Sconfig_el = [elset-2,elset+2,elset-2,elset+2,elset];
+Sconfig_el = [45,20,20,20];
+   
 % range from 0 to 2pi
 %azset = linspace(0,2*pi-0.01,20);
-azset = 80;
+azset = 0;
 %Sconfig_az = [pi/4,3*pi/4,5*pi/4,7*pi/4];
 %Sconfig_az = [pi/4-0.2,pi/4,pi/4-0.1,pi/4+0.1,pi/4+0.2];
-Sconfig_az = [azset-2,azset-2,azset+1,azset+1];
+%Sconfig_az = [azset-2,azset-2,azset+2,azset+2,azset];
+Sconfig_az = [41,48,69,45];
 
 %Sconfig_az = [1,pi/2-1,pi-1,3*pi/2+1];
 
@@ -45,12 +47,7 @@ el = deg2rad(Sconfig_el);
 az = deg2rad(Sconfig_az);
 [x,y] = polar2plot(az,el);
 %[x,y] = polar2plot(VisSat_LG_pol(2,:),VisSat_LG_pol(3,:));
-figure(1)
-subplot(2,2,1);
-subplot('position',[0.05,0.3,0.5,0.5])
-polarfig = PolarPlot(gcf);
-hold on
-scatter(x,y)
+
 
 % location of satellites at t = 0
 allSat = sat_ned2ecef(el,az,GS_LLH); % global frame
@@ -77,8 +74,26 @@ Rconfig = [1,0,0;
           0,-1,0;
           0,0,-1]';
 
+      
+alpha = [0;0;0];
+beta = Rconfig(:,1);
+%% plot receiver configuration - 0 is approximate location
+figure(1)
+ned2xyz = [1,0,0,0;0,-1,0,0;0,0,-1,0;0,0,0,0];
+
+subplot(221)
+plotrec([alpha,beta],gcf)
+ax = gca;
+%text(0,0,'Receiver and Satellite Configuration\n from Approximate Location')
+subplot(223);
+subplot('position',[0.05,0.05,0.45,0.45])
+scatter(x,y)
+hold on
+polarfig = PolarPlot(gcf,0.65);
+
+     %% 
 for j = 1:length(power)
-    Rec_displacement = 10^power(j).*[[0;0;0],Rconfig(:,1)];
+    Rec_displacement = 10^power(j).*[[0;0;0],beta];
     %Rec_displacement = [0,10;0,0;0,0];   % use NED coords
     Rec_ecef_local = lg2ecef(Rec_displacement,GS_LLH);
     allRec = GS_ECEF*ones(1,numRec)+Rec_ecef_local;

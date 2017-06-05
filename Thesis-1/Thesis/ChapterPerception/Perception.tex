@@ -27,7 +27,6 @@ When differencing through space between the receivers, the epoch alignment is re
 Following the literature, the two main options for increasing the accuracy is extensive modelling of the errors, or some type of differencing algorithm. Error modelling requires external hardware, internet connection and extra computation time which increases the budget requirements. Whereas 
 
 
-
 This new algorithm is derived from taking the difference in pseudorange between multiple receivers from one satellite and expressing the distances as planes.
 \begin{figure}[h]
 \centering
@@ -44,11 +43,18 @@ With multiple satellites in view, the intersection of planes for a particular re
 \includegraphics[width=0.7\linewidth]{ChapterLiteratureReview/overall_multiS_duelR.jpg}
 \end{figure}
 
-With this strategy, some of the errors that plague the absolute position are negated for the relative position. 
+With this strategy, some of the errors that plague the absolute position are negated for the relative position. Eq\eqref{Eq:full} describes the measured pseudorange for a single receiver $\omega$ from a single satellite $s$.
 \begin{eqnarray}
-\rho_\omega^s = R_\omega^s -cb_\omega + c(T_s + I_s+\nu_s+b_s)
+\rho_\omega^s = R_\omega^s -cb_\omega + c(T_s + I_s+\nu_s+b_s) + \epsilon \label{Eq:full}
 \end{eqnarray}
-where $R_\omega^s$ is the real range with the following sources of error; $b_\omega$ is the receiver clock bias, $T_s$ is the tropospheric error, $I_s$ is the ionospheric error, $\nu_s$ is the relativistic error and $b_s$ is the satellite clock bias.
+Where $R_\omega^s$ is the real range with the following sources of error; $b_\omega$ is the receiver clock bias, $T_s$ is the tropospheric error, $I_s$ is the ionospheric error, $\nu_s$ is the relativistic error, $b_s$ is the satellite clock bias and $\epsilon$ is random noise. The satellite correlated effects are removed with the individual receiver clock biases, random error and true range difference, Eq\eqref{Eq: D}.  
+\begin{eqnarray}
+D_{\omega_i\omega_j}^s &=& \rho_{\omega_i}^s - \rho_{\omega_j}^s \\
+D_{\omega_i\omega_j}^s &=& R_{\omega_i}^s-R_{\omega_j}^s -c(b_{\omega_i}-b_{\omega_j}) + \epsilon \label{Eq: D}
+\end{eqnarray}
+
+This chapter explains the assumptions and details the mathematics behind the planar algorithm.
+
 
 
 
@@ -61,6 +67,4 @@ where $R_\omega^s$ is the real range with the following sources of error; $b_\om
 
 %%%%%%%%%%%%%%%%%%%% Conclusions %%%%%%%%%%%%%%%%%%%
 
-\section{Summary}
 
-\Autoref{ch:estimation} and \autoref{ch:experiments} take things to a more advanced level.

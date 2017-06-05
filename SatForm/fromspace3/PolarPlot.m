@@ -1,10 +1,10 @@
 % polar plot   polar(theta,rho) where theta is azmuth and rho is elevation
 % in degreeds
 
-function fighandle = PolarPlot(fighandle)
+function fighandle = PolarPlot(fighandle,greyin)
     d_el = 15;
     d_spk = 30;
-    grey    = 0.65*[1 1 1];
+    grey    = greyin*[1 1 1];
 
     angle       = linspace(0,2*pi,150);
     unitC.x     = cos(angle);
@@ -50,7 +50,7 @@ function fighandle = PolarPlot(fighandle)
     text(-1-0.15, 0,     'West','HorizontalAlignment','Right');
     text(1+0.15,  0,     'East','HorizontalAlignment','Left');
 
-    axis square
+    axis equal
     set(gca, 'visible', 'off')
     set(gcf, 'Color', 0.95*[1 1 1])
 end

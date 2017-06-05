@@ -15,7 +15,7 @@ function [Loc_lin,clockbias] = planarsolve_epoch(range_com,Sat_com,numRec, GS_EC
     numSat = size(Sat_com,2);
 
 %% calculate normal vectors from approximate location to each satellite
-    
+    % in ecef frame
     avg_norm = normalise(Sat_com-GS_ECEF*ones(1,numSat));
     
 
@@ -26,6 +26,8 @@ function [Loc_lin,clockbias] = planarsolve_epoch(range_com,Sat_com,numRec, GS_EC
         all_RHO = [all_RHO;range_com(i+1:end,:)-ones(numRec-i,1)*range_com(i,:)];
     end
 
+    
+    
 %     for k = 1:numSat
 %         all_RHO{k} = [];
 %     end
@@ -130,6 +132,7 @@ function [Loc_lin,clockbias] = planarsolve_epoch(range_com,Sat_com,numRec, GS_EC
     ALL_ans = reshape(ALL_ans,[4,numRec]);
     clockbias = ALL_ans(4,:);
     Loc_lin = ALL_ans(1:3,:)';
+
 
 
 end

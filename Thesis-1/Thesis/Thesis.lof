@@ -1,18 +1,22 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Pseudorange measurement from the time delay of the PRN code \cite {whatwhenhow}\relax }}{7}{figure.caption.20}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Navigation Message Content and Format Overview \cite {signalspec}\relax }}{8}{figure.caption.21}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces \relax }}{10}{figure.caption.22}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces \relax }}{10}{figure.caption.23}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces GPS Constellation in Earth-Centered Inertial frame\relax }}{4}{figure.caption.19}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Pseudorange measurement from the time delay of the PRN code \cite {whatwhenhow}\relax }}{7}{figure.caption.20}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Navigation Message Content and Format Overview \cite {signalspec}\relax }}{8}{figure.caption.21}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces \relax }}{9}{figure.caption.22}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces \relax }}{10}{figure.caption.23}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces 2D representation\relax }}{20}{figure.caption.26}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces \relax }}{21}{figure.caption.27}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Vector Epoch Synchronisation\relax }}{25}{figure.caption.28}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces text\relax }}{28}{figure.caption.37}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Find position $f_\omega ^s$ on the plane\relax }}{31}{figure.caption.40}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces 2D representation\relax }}{21}{figure.caption.26}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces \relax }}{22}{figure.caption.27}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Vector Epoch Synchronisation\relax }}{26}{figure.caption.28}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Construction of Planes\relax }}{28}{figure.caption.36}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Geometric Dilution of Precision\relax }}{36}{figure.caption.49}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces text\relax }}{38}{figure.caption.51}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces \relax }}{39}{figure.caption.52}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Geometric Dilution of Precision\relax }}{35}{figure.caption.46}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces text\relax }}{37}{figure.caption.48}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Error of Plane Assumption vs Distance along North vector}}{39}{figure.caption.49}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces \relax }}{39}{figure.caption.50}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces North\relax }}{40}{figure.caption.51}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces East\relax }}{40}{figure.caption.52}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Down\relax }}{41}{figure.caption.53}
 \addvspace {10\p@ }
 \addvspace {10\p@ }

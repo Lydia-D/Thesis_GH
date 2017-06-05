@@ -26,8 +26,8 @@ numRec = 2;
 %load VisibleSat
 
 numSat = 10;
-Nel = 50;
-Naz = 150;
+Nel = 20;
+Naz = 50;
 elset = linspace(2,87,Nel);
 %Sconfig_el = [20,21,19,20];
 %Sconfig_el = [elset,elset+1,elset-1,elset+2,elset-2];
@@ -88,7 +88,7 @@ for iaz = 1:Naz
     Y(iel,iaz) = y;
     
     
-    Rec_displacement = 10^power(j).*[[0;0;0],Rconfig(:,3)];
+    Rec_displacement = 10^power(j).*[[0;0;0],Rconfig(:,1)];
     %Rec_displacement = [0,10;0,0;0,0];   % use NED coords
     Rec_ecef_local = lg2ecef(Rec_displacement,GS_LLH);
     allRec = GS_ECEF*ones(1,numRec)+Rec_ecef_local;
@@ -102,7 +102,7 @@ for iaz = 1:Naz
     
     
 %% statistical analysis - one rec
-total_iter = 1;
+total_iter = 50;
 allerror = zeros(3,total_iter,numRec-1);  % NEED TO STRUCTURE FOR MORE REC
 for i = 1:total_iter
 %    [allerror(:,i),clockbias(:,j)] = fn_planeepoch(GS_LLH,GS_ECEF,numSat,numRec,allRec,allSat,Estruc,true_rel_alpha);
@@ -114,7 +114,7 @@ end
 avg_error(:,j) = mean(allerror,2);
 std_dev(:,j) = std(allerror,0,2); % use N-1 (0) or N (1)? in second field
 
-% storeerror(iel,iaz) = magc(avg_error);
+storeerror(iel,iaz) = magc(avg_error);
 northerror(iel,iaz) = avg_error(1,:);
 easterror(iel,iaz) = avg_error(2,:);
 downerror(iel,iaz) = avg_error(3,:);
@@ -124,7 +124,7 @@ end
 end
 
 %% plot colourmap on polar plot
-polarfig= colourpolar_set(X,Y,downerror)
+polarfig= colourpolar_set(X,Y,storeerror)
 
 
 %%

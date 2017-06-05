@@ -6,7 +6,7 @@
 %         Rsat = column vector of real ranges from satellites
 % Outputs: 
 %% 
-function [X,DOP,clockbias] = convergance(X0,PosSat,Rsat)
+function [Loc,X,DOP,clockbias] = convergance(X0,PosSat,Rsat)
     % weighted 
     W = eye(size(PosSat,4)); % something to do with dilution of precision?
    
@@ -33,5 +33,5 @@ function [X,DOP,clockbias] = convergance(X0,PosSat,Rsat)
     %% DOPs
     DOP = DOPs(H);
     clockbias = X(4);
-
+    Loc = X(1:3);
 end

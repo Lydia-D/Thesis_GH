@@ -55,20 +55,3 @@ R = \frac{a\cos\left( \theta+\sin^{-1}\left( \frac{r_e\cos(\theta)}{a} \right) \
 Some configurations will not reflect what can be achieved in our current reality but may be able to in the future. The European GNSS constellation \textit{Galileo} will have 30 satellites operating in tandem with GPS. There are also the constellations GLONASS and Beibo the Russian and Chinese constellations that there may be international cooperation in the future to have all the GNSS constellations operating together in a high density system.
 
 
-\section{Planar Assumption and Intersection Least squares results}
-These results had no error induced in the measurements in order to analyse the effectiveness and robustness of the algorithm. No epoch alignment and no correlated or uncorrelated errors. Only two receivers were used with the reference receiver exactly at the approximate location. The second receiver was set at varied configurations of a set distance north, east and down of the reference receiver. The set distance between the receivers was varied from 1 mm to 100 km. As there are no randomly induced errors, there is no statistical analysis.
-
-The configuration of the satellites were also varied. 
-
-NOTE: When the satellites are in a cluster, the planes are very close together with minimal difference between them.
-with no errors in the system, the clockbias still went nuts with the constrain (tr-t1) on D
-the values of x,y,z are so big for the large differences that a small clockbias is proportionally the minimum
-SHOW WITH AND WITHOUT SOLVING FOR CLOCKBIAS
-- the excessive clock bias is trying to minimise the error due to the plane assumption
-
-\begin{figure}
-\centering
-\caption{}
-\label{fig:plane_total_north1_pow4}
-\includegraphics[width=0.7\linewidth]{ChapterExperiments/Figures/plane_total_north1_pow4}
-\end{figure}

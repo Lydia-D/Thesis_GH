@@ -1,5 +1,5 @@
 
-function [error_alpha,clockbias,error_alpha_NC] = fn_planeepoch(GS_LLH,GS_ECEF,numSat,numRec,allRec,allSat,Estruc,true_rel_alpha)
+function [error_alpha,clockbias,error_alpha_NC,range_error] = fn_planeepoch(GS_LLH,GS_ECEF,numSat,numRec,allRec,allSat,Estruc,true_rel_alpha)
 %% TO DO:
 % make this code into epoch manipulation.
 % how to pretend the sats are moving in orbit?

@@ -8,9 +8,6 @@
 %           ->  Obv_LLH                     = [lat, lon, h]'|Observer Centric
 %
 % Outputs:  ->  Pos_LG                    = [N, E, D]' in LGV frame
-%
-% Kelvin Hsu
-% AERO4701, 2016
 %% Edited by Lydia Drabsch 5/3/16
 % 1) convert observer Obs_LLH to Obs_ECEF
 % 2) find vector pointing from observer to satellite Pos_ECEF=Sat_ECEF-Obs_ECEF

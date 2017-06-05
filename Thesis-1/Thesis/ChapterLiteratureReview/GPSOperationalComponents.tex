@@ -5,28 +5,23 @@
 There are three components to the whole GPS system; the space segment, the user segment, and the ground control segment. The satellite sends radio signals towards the Earth which is received by both users and ground control centers. The ground control tracks the satellite and the data to analyse the satellite parameters and returns periodic updates to the satellite about its status. The satellite then updates its signal to the new parameters. The user receives the signal from the satellite with the updated parameters.
 
 \subsection{Space Segment}
-- current GNSS: explain GPS, GLONASS, galelao, chinese one constellations and how it works
-- what orbits are they in and why?: altitude\\
-inbetween the two radiation belts?
-
-The GPS constellation consists of 32 operational satellites in six different orbital planes
+A set of satellites in the same network is called a constellation. The GPS constellation consists of 30 active and spare NAVSTAR (NAVigation System with Timing and Ranging) satellites \cite{navpedia_spaceseg}. There are 24 satellites in the nominal configuration of 6 orbits with 4 satellites evenly spaced in the orbit with 90$^\circ$ separation, see Figure \ref{fig:GPS_ECI_side}. Each orbital plane is inclined at 55$^\circ$ and evenly spaced around the Earth with 60$^\circ$ separation. All of the orbits are almost circular with an eccentricity of 0.02 and an altitude (semi-major axis) of 20 200 km. This type of orbital configuration was chosen so that the period of the satellites are half of a sidereal day, 11 hours 58 minutes 2 seconds. With a masking of 15$^\circ$ from the horizon, this configuration provides coverage of a minimum of four satellites for every point on Earth, consistently \cite{understandinggps_ss}. Each satellite sends radio signals towards Earth and receives updates from ground control. The signals are explained more in Section \ref{sec:signals}.
+%speed of 3.9 km/s
 
 
+
+
+%http://content.schweitzer-online.de/static/catalog_manager/live/media_files/representation/zd_std_orig__zd_schw_orig/004/372/251/9780890067932_content_pdf_1.pdf
+%http://www.gps.gov/systems/gps/space/
 
 \subsection{User Segment}
-The user is a passive participant in the GPS system.
-- typical accuracy for civilian accessable gps\\
-- military has more precise stuff\\
-- lower cost receivers have only one frequency band, error in timing\\
-Unfortunately, low cost GNSS receivers rarely provide official access to the GPS raw data. Previous studies have used customised bluetooth headsets or customised android platform mobile phones to investigate algorithms on low-cost GPS receivers. More expensive receivers do allow raw data to be utilised, however they also provide other mechanisms such as duel frequencies and more accurate clocks, rendering the new algorithm *obtuse*. The mindset of *crowd-sourcing*/customising/flexible technology is changing the way manufactures build GPS receivers. The new Android OS platform Nougat 7.0 provides the developer raw GPS data at the software level.  
+The user is a passive participant in the GPS system, it receives the radio signals and processes them to determine position, velocity and timing (PVT). There are millions of receivers around the world covering military and civilian applications by ships, aircraft, ground vehicles and individuals.
+
+WHERE TO PUT THIS?\\
+Unfortunately, low cost GPS receivers rarely provide official access to the GPS raw data. Previous studies have used customised bluetooth headsets or customised android platform mobile phones to investigate algorithms on low-cost GPS receivers. More expensive receivers do allow raw data to be utilised, however they also provide other mechanisms such as duel frequencies and more accurate clocks, rendering the new algorithm *obtuse*. The mindset of *crowd-sourcing*/customising/flexible technology is changing the way manufactures build GPS receivers. The new Android OS platform Nougat 7.0 provides the developer raw GPS data at the software level.  
 
 \subsection{Ground Control Segment}
-On the ground spread all over the world, are control stations that monitor the satellites. 
-- tracking -> distance and angle - active as it sends back information
--Locations of control stations and why they're there
-
-Uses Herrick-Gibbs algorithm to determine the orbit of the satellite. A satellite is tracked over a ground station for a period of time and its position is measured. From three position vectors the velocity vector can be calculated and the ephemeris parameters are estimated. The ephemeris parameters describe the orbit of the satellite and are used to calculate the position of the satellite at any point in time by the user segment. The time parameters and clock corrections of the satellite are also calculated by the ground control station and sent back in the navigation message.
-The ephemeris data is highly accurate and updated every two hours.
+On the ground spread all over the world, are control stations that monitor the satellites. The ground stations use the Herrick-Gibbs algorithm to determine the orbit of the satellite. A satellite is tracked over a ground station for a period of time and its position is measured. From three position vectors the velocity vector can be calculated and the ephemeris parameters are estimated. The ephemeris parameters describe the orbit of the satellite and are used to calculate the position of the satellite at any point in time by the user segment. The time parameters and clock corrections of the satellite are also calculated by the ground control station and sent back in the navigation message. The ephemeris data is highly accurate and updated every two hours.
 
 
 

@@ -15,24 +15,39 @@
 %- data fusion, needed for drift correction
 
 %\section{GNSS Introduction} % just have as intro to the lit review?
+%America with GPS and Russia with GLONASS are at the time of writing the only two fully functional GNSS constellations. The EU and China are developing their own constellations called Galileo and Beidou respectively.
 
+Global Navigation Satellite System (GNSS) is a generic term for a satellite navigation system that provides autonomous localisation and tracking on a global scale. Some countries have developed or in the process of developing their own GNSS. This thesis focuses on the American GPS (Global Positioning System) due to information accessibly and extensive usage in literature as it is the oldest constellation.
 
-Global Navigation Satellite System (GNSS) is a generic term for a satellite navigation system that provides autonomous localisation and tracking on a global scale. Some countries have developed or in the process of developing their own GNSS, see Table \ref{Table:gnss constellations}. This thesis focuses on GPS (Global Positioning System) due to information accessibly and extensive usage in literature as it is the oldest constellation.
-\begin{table}
+\begin{figure}[!h]
 \centering
-\caption{GNSS Constellations}
-\label{Table:gnss constellations}
-\begin{tabular}[width=\linewidth]{|l|l|c|c|c|}
-\hline
-Country & Name & Number of Satellites & Start Date & End Date \\\hline
-America& GPS & 31 & &  \\\hline
-Russia & GLONASS & 24 & 1976 &  \\\hline
-European Union& Galileo &  & 1998 & \\\hline
-China & Beidou & & &  \\\hline
-\end{tabular}
-\end{table}
+\caption{GPS Constellation in Earth-Centered Inertial frame}
+\label{fig:GPS_ECI_side}
+\begin{subfigure}[t]{0.49\linewidth}
+\centering
+\caption{Side View}
+\includegraphics[trim=6cm 9.5cm 6cm 10cm,clip,width=0.8\linewidth]{ChapterLiteratureReview/GPS_ECI_side}
+\end{subfigure}
+\begin{subfigure}[t]{0.49\linewidth}
+\centering
+\caption{Top View}
+\includegraphics[trim=4cm 10cm 4cm 9cm,clip,width=\linewidth]{ChapterLiteratureReview/GPS_ECI_top}
+\end{subfigure}
+\end{figure}
 
-
+%\begin{table}
+%\centering
+%\caption{GNSS Constellations}
+%\label{Table:gnss constellations}
+%\begin{tabular}[width=\linewidth]{|l|l|c|c|c|}
+%\hline
+%Country & Name & Number of Satellites & Start Date & End Date \\\hline
+%America& GPS & 31 & &  \\\hline
+%Russia & GLONASS & 24 & 1976 &  \\\hline
+%European Union& Galileo &  & 1998 & \\\hline
+%China & Beidou & & &  \\\hline
+%\end{tabular}
+%\end{table}
 
 \input{ChapterLiteratureReview/GPSOperationalComponents}
 

@@ -33,7 +33,7 @@ true_rel_alpha = Rec_displacement(:,2:end)-repmat(Rec_displacement(:,1),[1,numRe
 el = deg2rad([30,80,55,42]);
 az = [pi/2+0.01,0,pi,3*pi/2];
 [x,y] = polar2plot(az,el);
-polarfig = PolarPlot();
+polarfig = PolarPlot(gcf,0.65);
 hold on
 scatter(x,y)
 
