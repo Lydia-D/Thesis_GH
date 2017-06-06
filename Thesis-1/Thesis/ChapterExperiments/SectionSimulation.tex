@@ -24,7 +24,7 @@ Orbital parameters & Value \\\hline
 The dispersion of receivers from $\alpha$ is a variable to the program. The actual displacement is calculated by multiplying the dispersion magnitude by a uniformly distributed random vector ranging from [0,1] in three dimensions for all remaining receivers in North-East-Down (NED) frame localised at $\alpha$. The positions were then transformed to the global ECEF frame.
 
 \subsubsection{Calculation of Pseudorange}
-In ECEF frame, the instantaneous distance between each visible satellite and each receiver was calculated. The errors were simulated by adding random distance proportional to error models in the literature to each individual satellite, see Table \ref{Table:mag errors}. The errors followed the structure in Eq\eqref{Eq: errorstruc}
+In ECEF frame, the instantaneous distance between each visible satellite and each receiver was calculated. The errors were simulated by adding random distance proportional to error models in the literature to each individual satellite, see Table \ref{Table:mag errors}. The errors followed the structure in Eq\eqref{Eq: errorstruc}.
 
 For the error analysis, the errors associated with the pseudorange were divided into three sections; satellite correlated errors, receiver correlated errors and random errors. For the satellite correlated errors, the same amount was added to the true range for each receiver from a single satellite. For the receiver correlated errors, the same amount was added to the true range for each satellite from a single receiver.  
 All errors were an addition to the pseudorange, so that how each type of error affected the algorithms 

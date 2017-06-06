@@ -6,9 +6,6 @@ function [error_alpha,clockbias,error_alpha_NC,range_error] = fn_planeepoch(GS_L
 
 
 
-
-
-
 %% Calculate range and add errors
 
 range_error = rangesim(allRec,allSat,Estruc);

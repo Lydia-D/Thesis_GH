@@ -44,38 +44,39 @@
 \contentsline {subsection}{\numberline {2.6.9}Summary of Algorithms ?}{19}{subsection.2.6.9}
 \contentsline {section}{\numberline {2.7}Moving Forward}{19}{section.2.7}
 \contentsline {chapter}{\numberline {3}Algorithm Solution}{21}{chapter.3}
-\contentsline {section}{\numberline {3.1}Proposed Planar Intersection Algorithm}{22}{section.3.1}
+\contentsline {section}{\numberline {3.1}Proposed Planar Algorithm (PA)}{22}{section.3.1}
 \contentsline {section}{\numberline {3.2}Assumptions}{23}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Approximate Global Location}{24}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.1}Approximate Global Location}{23}{subsection.3.2.1}
 \contentsline {subsection}{\numberline {3.2.2}Static Receivers}{24}{subsection.3.2.2}
 \contentsline {subsection}{\numberline {3.2.3}Parallel plane assumption}{24}{subsection.3.2.3}
 \contentsline {section}{\numberline {3.3}Epoch Alignment}{25}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Satellite Time}{25}{subsection.3.3.1}
-\contentsline {section}{\numberline {3.4}Planar Intersection Algorithm}{28}{section.3.4}
-\contentsline {paragraph}{Select reference receiver}{28}{section*.29}
-\contentsline {paragraph}{Collect data of one timestep from all receivers}{28}{section*.30}
-\contentsline {paragraph}{Align to reference Epoch time}{28}{section*.31}
-\contentsline {paragraph}{Average normal Vector}{28}{section*.32}
-\contentsline {paragraph}{Difference in Pseudorange}{28}{section*.33}
-\contentsline {paragraph}{Create Planes}{28}{section*.34}
-\contentsline {paragraph}{Solve for D}{29}{section*.35}
-\contentsline {paragraph}{Solve for Intersection}{30}{section*.37}
-\contentsline {paragraph}{Limitations}{32}{section*.38}
-\contentsline {chapter}{\numberline {4}Experiments That Prove Things}{33}{chapter.4}
-\contentsline {section}{\numberline {4.1}Simulation Creation}{33}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Creating a Simulation}{33}{subsection.4.1.1}
-\contentsline {subsubsection}{Simulate Satellite Locations}{33}{section*.39}
-\contentsline {subsubsection}{True Location of Receivers}{34}{section*.41}
-\contentsline {subsubsection}{Calculation of Pseudorange}{34}{section*.42}
-\contentsline {subsubsection}{Planar Algorithm}{35}{section*.44}
+\contentsline {section}{\numberline {3.4}Methodology}{27}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Preprocessing }{27}{subsection.3.4.1}
+\contentsline {paragraph}{Select reference receiver}{27}{section*.29}
+\contentsline {paragraph}{Calculate direction vectors $\mathaccentV {hat}05E{\eta }$}{27}{section*.30}
+\contentsline {paragraph}{Align to common Epoch time}{27}{section*.31}
+\contentsline {paragraph}{Difference in Pseudorange}{27}{section*.32}
+\contentsline {subsection}{\numberline {3.4.2}Planar Algorithm}{28}{subsection.3.4.2}
+\contentsline {paragraph}{Create Planes}{28}{section*.33}
+\contentsline {paragraph}{Solve for D}{28}{section*.34}
+\contentsline {paragraph}{Solve for Intersection}{29}{section*.36}
+\contentsline {paragraph}{Limitations}{31}{section*.37}
+\contentsline {chapter}{\numberline {4}Simulation and Analysis}{32}{chapter.4}
+\contentsline {section}{\numberline {4.1}Simulation Creation}{32}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Creating a Simulation}{32}{subsection.4.1.1}
+\contentsline {subsubsection}{Simulate Satellite Locations}{32}{section*.38}
+\contentsline {subsubsection}{True Location of Receivers}{33}{section*.40}
+\contentsline {subsubsection}{Calculation of Pseudorange}{33}{section*.41}
+\contentsline {subsubsection}{Planar Algorithm}{34}{section*.43}
 \contentsline {subsection}{\numberline {4.1.2}Evaluation}{35}{subsection.4.1.2}
-\contentsline {paragraph}{Dilution of Precision}{36}{section*.45}
-\contentsline {section}{\numberline {4.2}Evaluation}{37}{section.4.2}
-\contentsline {subsubsection}{Fake Satellite Positions}{37}{section*.47}
-\contentsline {section}{\numberline {4.3}Planar Assumption Analysis}{38}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Setup}{38}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}Discussion}{39}{subsection.4.3.2}
-\contentsline {section}{\numberline {4.4}Incorporating Error}{46}{section.4.4}
+\contentsline {paragraph}{Dilution of Precision}{35}{section*.44}
+\contentsline {section}{\numberline {4.2}Evaluation}{36}{section.4.2}
+\contentsline {subsubsection}{Fake Satellite Positions}{36}{section*.46}
+\contentsline {section}{\numberline {4.3}Planar Assumption Analysis}{37}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Setup}{37}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Discussion}{38}{subsection.4.3.2}
+\contentsline {section}{\numberline {4.4}Incorporating Error}{45}{section.4.4}
+\contentsline {section}{\numberline {4.5}Epoch Alignment Analysis}{48}{section.4.5}
 \contentsline {chapter}{\numberline {5}Conclusion}{49}{chapter.5}
-\contentsline {chapter}{List of References}{50}{section*.59}
+\contentsline {chapter}{List of References}{50}{section*.58}
 \contentsline {chapter}{\numberline {A}An Example Appendix}{52}{appendix.A}

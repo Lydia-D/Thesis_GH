@@ -18,7 +18,7 @@ constants();
 timevec = 0;
 
 %% Location of alpha recevier and what satellites are in view
-GS_LLH = [-deg2rad(33);deg2rad(151);0];
+GS_LLH = [-deg2rad(30);deg2rad(0);0];
 GS_ECEF = llhgc2ecef(GS_LLH);  % global
 
 

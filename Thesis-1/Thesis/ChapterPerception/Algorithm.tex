@@ -1,30 +1,30 @@
 %!TEX root = ../Thesis.tex
-\section{Planar Intersection Algorithm}
+\section{Methodology}
+The following methodology describes how PA was implemented. 
 
+%https://www.e-education.psu.edu/geog862/node/1759 - errors in pseduorange
 
-https://www.e-education.psu.edu/geog862/node/1759 - errors in pseduorange
-
-http://www.insidegnss.com/node/2898 - how to get pseudorange from raw data
-
+%http://www.insidegnss.com/node/2898 - how to get pseudorange from raw data
+\subsection{Preprocessing }
 
 \paragraph{Select reference receiver}
 The receiver $\alpha$ is used as the reference location and common epoch time. The reference location is calculated by performing NLLS on a receiver to calculate the absolute position for one point in time. Any receiver can be used as the reference point. For a real world implementation, all of the raw data can be sent to each node and it uses itself as the reference point.
-\paragraph{Collect data of one timestep from all receivers}
-The raw data as well as the estimated absolute location and clock bias (what frame of reference is this?) from non-linear least squares optimisation is collected from all GPS receivers.
-\paragraph{Align to reference Epoch time}\label{timetransform}
 
+\paragraph{Calculate direction vectors $\hat{\eta}$}
+Using the reference receiver, the normal direction vectors are calculated from the reference location to the visible satellites at the common epoch time.
+
+\paragraph{Align to common Epoch time}\label{timetransform}
+The method explored in Section \ref{sec:epochalignment} is conducted on the raw data to calculate the transform to common epoch time.
 
 %\subsubsection{Distance Optimisation}
 %By optimising the distance between each pair of receivers, the error in the whole system is minimised. 
 %This means that the position receivers are not only relative to the reference receiver $\alpha$ but between all receivers just with the reference frame origin located at $\alpha$. It is because of this step a receiver does not need to have all the same satellites in view as all other receivers, including the designated $\alpha$.
 
-
-\paragraph{Average normal Vector}
-Find the average normal vector pointing to each satellite $\hat{\eta_s}$ from the receivers. The normal vector is calculated by using the position all of the satellites in view at the common time $t_{\alpha}$ as previously transformed in \ref{timetransform} and the estimated absolute position of all receivers. The average for each satellite is calculated by taking the mean across all receivers.
-
 \paragraph{Difference in Pseudorange}
 The differences in pseudorange are calculated $\Omega^s_\omega$ in the ECEF frame where s is the satellite, $\omega$ is the receiver.
 
+
+\subsection{Planar Algorithm}
 \paragraph{Create Planes}
 Sets of planes are created for each receiver $\omega$. The equation of a plane is $Ax+By+Cz+D=0$ where the coefficients [A,B,C] describe the normal vector of the plane and the coefficient D sets the plane in 3D space along the vector, Eq\eqref{genplane}. As the normal vector is already calculated for each satellite, only the D coefficient must be solved for each receiver and satellite pair. 
 \begin{eqnarray}

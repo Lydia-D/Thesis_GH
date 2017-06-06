@@ -6,44 +6,46 @@
 \@writefile{lot}{\addvspace {10\p@ }}
 \@writefile{loa}{\addvspace {10\p@ }}
 \newlabel{ch:perception}{{3}{21}{Algorithm Solution}{chapter.3}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.1}Proposed Planar Intersection Algorithm}{22}{section.3.1}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.1}Proposed Planar Algorithm (PA)}{22}{section.3.1}}
 \@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces 2D representation\relax }}{22}{figure.caption.26}}
 \newlabel{fig:overall_singleS_multiR}{{3.1}{22}{2D representation\relax }{figure.caption.26}{}}
-\newlabel{Eq:full}{{3.1}{22}{Proposed Planar Intersection Algorithm}{equation.3.1.1}{}}
+\newlabel{Eq:full}{{3.1}{22}{Proposed Planar Algorithm (PA)}{equation.3.1.1}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {3.2}{\ignorespaces \relax }}{23}{figure.caption.27}}
 \newlabel{fig:overall_multiS_duelR}{{3.2}{23}{\relax }{figure.caption.27}{}}
-\newlabel{Eq: D}{{3.3}{23}{Proposed Planar Intersection Algorithm}{equation.3.1.2}{}}
+\newlabel{Eq: D}{{3.3}{23}{Proposed Planar Algorithm (PA)}{equation.3.1.2}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {3.2}Assumptions}{23}{section.3.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.1}Approximate Global Location}{24}{subsection.3.2.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.1}Approximate Global Location}{23}{subsection.3.2.1}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.2.2}Static Receivers}{24}{subsection.3.2.2}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.2.3}Parallel plane assumption}{24}{subsection.3.2.3}}
 \newlabel{Eq:parplane delta}{{3.4}{25}{Parallel plane assumption}{equation.3.2.4}{}}
 \newlabel{Eq: parplane e(d)}{{3.5}{25}{Parallel plane assumption}{equation.3.2.4}{}}
 \newlabel{Eq:squarerel}{{3.6}{25}{Parallel plane assumption}{equation.3.2.4}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {3.3}Epoch Alignment}{25}{section.3.3}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.1}Satellite Time}{25}{subsection.3.3.1}}
-\newlabel{Eq:deltarho}{{3.10}{26}{Satellite Time}{equation.3.3.8}{}}
+\newlabel{sec:epochalignment}{{3.3}{25}{Epoch Alignment}{section.3.3}{}}
+\newlabel{Eq: epochdist}{{3.7}{25}{Epoch Alignment}{equation.3.3.7}{}}
+\newlabel{Eq:deltarho}{{3.10}{26}{Epoch Alignment}{equation.3.3.8}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {3.3}{\ignorespaces Vector Epoch Synchronisation\relax }}{27}{figure.caption.28}}
 \newlabel{Fig:epochsync}{{3.3}{27}{Vector Epoch Synchronisation\relax }{figure.caption.28}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.4}Planar Intersection Algorithm}{28}{section.3.4}}
-\@writefile{toc}{\contentsline {paragraph}{Select reference receiver}{28}{section*.29}}
-\@writefile{toc}{\contentsline {paragraph}{Collect data of one timestep from all receivers}{28}{section*.30}}
-\newlabel{timetransform}{{3.4}{28}{Align to reference Epoch time}{section*.31}{}}
-\@writefile{toc}{\contentsline {paragraph}{Align to reference Epoch time}{28}{section*.31}}
-\@writefile{toc}{\contentsline {paragraph}{Average normal Vector}{28}{section*.32}}
-\@writefile{toc}{\contentsline {paragraph}{Difference in Pseudorange}{28}{section*.33}}
-\@writefile{toc}{\contentsline {paragraph}{Create Planes}{28}{section*.34}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.4}{\ignorespaces Construction of Planes\relax }}{29}{figure.caption.36}}
-\newlabel{fig:solvef}{{3.4}{29}{Construction of Planes\relax }{figure.caption.36}{}}
-\newlabel{genplane}{{3.12}{29}{Create Planes}{equation.3.4.12}{}}
-\@writefile{toc}{\contentsline {paragraph}{Solve for D}{29}{section*.35}}
-\newlabel{Eq:f}{{3.13}{29}{Solve for D}{equation.3.4.13}{}}
-\newlabel{Eq:solvef}{{3.14}{30}{Solve for D}{equation.3.4.14}{}}
-\@writefile{toc}{\contentsline {paragraph}{Solve for Intersection}{30}{section*.37}}
-\newlabel{Eq: P with alphat}{{3.16}{30}{Solve for Intersection}{equation.3.4.16}{}}
-\@writefile{toc}{\contentsline {paragraph}{Limitations}{32}{section*.38}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.4}Methodology}{27}{section.3.4}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.1}Preprocessing }{27}{subsection.3.4.1}}
+\@writefile{toc}{\contentsline {paragraph}{Select reference receiver}{27}{section*.29}}
+\@writefile{toc}{\contentsline {paragraph}{Calculate direction vectors $\mathaccentV {hat}05E{\eta }$}{27}{section*.30}}
+\newlabel{timetransform}{{3.4.1}{27}{Align to common Epoch time}{section*.31}{}}
+\@writefile{toc}{\contentsline {paragraph}{Align to common Epoch time}{27}{section*.31}}
+\@writefile{toc}{\contentsline {paragraph}{Difference in Pseudorange}{27}{section*.32}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.4}{\ignorespaces Construction of Planes\relax }}{28}{figure.caption.35}}
+\newlabel{fig:solvef}{{3.4}{28}{Construction of Planes\relax }{figure.caption.35}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4.2}Planar Algorithm}{28}{subsection.3.4.2}}
+\@writefile{toc}{\contentsline {paragraph}{Create Planes}{28}{section*.33}}
+\newlabel{genplane}{{3.12}{28}{Create Planes}{equation.3.4.12}{}}
+\@writefile{toc}{\contentsline {paragraph}{Solve for D}{28}{section*.34}}
+\newlabel{Eq:f}{{3.13}{28}{Solve for D}{equation.3.4.13}{}}
+\newlabel{Eq:solvef}{{3.14}{29}{Solve for D}{equation.3.4.14}{}}
+\@writefile{toc}{\contentsline {paragraph}{Solve for Intersection}{29}{section*.36}}
+\newlabel{Eq: P with alphat}{{3.16}{29}{Solve for Intersection}{equation.3.4.16}{}}
+\@writefile{toc}{\contentsline {paragraph}{Limitations}{31}{section*.37}}
 \@setckpt{ChapterPerception/Perception}{
-\setcounter{page}{33}
+\setcounter{page}{32}
 \setcounter{equation}{22}
 \setcounter{enumi}{2}
 \setcounter{enumii}{0}
@@ -54,7 +56,7 @@
 \setcounter{part}{0}
 \setcounter{chapter}{3}
 \setcounter{section}{4}
-\setcounter{subsection}{0}
+\setcounter{subsection}{2}
 \setcounter{subsubsection}{0}
 \setcounter{paragraph}{0}
 \setcounter{subparagraph}{0}
@@ -73,7 +75,7 @@
 \setcounter{lstnumber}{1}
 \setcounter{Item}{12}
 \setcounter{Hfootnote}{0}
-\setcounter{bookmark@seq@number}{54}
+\setcounter{bookmark@seq@number}{55}
 \setcounter{r@tfl@t}{0}
 \setcounter{AM@survey}{0}
 \setcounter{mdf@globalstyle@cnt}{0}

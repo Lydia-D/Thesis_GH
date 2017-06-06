@@ -1,6 +1,8 @@
 %% L Drabsch
 % 18/5/17
 % solve for all variables at once ->
+% updated 6/6/2017 for no distance optimisation
+
 
 function [Loc_lin,clockbias] = planarsolve_epoch(range_com,Sat_com,numRec, GS_ECEF)
     global c
