@@ -17,7 +17,7 @@ GS_ECEF = llhgc2ecef(GS_LLH);  % global
 % numRec = 5;
 % Rec_dispersion = 10; % in meters, how far apart to have the receivers
 % Rec_displacement = Rec_dispersion*rand([3,numRec-1]);
-numRec = 2;
+
 %allRec = allRec';
 
 %% Location of Satellites
@@ -28,7 +28,8 @@ numRec = 2;
 numSat = 10;
 
 elset = 75;
-Sconfig_el = [20,20,20,20];
+Sconfig_el = [15,30,75,60]; % good config 
+%Sconfig_el = [15 20 80 75]; % bad config
 %Sconfig_el = [60,70,65,50,45,62,30];
 %Sconfig_el = [elset,elset+1,elset-1,elset+2,elset-2];
 %Sconfig_el = [elset-2,elset+2,elset-2,elset+2,elset];
@@ -36,7 +37,10 @@ Sconfig_el = [20,20,20,20];
 % range from 0 to 2pi
 %azset = linspace(0,2*pi-0.01,20);
 azset = 0;
-Sconfig_az = [0,90,180,270]
+Sconfig_az = [60,120,270,300]; % good config north
+%Sconfig_az = [0,180,0,150]; % bad
+
+
 %Sconfig_az = [0,50,90,150,285,327,210];
 %Sconfig_az = [pi/4-0.2,pi/4,pi/4-0.1,pi/4+0.1,pi/4+0.2];
 %Sconfig_az = [azset-2,azset-2,azset+2,azset+2,azset];
@@ -62,11 +66,13 @@ if plotyes ==1
     scatter3(allSat(1,:),allSat(2,:),allSat(3,:))
 end
 %% errors
-power = [-3:1:5];
+%power = [-3:1:5];
+power = 1; % 1 m
 error_var_power = 10:-1:0;
-j=10;
+j = 1;
 
 % second receiver NED then transform - use as config(:,i)
+numRec = 2;
 Rconfig = [1,0,0;
           0,1,0;
           0,0,1;
@@ -85,17 +91,16 @@ subplot(221)
 plotrec([alpha,beta],gcf)
 ax = gca;
 %text(0,0,'Receiver and Satellite Configuration\n from Approximate Location')
-subplot(223);
-subplot('position',[0.05,0.05,0.45,0.45])
-scatter(x,y)
+%subplot(223);
+%subplot('position',[0.05,0.05,0.45,0.45])
+figure(2)
+scatter(x,y,'b','filled')
 hold on
 polarfig = PolarPlot(gcf,0.65);
 
 %% 
-    Estruc.satmag = 0*10^-error_var_power(4);
-    Estruc.recmag = 0*10^-error_var_power(10);
-    Estruc.random = 0*10^-error_var_power(2);
-for j = 1:length(power)
+
+for k = 1:length(error_var_power)
     Rec_displacement = 10^power(j).*[[0;0;0],beta];
     %Rec_displacement = [0,10;0,0;0,0];   % use NED coords
     Rec_ecef_local = lg2ecef(Rec_displacement,GS_LLH);
@@ -103,7 +108,9 @@ for j = 1:length(power)
     true_rel_alpha = Rec_displacement(:,2:end)-repmat(Rec_displacement(:,1),[1,numRec-1]);
 
     
-    
+    Estruc.satmag = 0*10^-error_var_power(k);
+    Estruc.recmag = 0*10^-error_var_power(k);
+    Estruc.random = 1*10^-error_var_power(k);
 
     
     
@@ -128,49 +135,83 @@ for i = 1:total_iter
     
 end
 
-%% error analysis
-avg_error(:,j) = mean(allerror,2);
-std_dev(:,j) = std(allerror,0,2); % use N-1 (0) or N (1)? in second field
-avg_error_NC(:,j) = mean(allerror_NC,2);
-std_dev_NC(:,j) = std(allerror_NC,0,2);
+%% store error for 1 m
+   
 
-NLLS_avg_error(:,j) = mean(NLLS_error_ned,2);
-NLLS_std_error(:,j) = std(NLLS_error_ned,0,2);
-    
+
+%% error analysis
+% avg_error(:,j) = mean(allerror,2);
+% std_dev(:,j) = std(allerror,0,2); % use N-1 (0) or N (1)? in second field
+% avg_error_NC(:,j) = mean(allerror_NC,2);
+% std_dev_NC(:,j) = std(allerror_NC,0,2);
+% 
+% NLLS_avg_error(:,j) = mean(NLLS_error_ned,2);
+% NLLS_std_error(:,j) = std(NLLS_error_ned,0,2);
+    avg_error(:,k) = mean(allerror,2);
+    std_dev(:,k) = std(allerror,0,2); % use N-1 (0) or N (1)? in second field
+
+    NLLS_avg_error(:,k) = mean(NLLS_error_ned,2);
+    NLLS_std_error(:,k) = std(NLLS_error_ned,0,2);
 end
 
-%%
-
-subplot(2,2,2)
-xplot = 10.^power;
+%% 
+%subplot(2,2,2)
+%xplot = 10.^power; % rec displacement
+figure(3)
+clf
+xplot = 10.^-error_var_power; % error magnitude
 loglog(xplot,magc(avg_error),'bo-')
 grid on
 hold on
-loglog(xplot,magc(avg_error_NC),'ro-')
-loglog(xplot,magc(NLLS_avg_error),'go-')
-loglog(xplot,magc(NLLS_avg_error)+magc(NLLS_std_error),'g--')
-loglog(xplot,magc(avg_error_NC)+magc(std_dev_NC),'r--')
 loglog(xplot,magc(avg_error)+magc(std_dev),'--b')
+%loglog(xplot,magc(avg_error_NC),'ro-')
+loglog(xplot,magc(NLLS_avg_error),'ko-')
+loglog(xplot,magc(NLLS_avg_error)+magc(NLLS_std_error),'k--')
+%loglog(xplot,magc(avg_error_NC)+magc(std_dev_NC),'r--')
 
-legend('solve with clockbias','solve without clockbias','Location','best')
-%loglog(xplot,magc(avg_error)-magc(std_dev),'--b')
-xlabel('Distance between receviers (meters)')
+
+%legend('solve with clockbias','solve without clockbias','NLLS','Location','best')
+legend('PA mean','PA std','NLLS mean','NLLS std','Location','best')
+
+xlabel('Magnitude of Error (seconds)')
 ylabel('Solution error (meters)')
-title('Total Error due to Plane Assumption')
+title('Total Error due to Uncorrelated Errors (Receivers 1m North Config)')
+%axis([10^-10 10^0 10^-8 10^0 ])
+
+%% 4 plot plot total error
+% 
+% subplot(2,2,2)
+% %xplot = 10.^power; % rec displacement
+% xplot = 10.^-error_var_power; % error magnitude
+% loglog(xplot,magc(avg_error),'bo-')
+% grid on
+% hold on
+% %loglog(xplot,magc(avg_error_NC),'ro-')
+% loglog(xplot,magc(NLLS_avg_error),'ko-')
+% loglog(xplot,magc(NLLS_avg_error)+magc(NLLS_std_error),'k--')
+% %loglog(xplot,magc(avg_error_NC)+magc(std_dev_NC),'r--')
+% loglog(xplot,magc(avg_error)+magc(std_dev),'--b')
+% 
+% %legend('solve with clockbias','solve without clockbias','NLLS','Location','best')
+% legend('solve with clockbias','NLLS','Location','best')
+% 
+% xlabel('Distance between receviers (meters)')
+% ylabel('Solution error (meters)')
+% title('Total Error due to Plane Assumption')
 
 %%
 
-subplot(2,2,4)
-loglog(xplot,abs(avg_error(1,:)),'ro-') % north error
-hold on
-loglog(xplot,abs(avg_error(2,:)),'ko-') % east error
-loglog(xplot,abs(avg_error(3,:)),'bo-') % down error
-%loglog(xplot,abs(clockbias(2,:)-clockbias(1,:)),'mx-')
-grid on
-xlabel('Distance between receviers (meters)')
-ylabel('Solution error (meters)')
-title('Component Error due to Plane Assumption')
-legend('North Error','East Error','Down Error','Location','best')
+% subplot(2,2,4)
+% loglog(xplot,abs(avg_error(1,:)),'ro-') % north error
+% hold on
+% loglog(xplot,abs(avg_error(2,:)),'ko-') % east error
+% loglog(xplot,abs(avg_error(3,:)),'bo-') % down error
+% loglog(xplot,abs(clockbias(2,:)-clockbias(1,:)),'mx-')
+% grid on
+% xlabel('Distance between receviers (meters)')
+% ylabel('Solution error (meters)')
+% title('Component Error due to Plane Assumption')
+% legend('North Error','East Error','Down Error','Location','best')
 
 
 

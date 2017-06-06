@@ -14,6 +14,9 @@
 %%=======================================================%%
 
 \section{Background and Motivation}
+
+Clearly identifies the problem for investigation and relevant context
+Clearly sets out the content and aims of the project
 Localisation, outdoors GNSS
 - accuracy 
 
@@ -44,17 +47,20 @@ what is the problem to be solved?
 - a system that has requirements for high accuracy typically needs it for between parts of the system in which case there will be a receiver on each part, or be accurate to a specific location in th field, not to the global reference frame. Therefore differencing systems
 
 \section{Principle Contributions}
-this is what ive achieved
- 
-- contribution: description
+The following list is an overview of what I have contributed to the field. 
 \begin{itemize}
 \item I carried out the literature survey in order to identify what areas of GNSS can be built on.
 \item I made the conceptual breakdown of the planar algorithm and the construction of the residuals: It is then solved using the generic solution for an overdetermined, non-homogeneous, linear system using least squares.
-\item I wrote a simulation in Matlab: The simulation calculates the pseudorange from all visible satellites to all receivers and adds randomised error in a controlled way to mimic different types of error. It then implements the epoch alignment and planar algorithm  
+\item I wrote a simulation in Matlab: The simulation calculates the pseudorange from all visible satellites to all receivers and adds randomised error in a controlled way to mimic different types of error. It implements the epoch alignment and planar algorithm with a comparison to 
 \item I used existing subfunctions as a part of my simulation that I had previously written: The subfunctions were all written as a part of Assignment 2 of the unit of study AERO4701 Space Engineering 3 in Semester 1 2016. The code that was adapted were; coordinate frame transforms, creation of plots in polar and cartesian frames, GPS constellation data, non-linear least squares solution of absolute position using pseudoranges.
-\item I carried out the analysis with influence from my supervisor.
+\item I carried out the analysis of the planar algorithm using the simulation as previously mentioned. The conclusions are my own.
 \end{itemize}
+
+
 \section{Outline}
+The rest of the thesis is organised as follows. Chapter \ref{ch:litreview} is an overview of how GPS works including the operation components and signal structure. The sources of error will be introduced and relevant work in the literature of how the errors can be minimised. Chapter \ref{ch:perception} is a discussion of the assumptions and the detailed mathematical methodology of the planar algorithm. Chapter \ref{ch:experiments} is a full analysis of the planar algorithm and comparison to 
+
+
 
 epoch synchrosation followed by two fold optimisation process\\
 need instantanous relative positioning with minimal calibration or setup of external hardware

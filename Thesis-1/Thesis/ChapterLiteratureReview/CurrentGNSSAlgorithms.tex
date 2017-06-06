@@ -6,11 +6,24 @@
 - use for motion tracking\\
 - performance vs cost trade off\\
 (http://ieeexplore.ieee.org.ezproxy1.library.usyd.edu.au/document/7530542/)
+
 \subsection{Standard Positioning Service}
+The Standard Positioning Service (SPS) is the default system that provides PNT signals as described in Section \ref{sec:signals} for free to civilian, commercial and scientific uses worldwide. It has been operational since 1993 and has minimum performance commitments of 3 meters horizontal accuracy and 5 meters vertical accuracy as of 2007 which was the latest edition of the Performance Standard USA Department of Deference issued \cite{officalperformance}. The GPS receivers use trilateration and solve for position and time with NLLS algorithm as described in Section \ref{sec:NLLS}. 
+
 - single frequency and multi frequency to remove atmospheric affects
 
+Currently the DOD is 
+code phase
+
+\subsection{Carrier Phase Solution}
+
+
+\subsection{Duel Frequency Precise Point Positioning (DF-PPP)}
+The ionospheric delay is one of the largest sources of error in the system. The electrical interference is diffusive, and is dependent on the frequency of the signal. The two signals are used to remove the ionosphere delay then combined to solve for the carrier phase ambiguities. This system can produce centimeter or decimeter accuracy but requires 20-40 minutes to converge to that accuracy. Also the duel frequency receiver costs more than single frequency receivers \cite{gnsssolutions_dfppp}.
+
+
 \subsection{Differential GPS}
-Differential GPS (DGPS) is a way to correct satellite correlated errors by using a stationary receiver in a well known location. It ties the satellite measurements into a local reference by solving for the reference receiver's position in reverse. That is, it solves for the timing errors in the satellite signal as it knows what position it should be in. The stationary reference receiver then broadcasts the error correction information to any roaming receiver in its vicinity.
+Differential GPS (DGPS) is a way to correct satellite correlated errors by using a stationary receiver in a well known location. It ties the satellite measurements into a local reference by solving for the reference receiver's position in reverse. That is, it solves for the timing errors in the satellite signal as it knows what position it should be in. The stationary reference receiver then broadcasts the error correction information to any roaming receiver in its vicinity. 
 
 
 - explain what it is\\
@@ -19,9 +32,7 @@ Differential GPS (DGPS) is a way to correct satellite correlated errors by using
 - degree of accuracy
 \subsection{WAAS DGPS}
 
-\subsection{SBAS  ?}
 
-\subsection{Real Time Kinematic}
 
 \subsection{Post Processing Algorithm}
 

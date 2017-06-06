@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.3.10)  6 JUN 2017 01:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.3.10)  7 JUN 2017 02:33
 entering extended mode
 **./Thesis.tex
 (Thesis.tex
@@ -1500,7 +1500,7 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 80.
 \openout2 = `FrontMatter/FrontMatter.aux'.
 
  (FrontMatter/FrontMatter.tex (FrontMatter/TitlePage.tex
-<FrontMatter/Figures/USYD_Logo_Colour_Stacked.pdf, id=251, 284.52798pt x 284.52
+<FrontMatter/Figures/USYD_Logo_Colour_Stacked.pdf, id=267, 284.52798pt x 284.52
 798pt>
 File: FrontMatter/Figures/USYD_Logo_Colour_Stacked.pdf Graphic file (type pdf)
  <use FrontMatter/Figures/USYD_Logo_Colour_Stacked.pdf>
@@ -1579,29 +1579,30 @@ File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 \tf@toc=\write6
 \openout6 = `Thesis.toc'.
 
- [7] (Thesis.lof)
+ [7] (Thesis.lof [8
+
+
+])
 \tf@lof=\write7
 \openout7 = `Thesis.lof'.
 
- [8
-
-
-] (Thesis.lot)
+ [9] (Thesis.lot)
 \tf@lot=\write8
 \openout8 = `Thesis.lot'.
 
- [9
+ [10
 
 
-] (FrontMatter/Nomenclature.tex
+]
+(FrontMatter/Nomenclature.tex
 Overfull \hbox (17.17133pt too wide) in paragraph at lines 10--13
 [] 
  []
 
-) [10
+) [11
 
 
-] (FrontMatter/Glossary.tex) [11
+] (FrontMatter/Glossary.tex) [12
 
 
 ])
@@ -1615,7 +1616,7 @@ Chapter 1.
 
 
 ] [2]
-Underfull \hbox (badness 10000) in paragraph at lines 62--64
+Underfull \hbox (badness 10000) in paragraph at lines 68--70
 
  []
 
@@ -1624,7 +1625,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 62--64
 
  (ChapterLiteratureReview/LiteratureReview.tex
 Chapter 2.
-<ChapterLiteratureReview/GPS_ECI_side.pdf, id=455, 597.23125pt x 845.1575pt>
+<ChapterLiteratureReview/GPS_ECI_side.pdf, id=497, 597.23125pt x 845.1575pt>
 File: ChapterLiteratureReview/GPS_ECI_side.pdf Graphic file (type pdf)
 
 <use ChapterLiteratureReview/GPS_ECI_side.pdf>
@@ -1632,7 +1633,7 @@ Package pdftex.def Info: ChapterLiteratureReview/GPS_ECI_side.pdf used on input
  line 29.
 (pdftex.def)             Requested size: 169.98157pt x 192.92445pt.
 
-<ChapterLiteratureReview/GPS_ECI_top.pdf, id=457, 597.23125pt x 845.1575pt>
+<ChapterLiteratureReview/GPS_ECI_top.pdf, id=499, 597.23125pt x 845.1575pt>
 File: ChapterLiteratureReview/GPS_ECI_top.pdf Graphic file (type pdf)
 
 <use ChapterLiteratureReview/GPS_ECI_top.pdf>
@@ -1650,7 +1651,7 @@ I_top.pdf>] [5])
 
 LaTeX Warning: Citation `signal spec' on page 6 undefined on input line 4.
 
-[6] <ChapterLiteratureReview/PRNtime.png, id=20550, 642.4pt x 347.2975pt>
+[6] <ChapterLiteratureReview/PRNtime.png, id=20593, 642.4pt x 347.2975pt>
 File: ChapterLiteratureReview/PRNtime.png Graphic file (type png)
 
 <use ChapterLiteratureReview/PRNtime.png>
@@ -1658,7 +1659,7 @@ Package pdftex.def Info: ChapterLiteratureReview/PRNtime.png used on input line
  16.
 (pdftex.def)             Requested size: 303.53267pt x 164.09892pt.
  [7 <./ChapterLiteratureReview/PRNtime.png>]
-<ChapterLiteratureReview/NavMessage.png, id=20565, 350.05782pt x 231.86626pt>
+<ChapterLiteratureReview/NavMessage.png, id=20607, 350.05782pt x 231.86626pt>
 File: ChapterLiteratureReview/NavMessage.png Graphic file (type png)
 
 <use ChapterLiteratureReview/NavMessage.png>
@@ -1667,52 +1668,52 @@ ine 35.
 (pdftex.def)             Requested size: 303.53267pt x 201.06393pt.
  [8 <./ChapterLiteratureReview/NavMessage.png>]) (ChapterLiteratureReview/Trila
 teration.tex
-<ChapterLiteratureReview/trilateration.pdf, id=20573, 963.6pt x 542.025pt>
+<ChapterLiteratureReview/trilateration.pdf, id=20618, 963.6pt x 542.025pt>
 File: ChapterLiteratureReview/trilateration.pdf Graphic file (type pdf)
 
 <use ChapterLiteratureReview/trilateration.pdf>
 Package pdftex.def Info: ChapterLiteratureReview/trilateration.pdf used on inpu
-t line 15.
+t line 9.
 (pdftex.def)             Requested size: 303.53267pt x 170.7305pt.
 
-<ChapterLiteratureReview/trilaterationtime.pdf, id=20574, 722.7pt x 542.025pt>
+<ChapterLiteratureReview/trilaterationtime.pdf, id=20619, 722.7pt x 542.025pt>
 File: ChapterLiteratureReview/trilaterationtime.pdf Graphic file (type pdf)
 
 <use ChapterLiteratureReview/trilaterationtime.pdf>
 Package pdftex.def Info: ChapterLiteratureReview/trilaterationtime.pdf used on 
-input line 22.
+input line 15.
 (pdftex.def)             Requested size: 303.53267pt x 227.64894pt.
-)
-(ChapterLiteratureReview/ErrorSources.tex [9 <./ChapterLiteratureReview/trilate
-ration.pdf>] [10 <./ChapterLiteratureReview/trilaterationtime.pdf>] [11]
-[12]) (ChapterLiteratureReview/MultipleReceivers.tex [13])
-(ChapterLiteratureReview/CurrentGNSSAlgorithms.tex [14]
-Underfull \hbox (badness 10000) in paragraph at lines 52--53
+ [9 <./ChapterLiteratureReview/trilateration.pdf>] [10 <./ChapterLiteratureRevi
+ew/trilaterationtime.pdf>])
+(ChapterLiteratureReview/ErrorSources.tex [11] [12] [13])
+(ChapterLiteratureReview/MultipleReceivers.tex [14])
+(ChapterLiteratureReview/CurrentGNSSAlgorithms.tex [15] [16]
+Underfull \hbox (badness 10000) in paragraph at lines 63--64
 
  []
 
-[15] [16]
-Underfull \hbox (badness 10000) in paragraph at lines 54--55
+[17]
+Underfull \hbox (badness 10000) in paragraph at lines 65--66
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 56--57
+Underfull \hbox (badness 10000) in paragraph at lines 67--68
 
  []
 
-[17]) (ChapterLiteratureReview/LitSummary.tex) [18]) [19]
+[18]) (ChapterLiteratureReview/LitSummary.tex) [19]) [20]
 \openout2 = `ChapterPerception/Perception.aux'.
 
 
 (ChapterPerception/Perception.tex
 Chapter 3.
-[20
+[21
 
 
 
 ]
-<ChapterLiteratureReview/overall_singleS_multiR.jpg, id=20664, 1782.66pt x 1336
+<ChapterLiteratureReview/overall_singleS_multiR.jpg, id=20730, 1782.66pt x 1336
 .995pt>
 File: ChapterLiteratureReview/overall_singleS_multiR.jpg Graphic file (type jpg
 )
@@ -1721,7 +1722,7 @@ Package pdftex.def Info: ChapterLiteratureReview/overall_singleS_multiR.jpg use
 d on input line 35.
 (pdftex.def)             Requested size: 303.53267pt x 227.65335pt.
 
-<ChapterLiteratureReview/overall_multiS_duelR.jpg, id=20665, 1782.66pt x 1336.9
+<ChapterLiteratureReview/overall_multiS_duelR.jpg, id=20731, 1782.66pt x 1336.9
 95pt>
 File: ChapterLiteratureReview/overall_multiS_duelR.jpg Graphic file (type jpg)
  <use ChapterLiteratureReview/overall_multiS_duelR.jpg>
@@ -1732,20 +1733,20 @@ on input line 43.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[21 <./ChapterLiteratureReview/overall_singleS_multiR.jpg>]
-(ChapterPerception/Assumptions.tex [22 <./ChapterLiteratureReview/overall_multi
+[22 <./ChapterLiteratureReview/overall_singleS_multiR.jpg>]
+(ChapterPerception/Assumptions.tex [23 <./ChapterLiteratureReview/overall_multi
 S_duelR.jpg>]
 Underfull \hbox (badness 10000) in paragraph at lines 11--12
 
  []
 
-[23]) (ChapterPerception/EpochAlign.tex
+[24]) (ChapterPerception/EpochAlign.tex
 Underfull \hbox (badness 10000) in paragraph at lines 5--6
 
  []
 
-[24]
-<ChapterPerception/Figures/epochalignment.pdf, id=20699, 963.6pt x 542.025pt>
+[25]
+<ChapterPerception/Figures/epochalignment.pdf, id=20763, 963.6pt x 542.025pt>
 File: ChapterPerception/Figures/epochalignment.pdf Graphic file (type pdf)
 
 <use ChapterPerception/Figures/epochalignment.pdf>
@@ -1753,30 +1754,30 @@ Package pdftex.def Info: ChapterPerception/Figures/epochalignment.pdf used on i
 nput line 43.
 (pdftex.def)             Requested size: 260.17464pt x 216.69714pt.
 )
-(ChapterPerception/Algorithm.tex [25] [26 <./ChapterPerception/Figures/epochali
-gnment.pdf>] [27]
-<ChapterPerception/Figures/solveF.pdf, id=20744, 963.6pt x 542.025pt>
+(ChapterPerception/Algorithm.tex [26] [27 <./ChapterPerception/Figures/epochali
+gnment.pdf>] [28]
+<ChapterPerception/Figures/solveF.pdf, id=20807, 963.6pt x 542.025pt>
 File: ChapterPerception/Figures/solveF.pdf Graphic file (type pdf)
 
 <use ChapterPerception/Figures/solveF.pdf>
 Package pdftex.def Info: ChapterPerception/Figures/solveF.pdf used on input lin
 e 44.
 (pdftex.def)             Requested size: 260.17464pt x 233.17961pt.
- [28 <./ChapterPerception/Figures/solveF.pdf>] [29] [30])) [31]
+ [29 <./ChapterPerception/Figures/solveF.pdf>] [30] [31])) [32]
 \openout2 = `ChapterExperiments/Experiments.aux'.
 
  (ChapterExperiments/Experiments.tex
 Chapter 4.
-(ChapterExperiments/SectionSimulation.tex [32
+(ChapterExperiments/SectionSimulation.tex [33
 
 
 
-] [33]
+] [34]
 Underfull \hbox (badness 10000) in paragraph at lines 53--54
 
  []
 
-[34] <ChapterExperiments/Figures/GDOP.png, id=20809, 562.1pt x 451.6875pt>
+[35] <ChapterExperiments/Figures/GDOP.png, id=20872, 562.1pt x 451.6875pt>
 File: ChapterExperiments/Figures/GDOP.png Graphic file (type png)
 
 <use ChapterExperiments/Figures/GDOP.png>
@@ -1788,14 +1789,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 88--92
 
  []
 
-) (ChapterExperiments/SectionExample.tex [35 <./ChapterExperiments/Figures/GDOP
+) (ChapterExperiments/SectionExample.tex [36 <./ChapterExperiments/Figures/GDOP
 .png>]
 Underfull \hbox (badness 10000) in paragraph at lines 34--39
 
  []
 
-[36]
-<ChapterExperiments/Figures/orbit_distance.pdf, id=20821, 963.6pt x 542.025pt>
+[37]
+<ChapterExperiments/Figures/orbit_distance.pdf, id=20885, 963.6pt x 542.025pt>
 File: ChapterExperiments/Figures/orbit_distance.pdf Graphic file (type pdf)
 
 <use ChapterExperiments/Figures/orbit_distance.pdf>
@@ -1804,17 +1805,27 @@ input line 52.
 (pdftex.def)             Requested size: 303.53267pt x 136.76035pt.
 )
 (ChapterExperiments/PlaneAssError.tex
-Overfull \hbox (29.33888pt too wide) in paragraph at lines 3--3
-[]\T1/lmr/bx/n/17.28 Planar As-sump-tion and In-ter-sec-tion Least squares
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 4--5
+Underfull \hbox (badness 10000) in paragraph at lines 5--6
 
  []
 
-[37 <./ChapterExperiments/Figures/orbit_distance.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 6--7
+[38 <./ChapterExperiments/Figures/orbit_distance.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 7--8
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--13
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 14--15
+
+ []
+
+[39]
+Underfull \hbox (badness 10000) in paragraph at lines 16--17
 
  []
 
@@ -1829,18 +1840,25 @@ h_9060-eps-converted-to.pdf>
 (epstopdf)             Command: <epstopdf --outfile=ChapterExperiments/Figures/
 plane_ALLE_north_9060-eps-converted-to.pdf ChapterExperiments/Figures/plane_ALL
 E_north_9060.eps>
-(epstopdf)             \includegraphics on input line 16.
+(epstopdf)             \includegraphics on input line 24.
 Package epstopdf Info: Output file is already uptodate.
 
-<ChapterExperiments/Figures/plane_ALLE_north_9060-eps-converted-to.pdf, id=2084
-5, 1028.84375pt x 489.83pt>
+<ChapterExperiments/Figures/plane_ALLE_north_9060-eps-converted-to.pdf, id=2091
+6, 1028.84375pt x 489.83pt>
 File: ChapterExperiments/Figures/plane_ALLE_north_9060-eps-converted-to.pdf Gra
 phic file (type pdf)
 
 <use ChapterExperiments/Figures/plane_ALLE_north_9060-eps-converted-to.pdf>
 Package pdftex.def Info: ChapterExperiments/Figures/plane_ALLE_north_9060-eps-c
-onverted-to.pdf used on input line 16.
+onverted-to.pdf used on input line 24.
 (pdftex.def)             Requested size: 433.62pt x 225.12273pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 27--28
+
+ []
+
+[40] [41 <./ChapterExperiments/Figures/plane_ALLE_north_9060-eps-converted-to.p
+df>]
 Package epstopdf Info: Source file: <ChapterExperiments/Figures/plane_ALLE_nort
 h_0075.eps>
 (epstopdf)                    date: 2017-06-04 14:40:24
@@ -1852,18 +1870,18 @@ h_0075-eps-converted-to.pdf>
 (epstopdf)             Command: <epstopdf --outfile=ChapterExperiments/Figures/
 plane_ALLE_north_0075-eps-converted-to.pdf ChapterExperiments/Figures/plane_ALL
 E_north_0075.eps>
-(epstopdf)             \includegraphics on input line 35.
+(epstopdf)             \includegraphics on input line 36.
 Package epstopdf Info: Output file is already uptodate.
 
-<ChapterExperiments/Figures/plane_ALLE_north_0075-eps-converted-to.pdf, id=2084
-7, 1028.84375pt x 489.83pt>
+<ChapterExperiments/Figures/plane_ALLE_north_0075-eps-converted-to.pdf, id=2093
+9, 1028.84375pt x 489.83pt>
 File: ChapterExperiments/Figures/plane_ALLE_north_0075-eps-converted-to.pdf Gra
 phic file (type pdf)
 
 <use ChapterExperiments/Figures/plane_ALLE_north_0075-eps-converted-to.pdf>
 Package pdftex.def Info: ChapterExperiments/Figures/plane_ALLE_north_0075-eps-c
-onverted-to.pdf used on input line 35.
-(pdftex.def)             Requested size: 303.53267pt x 144.51353pt.
+onverted-to.pdf used on input line 36.
+(pdftex.def)             Requested size: 433.62pt x 225.12273pt.
 Package epstopdf Info: Source file: <ChapterExperiments/Figures/plane_total_nor
 th1_pow4.eps>
 (epstopdf)                    date: 2017-06-04 05:53:00
@@ -1875,17 +1893,17 @@ th1_pow4-eps-converted-to.pdf>
 (epstopdf)             Command: <epstopdf --outfile=ChapterExperiments/Figures/
 plane_total_north1_pow4-eps-converted-to.pdf ChapterExperiments/Figures/plane_t
 otal_north1_pow4.eps>
-(epstopdf)             \includegraphics on input line 43.
+(epstopdf)             \includegraphics on input line 44.
 Package epstopdf Info: Output file is already uptodate.
 
 <ChapterExperiments/Figures/plane_total_north1_pow4-eps-converted-to.pdf, id=20
-848, 670.505pt x 452.69125pt>
+941, 670.505pt x 452.69125pt>
 File: ChapterExperiments/Figures/plane_total_north1_pow4-eps-converted-to.pdf G
 raphic file (type pdf)
 
 <use ChapterExperiments/Figures/plane_total_north1_pow4-eps-converted-to.pdf>
 Package pdftex.def Info: ChapterExperiments/Figures/plane_total_north1_pow4-eps
--converted-to.pdf used on input line 43.
+-converted-to.pdf used on input line 44.
 (pdftex.def)             Requested size: 303.53267pt x 204.9249pt.
 Package epstopdf Info: Source file: <ChapterExperiments/Figures/plane_total_eas
 t_pow4.eps>
@@ -1898,17 +1916,17 @@ t_pow4-eps-converted-to.pdf>
 (epstopdf)             Command: <epstopdf --outfile=ChapterExperiments/Figures/
 plane_total_east_pow4-eps-converted-to.pdf ChapterExperiments/Figures/plane_tot
 al_east_pow4.eps>
-(epstopdf)             \includegraphics on input line 50.
+(epstopdf)             \includegraphics on input line 51.
 Package epstopdf Info: Output file is already uptodate.
 
-<ChapterExperiments/Figures/plane_total_east_pow4-eps-converted-to.pdf, id=2084
-9, 623.32875pt x 423.5825pt>
+<ChapterExperiments/Figures/plane_total_east_pow4-eps-converted-to.pdf, id=2094
+2, 623.32875pt x 423.5825pt>
 File: ChapterExperiments/Figures/plane_total_east_pow4-eps-converted-to.pdf Gra
 phic file (type pdf)
 
 <use ChapterExperiments/Figures/plane_total_east_pow4-eps-converted-to.pdf>
 Package pdftex.def Info: ChapterExperiments/Figures/plane_total_east_pow4-eps-c
-onverted-to.pdf used on input line 50.
+onverted-to.pdf used on input line 51.
 (pdftex.def)             Requested size: 303.53267pt x 206.26457pt.
 Package epstopdf Info: Source file: <ChapterExperiments/Figures/plane_total_dow
 n_pow4.eps>
@@ -1921,17 +1939,17 @@ n_pow4-eps-converted-to.pdf>
 (epstopdf)             Command: <epstopdf --outfile=ChapterExperiments/Figures/
 plane_total_down_pow4-eps-converted-to.pdf ChapterExperiments/Figures/plane_tot
 al_down_pow4.eps>
-(epstopdf)             \includegraphics on input line 57.
+(epstopdf)             \includegraphics on input line 58.
 Package epstopdf Info: Output file is already uptodate.
 
-<ChapterExperiments/Figures/plane_total_down_pow4-eps-converted-to.pdf, id=2085
-0, 609.27625pt x 414.54875pt>
+<ChapterExperiments/Figures/plane_total_down_pow4-eps-converted-to.pdf, id=2094
+3, 609.27625pt x 414.54875pt>
 File: ChapterExperiments/Figures/plane_total_down_pow4-eps-converted-to.pdf Gra
 phic file (type pdf)
 
 <use ChapterExperiments/Figures/plane_total_down_pow4-eps-converted-to.pdf>
 Package pdftex.def Info: ChapterExperiments/Figures/plane_total_down_pow4-eps-c
-onverted-to.pdf used on input line 57.
+onverted-to.pdf used on input line 58.
 (pdftex.def)             Requested size: 303.53267pt x 206.52745pt.
 Package epstopdf Info: Source file: <ChapterExperiments/Figures/plane_Enorth_no
 rth_pow4.eps>
@@ -1944,17 +1962,17 @@ rth_pow4-eps-converted-to.pdf>
 (epstopdf)             Command: <epstopdf --outfile=ChapterExperiments/Figures/
 plane_Enorth_north_pow4-eps-converted-to.pdf ChapterExperiments/Figures/plane_E
 north_north_pow4.eps>
-(epstopdf)             \includegraphics on input line 65.
+(epstopdf)             \includegraphics on input line 68.
 Package epstopdf Info: Output file is already uptodate.
 
 <ChapterExperiments/Figures/plane_Enorth_north_pow4-eps-converted-to.pdf, id=20
-851, 619.31375pt x 394.47375pt>
+944, 619.31375pt x 394.47375pt>
 File: ChapterExperiments/Figures/plane_Enorth_north_pow4-eps-converted-to.pdf G
 raphic file (type pdf)
 
 <use ChapterExperiments/Figures/plane_Enorth_north_pow4-eps-converted-to.pdf>
 Package pdftex.def Info: ChapterExperiments/Figures/plane_Enorth_north_pow4-eps
--converted-to.pdf used on input line 65.
+-converted-to.pdf used on input line 68.
 (pdftex.def)             Requested size: 212.47617pt x 135.33516pt.
 Package epstopdf Info: Source file: <ChapterExperiments/Figures/plane_Enorth_do
 wn_pow4.eps>
@@ -1967,17 +1985,17 @@ wn_pow4-eps-converted-to.pdf>
 (epstopdf)             Command: <epstopdf --outfile=ChapterExperiments/Figures/
 plane_Enorth_down_pow4-eps-converted-to.pdf ChapterExperiments/Figures/plane_En
 orth_down_pow4.eps>
-(epstopdf)             \includegraphics on input line 70.
+(epstopdf)             \includegraphics on input line 73.
 Package epstopdf Info: Output file is already uptodate.
 
-<ChapterExperiments/Figures/plane_Enorth_down_pow4-eps-converted-to.pdf, id=208
-52, 591.20876pt x 380.42125pt>
+<ChapterExperiments/Figures/plane_Enorth_down_pow4-eps-converted-to.pdf, id=209
+45, 591.20876pt x 380.42125pt>
 File: ChapterExperiments/Figures/plane_Enorth_down_pow4-eps-converted-to.pdf Gr
 aphic file (type pdf)
 
 <use ChapterExperiments/Figures/plane_Enorth_down_pow4-eps-converted-to.pdf>
 Package pdftex.def Info: ChapterExperiments/Figures/plane_Enorth_down_pow4-eps-
-converted-to.pdf used on input line 70.
+converted-to.pdf used on input line 73.
 (pdftex.def)             Requested size: 212.47617pt x 136.71935pt.
 Package epstopdf Info: Source file: <ChapterExperiments/Figures/plane_Eeast_nor
 th_pow4.eps>
@@ -1990,17 +2008,17 @@ th_pow4-eps-converted-to.pdf>
 (epstopdf)             Command: <epstopdf --outfile=ChapterExperiments/Figures/
 plane_Eeast_north_pow4-eps-converted-to.pdf ChapterExperiments/Figures/plane_Ee
 ast_north_pow4.eps>
-(epstopdf)             \includegraphics on input line 75.
+(epstopdf)             \includegraphics on input line 78.
 Package epstopdf Info: Output file is already uptodate.
 
-<ChapterExperiments/Figures/plane_Eeast_north_pow4-eps-converted-to.pdf, id=208
-53, 573.14125pt x 389.455pt>
+<ChapterExperiments/Figures/plane_Eeast_north_pow4-eps-converted-to.pdf, id=209
+46, 573.14125pt x 389.455pt>
 File: ChapterExperiments/Figures/plane_Eeast_north_pow4-eps-converted-to.pdf Gr
 aphic file (type pdf)
 
 <use ChapterExperiments/Figures/plane_Eeast_north_pow4-eps-converted-to.pdf>
 Package pdftex.def Info: ChapterExperiments/Figures/plane_Eeast_north_pow4-eps-
-converted-to.pdf used on input line 75.
+converted-to.pdf used on input line 78.
 (pdftex.def)             Requested size: 212.47617pt x 144.38133pt.
 Package epstopdf Info: Source file: <ChapterExperiments/Figures/plane_Eeast_dow
 n_pow4.eps>
@@ -2013,17 +2031,17 @@ n_pow4-eps-converted-to.pdf>
 (epstopdf)             Command: <epstopdf --outfile=ChapterExperiments/Figures/
 plane_Eeast_down_pow4-eps-converted-to.pdf ChapterExperiments/Figures/plane_Eea
 st_down_pow4.eps>
-(epstopdf)             \includegraphics on input line 80.
+(epstopdf)             \includegraphics on input line 83.
 Package epstopdf Info: Output file is already uptodate.
 
-<ChapterExperiments/Figures/plane_Eeast_down_pow4-eps-converted-to.pdf, id=2085
-4, 560.0925pt x 355.3275pt>
+<ChapterExperiments/Figures/plane_Eeast_down_pow4-eps-converted-to.pdf, id=2094
+7, 560.0925pt x 355.3275pt>
 File: ChapterExperiments/Figures/plane_Eeast_down_pow4-eps-converted-to.pdf Gra
 phic file (type pdf)
 
 <use ChapterExperiments/Figures/plane_Eeast_down_pow4-eps-converted-to.pdf>
 Package pdftex.def Info: ChapterExperiments/Figures/plane_Eeast_down_pow4-eps-c
-onverted-to.pdf used on input line 80.
+onverted-to.pdf used on input line 83.
 (pdftex.def)             Requested size: 212.47617pt x 134.79813pt.
 Package epstopdf Info: Source file: <ChapterExperiments/Figures/plane_Edown_nor
 th_pow4.eps>
@@ -2036,17 +2054,17 @@ th_pow4-eps-converted-to.pdf>
 (epstopdf)             Command: <epstopdf --outfile=ChapterExperiments/Figures/
 plane_Edown_north_pow4-eps-converted-to.pdf ChapterExperiments/Figures/plane_Ed
 own_north_pow4.eps>
-(epstopdf)             \includegraphics on input line 85.
+(epstopdf)             \includegraphics on input line 88.
 Package epstopdf Info: Output file is already uptodate.
 
-<ChapterExperiments/Figures/plane_Edown_north_pow4-eps-converted-to.pdf, id=208
-55, 578.16pt x 398.48875pt>
+<ChapterExperiments/Figures/plane_Edown_north_pow4-eps-converted-to.pdf, id=209
+48, 578.16pt x 398.48875pt>
 File: ChapterExperiments/Figures/plane_Edown_north_pow4-eps-converted-to.pdf Gr
 aphic file (type pdf)
 
 <use ChapterExperiments/Figures/plane_Edown_north_pow4-eps-converted-to.pdf>
 Package pdftex.def Info: ChapterExperiments/Figures/plane_Edown_north_pow4-eps-
-converted-to.pdf used on input line 85.
+converted-to.pdf used on input line 88.
 (pdftex.def)             Requested size: 212.47617pt x 146.44133pt.
 Package epstopdf Info: Source file: <ChapterExperiments/Figures/plane_Edown_dow
 n_pow4.eps>
@@ -2059,49 +2077,162 @@ n_pow4-eps-converted-to.pdf>
 (epstopdf)             Command: <epstopdf --outfile=ChapterExperiments/Figures/
 plane_Edown_down_pow4-eps-converted-to.pdf ChapterExperiments/Figures/plane_Edo
 wn_down_pow4.eps>
-(epstopdf)             \includegraphics on input line 90.
+(epstopdf)             \includegraphics on input line 93.
 Package epstopdf Info: Output file is already uptodate.
 
-<ChapterExperiments/Figures/plane_Edown_down_pow4-eps-converted-to.pdf, id=2085
-6, 594.22pt x 372.39125pt>
+<ChapterExperiments/Figures/plane_Edown_down_pow4-eps-converted-to.pdf, id=2094
+9, 594.22pt x 372.39125pt>
 File: ChapterExperiments/Figures/plane_Edown_down_pow4-eps-converted-to.pdf Gra
 phic file (type pdf)
 
 <use ChapterExperiments/Figures/plane_Edown_down_pow4-eps-converted-to.pdf>
 Package pdftex.def Info: ChapterExperiments/Figures/plane_Edown_down_pow4-eps-c
-onverted-to.pdf used on input line 90.
+onverted-to.pdf used on input line 93.
 (pdftex.def)             Requested size: 212.47617pt x 133.15727pt.
-))
-[38] [39 <./ChapterExperiments/Figures/plane_ALLE_north_9060-eps-converted-to.p
-df> <./ChapterExperiments/Figures/plane_ALLE_north_0075-eps-converted-to.pdf>]
-[40 <./ChapterExperiments/Figures/plane_total_north1_pow4-eps-converted-to.pdf>
- <./ChapterExperiments/Figures/plane_total_east_pow4-eps-converted-to.pdf>]
-[41 <./ChapterExperiments/Figures/plane_total_down_pow4-eps-converted-to.pdf>]
-[42 <./ChapterExperiments/Figures/plane_Enorth_north_pow4-eps-converted-to.pdf>
- <./ChapterExperiments/Figures/plane_Enorth_down_pow4-eps-converted-to.pdf> <./
-ChapterExperiments/Figures/plane_Eeast_north_pow4-eps-converted-to.pdf> <./Chap
-terExperiments/Figures/plane_Eeast_down_pow4-eps-converted-to.pdf> <./ChapterEx
-periments/Figures/plane_Edown_north_pow4-eps-converted-to.pdf> <./ChapterExperi
-ments/Figures/plane_Edown_down_pow4-eps-converted-to.pdf>]
+)
+(ChapterExperiments/RandomError.tex [42 <./ChapterExperiments/Figures/plane_ALL
+E_north_0075-eps-converted-to.pdf>] [43 <./ChapterExperiments/Figures/plane_tot
+al_north1_pow4-eps-converted-to.pdf> <./ChapterExperiments/Figures/plane_total_
+east_pow4-eps-converted-to.pdf>] [44 <./ChapterExperiments/Figures/plane_total_
+down_pow4-eps-converted-to.pdf>] [45 <./ChapterExperiments/Figures/plane_Enorth
+_north_pow4-eps-converted-to.pdf> <./ChapterExperiments/Figures/plane_Enorth_do
+wn_pow4-eps-converted-to.pdf> <./ChapterExperiments/Figures/plane_Eeast_north_p
+ow4-eps-converted-to.pdf> <./ChapterExperiments/Figures/plane_Eeast_down_pow4-e
+ps-converted-to.pdf> <./ChapterExperiments/Figures/plane_Edown_north_pow4-eps-c
+onverted-to.pdf> <./ChapterExperiments/Figures/plane_Edown_down_pow4-eps-conver
+ted-to.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 4--5
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6--7
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 8--9
+
+ []
+
+Package epstopdf Info: Source file: <ChapterExperiments/Figures/ControlledError
+/satconfig_1m.eps>
+(epstopdf)                    date: 2017-06-07 00:59:53
+(epstopdf)                    size: 66673 bytes
+(epstopdf)             Output file: <ChapterExperiments/Figures/ControlledError
+/satconfig_1m-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-06-07 01:08:55
+(epstopdf)                    size: 10674 bytes
+(epstopdf)             Command: <epstopdf --outfile=ChapterExperiments/Figures/
+ControlledError/satconfig_1m-eps-converted-to.pdf ChapterExperiments/Figures/Co
+ntrolledError/satconfig_1m.eps>
+(epstopdf)             \includegraphics on input line 16.
+Package epstopdf Info: Output file is already uptodate.
+
+<ChapterExperiments/Figures/ControlledError/satconfig_1m-eps-converted-to.pdf, 
+id=21033, 421.575pt x 316.18124pt>
+File: ChapterExperiments/Figures/ControlledError/satconfig_1m-eps-converted-to.
+pdf Graphic file (type pdf)
+
+<use ChapterExperiments/Figures/ControlledError/satconfig_1m-eps-converted-to.p
+df>
+Package pdftex.def Info: ChapterExperiments/Figures/ControlledError/satconfig_1
+m-eps-converted-to.pdf used on input line 16.
+(pdftex.def)             Requested size: 303.53267pt x 227.65514pt.
+Package epstopdf Info: Source file: <ChapterExperiments/Figures/ControlledError
+/satellite.eps>
+(epstopdf)                    date: 2017-06-07 00:35:26
+(epstopdf)                    size: 78606 bytes
+(epstopdf)             Output file: <ChapterExperiments/Figures/ControlledError
+/satellite-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-06-07 00:35:59
+(epstopdf)                    size: 7932 bytes
+(epstopdf)             Command: <epstopdf --outfile=ChapterExperiments/Figures/
+ControlledError/satellite-eps-converted-to.pdf ChapterExperiments/Figures/Contr
+olledError/satellite.eps>
+(epstopdf)             \includegraphics on input line 24.
+Package epstopdf Info: Output file is already uptodate.
+
+<ChapterExperiments/Figures/ControlledError/satellite-eps-converted-to.pdf, id=
+21034, 676.5275pt x 342.27875pt>
+File: ChapterExperiments/Figures/ControlledError/satellite-eps-converted-to.pdf
+ Graphic file (type pdf)
+
+<use ChapterExperiments/Figures/ControlledError/satellite-eps-converted-to.pdf>
+Package pdftex.def Info: ChapterExperiments/Figures/ControlledError/satellite-e
+ps-converted-to.pdf used on input line 24.
+(pdftex.def)             Requested size: 433.62pt x 219.38667pt.
+Package epstopdf Info: Source file: <ChapterExperiments/Figures/ControlledError
+/Receivers.eps>
+(epstopdf)                    date: 2017-06-07 00:39:28
+(epstopdf)                    size: 72155 bytes
+(epstopdf)             Output file: <ChapterExperiments/Figures/ControlledError
+/Receivers-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-06-07 01:02:41
+(epstopdf)                    size: 7624 bytes
+(epstopdf)             Command: <epstopdf --outfile=ChapterExperiments/Figures/
+ControlledError/Receivers-eps-converted-to.pdf ChapterExperiments/Figures/Contr
+olledError/Receivers.eps>
+(epstopdf)             \includegraphics on input line 31.
+Package epstopdf Info: Output file is already uptodate.
+
+<ChapterExperiments/Figures/ControlledError/Receivers-eps-converted-to.pdf, id=
+21035, 692.5875pt x 363.3575pt>
+File: ChapterExperiments/Figures/ControlledError/Receivers-eps-converted-to.pdf
+ Graphic file (type pdf)
+
+<use ChapterExperiments/Figures/ControlledError/Receivers-eps-converted-to.pdf>
+Package pdftex.def Info: ChapterExperiments/Figures/ControlledError/Receivers-e
+ps-converted-to.pdf used on input line 31.
+(pdftex.def)             Requested size: 433.62pt x 227.49706pt.
+Package epstopdf Info: Source file: <ChapterExperiments/Figures/ControlledError
+/Uncorellated.eps>
+(epstopdf)                    date: 2017-06-07 00:57:01
+(epstopdf)                    size: 55021 bytes
+(epstopdf)             Output file: <ChapterExperiments/Figures/ControlledError
+/Uncorellated-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-06-07 01:02:42
+(epstopdf)                    size: 6373 bytes
+(epstopdf)             Command: <epstopdf --outfile=ChapterExperiments/Figures/
+ControlledError/Uncorellated-eps-converted-to.pdf ChapterExperiments/Figures/Co
+ntrolledError/Uncorellated.eps>
+(epstopdf)             \includegraphics on input line 37.
+Package epstopdf Info: Output file is already uptodate.
+
+<ChapterExperiments/Figures/ControlledError/Uncorellated-eps-converted-to.pdf, 
+id=21036, 751.80875pt x 391.4625pt>
+File: ChapterExperiments/Figures/ControlledError/Uncorellated-eps-converted-to.
+pdf Graphic file (type pdf)
+
+<use ChapterExperiments/Figures/ControlledError/Uncorellated-eps-converted-to.p
+df>
+Package pdftex.def Info: ChapterExperiments/Figures/ControlledError/Uncorellate
+d-eps-converted-to.pdf used on input line 37.
+(pdftex.def)             Requested size: 433.62pt x 225.78804pt.
+) (ChapterExperiments/EpochError.tex)) [46] [47 <./ChapterExperiments/Figures/C
+ontrolledError/satconfig_1m-eps-converted-to.pdf> <./ChapterExperiments/Figures
+/ControlledError/satellite-eps-converted-to.pdf>] [48 <./ChapterExperiments/Fig
+ures/ControlledError/Receivers-eps-converted-to.pdf> <./ChapterExperiments/Figu
+res/ControlledError/Uncorellated-eps-converted-to.pdf>]
 \openout2 = `ChapterConclusion/Conclusion.aux'.
 
 
 (ChapterConclusion/Conclusion.tex
 Chapter 5.
-) [43
+) [49
 
 
 
-] (Thesis.bbl) [44
+] (Thesis.bbl [50
 
 
 
-]
+]) [51]
 \openout2 = `AppendixSomething/Something.aux'.
 
  (AppendixSomething/Something.tex
 Appendix A.
-) [45
+) [52
 
 
 ]
@@ -2114,7 +2245,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 117.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 117.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 117.
 Package rerunfilecheck Info: File `Thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 51FF8A877C2ACFCEFFE583CD25C14A61;4407.
+(rerunfilecheck)             Checksum: 7342F48576B77AA9AE9E7D88C8E85B53;4717.
 
 
 LaTeX Warning: There were undefined references.
@@ -2126,17 +2257,17 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 117.
 ### simple group (level 1) entered at line 1061 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 22064 strings out of 493634
- 380662 string characters out of 3135239
- 465468 words of memory out of 3000000
- 24736 multiletter control sequences out of 15000+200000
+ 22139 strings out of 493634
+ 382867 string characters out of 3135239
+ 466457 words of memory out of 3000000
+ 24774 multiletter control sequences out of 15000+200000
  61740 words of font info for 51 fonts, out of 3000000 for 9000
  1025 hyphenation exceptions out of 8191
- 44i,14n,44p,10420b,10682s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 44i,14n,44p,10420b,10728s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Users/Lydia/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvi
-ps/lm/lm-mathex.enc}{C:/Users/Lydia/AppData/Local/Programs/MiKTeX 2.9/fonts/enc
-/dvips/lm/lm-mathit.enc}{C:/Users/Lydia/AppData/Local/Programs/MiKTeX 2.9/fonts
-/enc/dvips/lm/lm-rm.enc}{C:/Users/Lydia/AppData/Local/Programs/MiKTeX 2.9/fonts
+ps/lm/lm-rm.enc}{C:/Users/Lydia/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvi
+ps/lm/lm-mathit.enc}{C:/Users/Lydia/AppData/Local/Programs/MiKTeX 2.9/fonts/enc
+/dvips/lm/lm-mathex.enc}{C:/Users/Lydia/AppData/Local/Programs/MiKTeX 2.9/fonts
 /enc/dvips/lm/lm-mathsy.enc}{C:/Users/Lydia/AppData/Local/Programs/MiKTeX 2.9/f
 onts/enc/dvips/lm/lm-ec.enc}<C:/Users/Lydia/AppData/Local/Programs/MiKTeX 2.9/f
 onts/type1/public/lm/lmbx12.pfb><C:/Users/Lydia/AppData/Local/Programs/MiKTeX 2
@@ -2152,9 +2283,9 @@ a/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmri12.pfb><C:/Users/Lydia/Ap
 pData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy10.pfb><C:/Users/Lydi
 a/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb><C:/Users/L
 ydia/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/lm/lmtt12.pfb>
-Output written on Thesis.pdf (57 pages, 9215832 bytes).
+Output written on Thesis.pdf (65 pages, 9276350 bytes).
 PDF statistics:
- 21059 PDF objects out of 22161 (max. 8388607)
- 200 named destinations out of 1000 (max. 500000)
- 653 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21193 PDF objects out of 22161 (max. 8388607)
+ 226 named destinations out of 1000 (max. 500000)
+ 711 words of extra memory for PDF output out of 10000 (max. 10000000)
 

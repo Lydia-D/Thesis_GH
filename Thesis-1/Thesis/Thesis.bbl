@@ -27,6 +27,13 @@ E.~S. Agency, ``Gps space segment,'' 2016. [Online]. Available:
   \url{http://www.navipedia.net/index.php/GPS_Space_Segment}
 \BIBentrySTDinterwordspacing
 
+\bibitem{gnsssolutions_dfppp}
+\BIBentryALTinterwordspacing
+H.~V. DerMarel and P.~De~Bakker, ``Gnss solutions: Single vs duel frequency
+  precise point positioning,'' 2012. [Online]. Available:
+  \url{http://www.insidegnss.com/auto/julyaug12-Solutions.pdf}
+\BIBentrySTDinterwordspacing
+
 \bibitem{HighAccDiffTrack}
 W.~Hedgecock, M.~Maroti, J.~Sallai, P.~Volgyesi, and A.~Ledeczi,
   ``High-accuracy differential tracking of low-cost gps receivers,'' in
@@ -55,6 +62,14 @@ N.~National Coordination Office~for Space-Based~Positioning and Timing,
   specification,'' GPS Navstar, Technical Report, June 1995. [Online].
   Available:
   \url{http://www.gps.gov/technical/ps/1995-SPS-signal-specification.pdf}
+\BIBentrySTDinterwordspacing
+
+\bibitem{officalperformance}
+\BIBentryALTinterwordspacing
+------, ``Global positioning system standard positioning service performance
+  standard (4th ed),'' USA DoD and GPS Navstar, Technical Report, 2008.
+  [Online]. Available:
+  \url{http://www.gps.gov/technical/ps/2008-SPS-performance-standard.pdf}
 \BIBentrySTDinterwordspacing
 
 \bibitem{trimble_errors}

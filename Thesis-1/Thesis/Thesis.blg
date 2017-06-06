@@ -27,8 +27,12 @@ I'm skipping whatever remains of this entry
 ** Sorting version - not for normal IEEE work.
 Name 1 in "National Coordination Office for Space-Based Positioning, Navigation, and Timing" has a comma at the end for entry signalspec
 while executing---line 2589 of file ieeetrans.bst
+Name 1 in "National Coordination Office for Space-Based Positioning, Navigation, and Timing" has a comma at the end for entry officalperformance
+while executing---line 2589 of file ieeetrans.bst
 Name 1 in "National Coordination Office for Space-Based Positioning, Navigation, and Timing" has a comma at the end for entry signalspec
+while executing---line 2601 of file ieeetrans.bst
+Name 1 in "National Coordination Office for Space-Based Positioning, Navigation, and Timing" has a comma at the end for entry officalperformance
 while executing---line 2601 of file ieeetrans.bst
 
 Done.
-(There were 5 error messages)
+(There were 7 error messages)

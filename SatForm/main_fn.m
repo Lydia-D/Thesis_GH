@@ -101,7 +101,7 @@ for j = 1:length(power)
 
     
     
-    Estruc.satmag = 0*10^-error_var_power(10);
+    Estruc.satmag = 1*10^-error_var_power(10);
     Estruc.recmag = 0*10^-error_var_power(10);
     Estruc.random = 0*10^-error_var_power(10);
     

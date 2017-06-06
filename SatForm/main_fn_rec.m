@@ -1,0 +1,231 @@
+%% L Drabsch
+% main using fn_planeepoch
+
+clear
+%clc
+close all
+addpath('./fromspace3')
+constants();
+%% approximate location
+%GS_LLH = [-deg2rad(-33);deg2rad(151);0]; % sydney
+GS_LLH = [deg2rad(0);0;0];
+%GS_LLH = [-deg2rad(90);deg2rad(0);0]; % sydney
+GS_ECEF = llhgc2ecef(GS_LLH);  % global
+
+%% Location of receivers
+
+% numRec = 5;
+% Rec_dispersion = 10; % in meters, how far apart to have the receivers
+% Rec_displacement = Rec_dispersion*rand([3,numRec-1]);
+
+%allRec = allRec';
+
+%% Location of Satellites
+% how to pretend they're moving?
+% assume they're all moving to the centre?
+%load VisibleSat
+
+numSat = 10;
+
+elset = 75;
+Sconfig_el = [15,30,75,60]; % good config 
+%Sconfig_el = [15 20 80 75]; % bad config
+%Sconfig_el = [60,70,65,50,45,62,30];
+%Sconfig_el = [elset,elset+1,elset-1,elset+2,elset-2];
+%Sconfig_el = [elset-2,elset+2,elset-2,elset+2,elset];
+   
+% range from 0 to 2pi
+%azset = linspace(0,2*pi-0.01,20);
+azset = 0;
+Sconfig_az = [60,120,270,300]; % good config north
+%Sconfig_az = [0,180,0,150]; % bad
+
+
+%Sconfig_az = [0,50,90,150,285,327,210];
+%Sconfig_az = [pi/4-0.2,pi/4,pi/4-0.1,pi/4+0.1,pi/4+0.2];
+%Sconfig_az = [azset-2,azset-2,azset+2,azset+2,azset];
+
+%Sconfig_az = [1,pi/2-1,pi-1,3*pi/2+1];
+
+el = deg2rad(Sconfig_el);
+az = deg2rad(Sconfig_az);
+[x,y] = polar2plot(az,el);
+%[x,y] = polar2plot(VisSat_LG_pol(2,:),VisSat_LG_pol(3,:));
+
+
+% location of satellites at t = 0
+allSat = sat_ned2ecef(el,az,GS_LLH); % global frame
+%allSat = VisibleSat;
+% make them move
+
+timevec = 0;
+plotyes = 0;
+if plotyes ==1
+    animation3Dearth;
+    hold on
+    scatter3(allSat(1,:),allSat(2,:),allSat(3,:))
+end
+%% errors
+%power = [-3:1:5];
+power = 1; % 1 m
+error_var_power = 10:-1:0;
+j = 1;
+
+% second receiver NED then transform - use as config(:,i)
+numRec = 2;
+Rconfig = [1,0,0;
+          0,1,0;
+          0,0,1;
+          -1,0,0;
+          0,-1,0;
+          0,0,-1]';
+
+      
+alpha = [0;0;0];
+beta = Rconfig(:,1);
+%% plot receiver configuration - 0 is approximate location
+figure(1)
+ned2xyz = [1,0,0,0;0,-1,0,0;0,0,-1,0;0,0,0,0];
+
+subplot(221)
+plotrec([alpha,beta],gcf)
+ax = gca;
+%text(0,0,'Receiver and Satellite Configuration\n from Approximate Location')
+%subplot(223);
+%subplot('position',[0.05,0.05,0.45,0.45])
+figure(2)
+scatter(x,y,'b','filled')
+hold on
+polarfig = PolarPlot(gcf,0.65);
+
+%% 
+
+for k = 1:length(error_var_power)
+    Rec_displacement = 10^power(j).*[[0;0;0],beta];
+    %Rec_displacement = [0,10;0,0;0,0];   % use NED coords
+    Rec_ecef_local = lg2ecef(Rec_displacement,GS_LLH);
+    allRec = GS_ECEF*ones(1,numRec)+Rec_ecef_local;
+    true_rel_alpha = Rec_displacement(:,2:end)-repmat(Rec_displacement(:,1),[1,numRec-1]);
+
+    
+    Estruc.satmag = 0*10^-error_var_power(k);
+    Estruc.recmag = 0*10^-error_var_power(k);
+    Estruc.random = 1*10^-error_var_power(k);
+
+    
+    
+%% statistical analysis - one rec
+total_iter = 100;
+allerror = zeros(3,total_iter,numRec-1);  % NEED TO STRUCTURE FOR MORE REC
+for i = 1:total_iter
+%    [allerror(:,i),clockbias(:,j)] = fn_planeepoch(GS_LLH,GS_ECEF,numSat,numRec,allRec,allSat,Estruc,true_rel_alpha);
+    [allerror(:,i),clockbias(:,j),allerror_NC(:,i),range_error] = fn_planeepoch(GS_LLH,GS_ECEF,numSat,numRec,allRec,allSat,Estruc,true_rel_alpha);
+
+    % NLLS
+    for irec = 1:numRec
+    [NLLS_abs_ecef_global(:,irec),~,~,calc_clockbias(i,irec)] = convergance([GS_ECEF;0],allSat,range_error(irec,:)');
+    end
+    % convert to local NED
+    NLLS_abs_ecef_local = vectoradd(NLLS_abs_ecef_global,GS_ECEF,-1);
+    NLLS_abs_ned = ecef2lg(NLLS_abs_ecef_local,GS_LLH); % local
+    % take relative distance for two rec
+    NLLS_rel_ned = vectoradd(NLLS_abs_ned(:,2:end),NLLS_abs_ned(:,1),-1);
+    % error
+    NLLS_error_ned(:,i) = NLLS_rel_ned - true_rel_alpha;
+    
+end
+
+%% store error for 1 m
+   
+
+
+%% error analysis
+% avg_error(:,j) = mean(allerror,2);
+% std_dev(:,j) = std(allerror,0,2); % use N-1 (0) or N (1)? in second field
+% avg_error_NC(:,j) = mean(allerror_NC,2);
+% std_dev_NC(:,j) = std(allerror_NC,0,2);
+% 
+% NLLS_avg_error(:,j) = mean(NLLS_error_ned,2);
+% NLLS_std_error(:,j) = std(NLLS_error_ned,0,2);
+    avg_error(:,k) = mean(allerror,2);
+    std_dev(:,k) = std(allerror,0,2); % use N-1 (0) or N (1)? in second field
+
+    NLLS_avg_error(:,k) = mean(NLLS_error_ned,2);
+    NLLS_std_error(:,k) = std(NLLS_error_ned,0,2);
+end
+
+%% 
+%subplot(2,2,2)
+%xplot = 10.^power; % rec displacement
+figure(3)
+clf
+xplot = 10.^-error_var_power; % error magnitude
+loglog(xplot,magc(avg_error),'bo-')
+grid on
+hold on
+loglog(xplot,magc(avg_error)+magc(std_dev),'--b')
+%loglog(xplot,magc(avg_error_NC),'ro-')
+loglog(xplot,magc(NLLS_avg_error),'ko-')
+loglog(xplot,magc(NLLS_avg_error)+magc(NLLS_std_error),'k--')
+%loglog(xplot,magc(avg_error_NC)+magc(std_dev_NC),'r--')
+
+
+%legend('solve with clockbias','solve without clockbias','NLLS','Location','best')
+legend('PA mean','PA std','NLLS mean','NLLS std','Location','best')
+
+xlabel('Magnitude of Error (seconds)')
+ylabel('Solution error (meters)')
+title('Total Error due to Uncorrelated Errors (Receivers 1m North Config)')
+%axis([10^-10 10^0 10^-8 10^0 ])
+
+%% 4 plot plot total error
+% 
+% subplot(2,2,2)
+% %xplot = 10.^power; % rec displacement
+% xplot = 10.^-error_var_power; % error magnitude
+% loglog(xplot,magc(avg_error),'bo-')
+% grid on
+% hold on
+% %loglog(xplot,magc(avg_error_NC),'ro-')
+% loglog(xplot,magc(NLLS_avg_error),'ko-')
+% loglog(xplot,magc(NLLS_avg_error)+magc(NLLS_std_error),'k--')
+% %loglog(xplot,magc(avg_error_NC)+magc(std_dev_NC),'r--')
+% loglog(xplot,magc(avg_error)+magc(std_dev),'--b')
+% 
+% %legend('solve with clockbias','solve without clockbias','NLLS','Location','best')
+% legend('solve with clockbias','NLLS','Location','best')
+% 
+% xlabel('Distance between receviers (meters)')
+% ylabel('Solution error (meters)')
+% title('Total Error due to Plane Assumption')
+
+%%
+
+% subplot(2,2,4)
+% loglog(xplot,abs(avg_error(1,:)),'ro-') % north error
+% hold on
+% loglog(xplot,abs(avg_error(2,:)),'ko-') % east error
+% loglog(xplot,abs(avg_error(3,:)),'bo-') % down error
+% loglog(xplot,abs(clockbias(2,:)-clockbias(1,:)),'mx-')
+% grid on
+% xlabel('Distance between receviers (meters)')
+% ylabel('Solution error (meters)')
+% title('Component Error due to Plane Assumption')
+% legend('North Error','East Error','Down Error','Location','best')
+
+
+
+
+% figure(3)
+% clf
+% semilogx(xplot,magc(avg_error),'b')
+% grid on
+% hold on
+% semilogx(xplot,magc(avg_error)+magc(std_dev),'--b')
+% semilogx(xplot,magc(avg_error)-magc(std_dev),'--b')
+% xlabel('Magnitude of induced error (seconds)')
+% ylabel('Solution error (meters)')
+% title('Satellite Error')
+
+% errorbar(xplot,magc(avg_error),magc(std_dev))
+
